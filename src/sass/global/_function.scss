@@ -15,6 +15,22 @@
 }
 
 // remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
-@function rem($pixels) {
-  @return math.div($pixels, 16) * 1rem;
+@function rem($px, $basepx: 16) {
+  @return calc($px / $basepx * 1rem);
 }
+
+//重なり順（z-index）
+@function zi($key) {
+  @return map-get($z-index-layer, $key);
+}
+$z-index-layer: (
+  loading: 9000,
+  modal: 8000,
+  hamburger: 7000,
+  button-top-page: 6000,
+  drawer: 5000,
+  header: 3000,
+  just-above: 1000,
+  default: 1,
+  just-below: -1000,
+);
