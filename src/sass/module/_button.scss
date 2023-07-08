@@ -5,15 +5,16 @@
   position: relative;
   width: 14.4em;
   padding: rem(16) rem(40);
+  border: 1px solid $c-green-accent;
   background-color: $c-green-accent;
   color: $white;
   font-size: rem(14);
   line-height: calc(22 / 14);
-
-  transition: opacity 0.3s;
-  &:hover {
-    opacity: 0.8;
-  }
+  transition: background-color 0.3s, color 0.3s;
+}
+.button:hover {
+  background-color: $white;
+  color: $c-green-accent;
 }
 .button::first-letter {
   text-transform: capitalize;
@@ -28,13 +29,17 @@
   border: 1px solid $c-green-accent;
 }
 .button::after {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: 50%;
+  right: rem(40);
+  transform: translateY(-80%) skewX(50deg);
   width: rem(30);
   height: rem(6);
-  border-bottom: 1px solid $white;
   border-right: 1px solid $white;
-  top: 50%;
-  transform: translateY(-80%) skewX(50deg);
-  right: rem(40);
+  border-bottom: 1px solid $white;
+  transition: border-color 0.3s;
+}
+.button:hover::after {
+  border-color: $c-green-accent;
 }
