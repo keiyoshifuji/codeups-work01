@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.empty {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

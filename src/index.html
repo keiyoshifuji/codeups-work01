@@ -20,7 +20,12 @@
     <!-- ファビコン -->
     <link rel="”icon”" href="/images/favicon.ico" />
     <!-- * Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
@@ -29,11 +34,58 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <div class="inner">
-        <p class="test">変更のテスト</p>
-      </div>
-    </main>
+    <main></main>
     <footer></footer>
+
+    <div class="component">
+      <span class="empty"></span>
+
+      <div class="section-title">
+        <h2 class="section-title__main"><span>s</span>ection title</h2>
+        <span class="section-title__sub">セクションタイトル</span>
+      </div>
+
+      <span class="empty"></span>
+
+      <div class="section-title section-title--large">
+        <h2 class="section-title__main section-title__main"><span>c</span>ontact</h2>
+        <span class="section-title__sub">お問合せ</span>
+      </div>
+
+      <span class="empty"></span>
+
+      <div class="card-campaign">
+        <figure class="card-campaign__image">
+          <img src="/assets/images/campaign01.jpg" alt="紺青の海中を黄色く小さな熱帯魚の群れが泳いでいる様子" />
+        </figure>
+        <div class="card-campaign__body">
+          <span class="card-campaign__category">ライセンス講習</span>
+          <h3 class="card-campaign__title">ライセンス取得</h3>
+          <div class="card-campaign__border"></div>
+          <div class="card-campaign__content">
+            <p class="card-campaign__text">全部コミコミ&#040;お一人様&#041;</p>
+            <div class="card-campaign__prices">
+              <span class="card-campaign__price-before">&#165;56,000</span>
+              <span class="card-campaign__price-after">&#165;46,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="empty"></span>
+
+      <a href="#" class="button">view more</a>
+
+      <span class="empty"></span>
+
+      <a href="#" class="button">contact us</a>
+
+      <span class="empty"></span>
+      <span class="empty"></span>
+      <span class="empty"></span>
+      <span class="empty"></span>
+      <span class="empty"></span>
+      <span class="empty"></span>
+    </div>
   </body>
 </html>

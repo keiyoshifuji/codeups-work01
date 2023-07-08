@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.section-title {
+  text-align: center;
+}
+.section-title__main {
+  color: $c-green01;
+  font-size: rem(32);
+  font-weight: $normal;
+  line-height: 1.25;
+
+  @include mq {
+    font-size: rem(40);
+    line-height: 1;
+  }
+}
+.section-title__main span {
+  color: $c-green-accent;
+  text-transform: uppercase;
+}
+.section-title__sub {
+  display: inline-block;
+  margin-top: rem(4);
+  color: $c-green-accent;
+  font-size: rem(12);
+  @include mq {
+    margin-top: rem(8);
+  }
+}
+
+.section-title.section-title--large .section-title__main {
+  font-size: rem(80);
+  line-height: 1;
+}
+.section-title.section-title--large .section-title__sub {
+  margin-top: 0;
+}
