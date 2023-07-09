@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.component {
+  margin-top: 100vh;
+}
 .empty {
   display: block;
   height: 1px;

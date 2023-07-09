@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.card-voice {
+  display: block;
+  width: 100%;
+  padding: rem(16) rem(16) rem(24);
+  background: $white;
+  box-shadow: 2px 2px 10px 0px rgba($black, 0.25);
+
+  @include mq {
+    padding: rem(24);
+    width: rem(520); // ! tentative
+  }
+}
+.card-voice__flex {
+  display: flex;
+  gap: rem(13);
+  align-items: end;
+
+  @include mq {
+    gap: rem(16);
+  }
+}
+.card-voice__sub-container {
+  @include mq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+.card-voice__information {
+  font-family: "Noto Sans JP";
+  color: $c-green01;
+  font-size: rem(12);
+}
+.card-voice__title {
+  margin-top: rem(4);
+  color: $c-green01;
+  font-size: rem(16);
+  font-weight: $medium;
+
+  padding-bottom: rem(4);
+  border-bottom: 2px solid $c-green-accent;
+
+  @include mq {
+    margin-top: rem(8);
+    font-size: rem(24);
+  }
+}
+.card-voice__image {
+  flex-shrink: 0;
+  width: rem(150);
+
+  @include mq {
+    width: rem(180);
+  }
+}
+.card-voice__content {
+  margin-top: rem(15);
+
+  @include mq {
+    margin-top: rem(40);
+  }
+}
+.card-voice__text {
+  color: $black;
+  font-size: rem(16);
+}

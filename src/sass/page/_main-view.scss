@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.main-view {
+  width: 100%;
+  height: 100dvh;
+  background-image: url("../images/main-view01-pc.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

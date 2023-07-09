@@ -15,8 +15,8 @@
 }
 
 // remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
-@function rem($px, $basepx: 16) {
-  @return calc($px / $basepx * 1rem);
+@function rem($px) {
+  @return calc($px /16 * 1rem);
 }
 
 //重なり順（z-index）

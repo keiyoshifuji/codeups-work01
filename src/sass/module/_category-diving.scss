@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.category-diving {
+  display: inline-block;
+  padding: rem(8) rem(12);
+  border: 1px solid $c-green-accent;
+  color: $c-green-accent;
+  font-size: rem(12);
+  line-height: 1;
+
+  @include mq {
+    padding: rem(10) rem(16);
+  }
+}

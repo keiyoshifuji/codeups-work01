@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: zi(header);
+  height: rem(80);
+  background-color: rgba($c-green01, 0.68);
+  @include mq {
+    height: rem(90);
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  padding: 0 rem(15);
+  @include mq {
+    padding: 0 rem(40);
+  }
+}
+.header__logo {
+  width: rem(102);
+  height: inherit;
+  font-weight: $normal;
+  line-height: 1;
+  @include mq {
+    width: rem(133);
+  }
+}
+.header__logo--drawer {
+  height: rem(80);
+}
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.header__pc-nav {
+  height: inherit;
+  margin-left: rem(40);
+}
+
+// * HAMBURGER
+.header__hamburger {
+  position: fixed;
+  top: rem(28);
+  right: rem(15);
+}
+
+// * DRAWER
+.header__drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: zi(drawer);
+  width: 100vw;
+  height: 100dvh;
+  background-color: $c-green-accent;
+}
