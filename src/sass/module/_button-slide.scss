@@ -1,0 +1,28 @@
+@use "global" as *;
+
+// * ARROW
+.button-slide__prev,
+.button-slide__next {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $c-green-accent;
+  border-radius: 50%;
+}
+.button-slide__prev::after,
+.button-slide__next::after {
+  content: "";
+  width: rem(40);
+  height: rem(6);
+  border-bottom: 1px solid $c-green-accent;
+  transition: border-color 0.3s;
+}
+.button-slide__prev::after {
+  transform: translateX(10%) skew(-50deg);
+  border-left: 1px solid $c-green-accent;
+}
+.button-slide__next::after {
+  transform: translateX(-10%) skew(50deg);
+  border-right: 1px solid $c-green-accent;
+}

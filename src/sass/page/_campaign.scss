@@ -8,7 +8,10 @@
   }
 }
 .campaign__items {
-  padding-top: rem(40);
+  padding-top: rem(24);
+  @include mq {
+    padding-top: rem(40);
+  }
 }
 .campaign__item {
   width: 100%;
@@ -19,47 +22,38 @@
   }
 }
 
-.campaign__swiper-button {
+// * Swiper button
+.campaign__swiper-button-prev,
+.campaign__swiper-button-next {
+  display: none;
   position: absolute;
+  //trblはデフォルト値上書き用
   top: auto;
   right: auto;
   bottom: auto;
   left: auto;
-  width: 80px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid $c-green-accent;
-  border-radius: 50%;
   transform: translateY(-50%);
-
-  display: none;
   @include mq {
     display: flex;
   }
 }
-.campaign__swiper-button.campaign__swiper-button--prev {
+
+.campaign__swiper-button-prev {
   top: -25px;
   right: 160px;
 }
-.campaign__swiper-button.campaign__swiper-button--next {
+.campaign__swiper-button-next {
   top: -25px;
   right: 0;
 }
 
-// * ARROW
-.campaign__swiper-button::after {
-  content: "";
-  width: rem(40);
-  height: rem(6);
-  border-bottom: 1px solid $c-green-accent;
-  transition: border-color 0.3s;
+.campaign__button-container {
+  margin-top: rem(40);
+  @include mq {
+    margin-top: rem(80);
+  }
 }
-.campaign__swiper-button.campaign__swiper-button--prev::after {
-  border-left: 1px solid $c-green-accent;
-  transform: translateX(10%) skew(-50deg);
-}
-.campaign__swiper-button.campaign__swiper-button--next::after {
-  border-right: 1px solid $c-green-accent;
-  transform: translateX(-10%) skew(50deg);
+.campaign__button-more {
+  margin-right: auto;
+  margin-left: auto;
 }
