@@ -29,9 +29,14 @@
   height: 80px;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  border: 1px solid $c-green-accent;
   border-radius: 50%;
   transform: translateY(-50%);
+
+  display: none;
+  @include mq {
+    display: flex;
+  }
 }
 .campaign__swiper-button.campaign__swiper-button--prev {
   top: -25px;
@@ -40,4 +45,21 @@
 .campaign__swiper-button.campaign__swiper-button--next {
   top: -25px;
   right: 0;
+}
+
+// * ARROW
+.campaign__swiper-button::after {
+  content: "";
+  width: rem(40);
+  height: rem(6);
+  border-bottom: 1px solid $c-green-accent;
+  transition: border-color 0.3s;
+}
+.campaign__swiper-button.campaign__swiper-button--prev::after {
+  border-left: 1px solid $c-green-accent;
+  transform: translateX(10%) skew(-50deg);
+}
+.campaign__swiper-button.campaign__swiper-button--next::after {
+  border-right: 1px solid $c-green-accent;
+  transform: translateX(-10%) skew(50deg);
 }
