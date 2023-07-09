@@ -1,0 +1,32 @@
+@use "global" as *;
+
+
+.navigation__item {
+  margin-left: rem(22);
+  list-style-position: outside;
+  list-style-image: url("../images/list-style.svg");
+  line-height: 1.125;
+}
+.navigation__item:not(:first-of-type){
+  margin-top: rem(16);
+}
+.navigation__item::marker {
+  line-height: 0;
+}
+
+.navigation__item > a,
+.navigation__sub-item > a {
+  display: block;
+  color: $white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.navigation__item > a {
+  font-weight: $bold;
+}
+.navigation__sub-item > a {
+  font-weight: $normal;
+}
+.navigation__sub-item {
+  line-height: 1.125;
+}

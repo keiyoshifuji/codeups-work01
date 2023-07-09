@@ -28,8 +28,10 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -41,6 +43,7 @@
           </a>
         </h1>
 
+        <!-- navigation -->
         <div class="header__pc-nav pc-nav u-desktop">
           <ul class="pc-nav__items">
             <li class="pc-nav__item">
@@ -111,51 +114,88 @@
         </div>
         <div class="header__sp-nav sp-nav">
           <div class="sp-nav__items">
-            <ul class="sp-nav__aside-left">
-              <li class="sp-nav__item">
+            <ul class="sp-nav__aside-left navigation">
+              <li class="navigation__item">
                 <a href="#campagin">キャンペーン</a>
-                <ul class="sp-nav__sub-items">
-                  <li class="sp-nav__sub-item"><a href="#">ライセンス取得</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">貸切体験ダイビング</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">ナイトダイビング</a></li>
+                <ul class="navigation__sub-items">
+                  <li class="navigation__sub-item"><a href="#">ライセンス取得</a></li>
+                  <li class="navigation__sub-item"><a href="#">貸切体験ダイビング</a></li>
+                  <li class="navigation__sub-item"><a href="#">ナイトダイビング</a></li>
                 </ul>
               </li>
-              <li class="sp-nav__item"><a href="#about-us">私たちについて</a></li>
-              <li class="sp-nav__item">
+              <li class="navigation__item"><a href="#about-us">私たちについて</a></li>
+              <li class="navigation__item">
                 <a href="#information">ダイビング情報</a>
-                <ul class="sp-nav__sub-items">
-                  <li class="sp-nav__sub-item"><a href="#">ライセンス講習</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">体験ダイビング</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">ファンダイビング</a></li>
+                <ul class="navigation__sub-items">
+                  <li class="navigation__sub-item"><a href="#">ライセンス講習</a></li>
+                  <li class="navigation__sub-item"><a href="#">体験ダイビング</a></li>
+                  <li class="navigation__sub-item"><a href="#">ファンダイビング</a></li>
                 </ul>
               </li>
-              <li class="sp-nav__item"><a href="#blog">ブログ</a></li>
+              <li class="navigation__item"><a href="#blog">ブログ</a></li>
             </ul>
 
             <ul class="sp-nav__aside-right">
-              <li class="sp-nav__item"><a href="#voice">お客様の声</a></li>
-              <li class="sp-nav__item">
+              <li class="navigation__item"><a href="#voice">お客様の声</a></li>
+              <li class="navigation__item">
                 <a href="#price">料金一覧</a>
-                <ul class="sp-nav__sub-items">
-                  <li class="sp-nav__sub-item"><a href="#">ライセンス講習</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">体験ダイビング</a></li>
-                  <li class="sp-nav__sub-item"><a href="#">ファンダイビング</a></li>
+                <ul class="navigation__sub-items">
+                  <li class="navigation__sub-item"><a href="#">ライセンス講習</a></li>
+                  <li class="navigation__sub-item"><a href="#">体験ダイビング</a></li>
+                  <li class="navigation__sub-item"><a href="#">ファンダイビング</a></li>
                 </ul>
               </li>
-              <li class="sp-nav__item"><a href="#faq">よくある質問</a></li>
-              <li class="sp-nav__item">
+              <li class="navigation__item"><a href="#faq">よくある質問</a></li>
+              <li class="navigation__item">
                 <a href="#">プライバシー<br />ポリシー</a>
               </li>
-              <li class="sp-nav__item"><a href="#">利用規約</a></li>
-              <li class="sp-nav__item"><a href="#">サイトマップ</a></li>
-              <li class="sp-nav__item"><a href="#contact">お問合わせ</a></li>
+              <li class="navigation__item"><a href="#">利用規約</a></li>
+              <li class="navigation__item"><a href="#">サイトマップ</a></li>
+              <li class="navigation__item"><a href="#contact">お問合わせ</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="main-view"></section>
+      <section class="main-view">
+        <div class="main-view__inner">
+          <div class="main-view__body">
+            <div class="main-view__heading">
+              <p class="main-view__text-large">diving</p>
+              <p class="main-view__text-small">into the ocean</p>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="main-view__image">
+                    <source srcset="/assets/images/main-view01-pc.webp" media="(min-width:768px)" />
+                    <img src="/assets/images/main-view01-sp.webp" alt="" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="main-view__image">
+                    <source srcset="/assets/images/main-view02-pc.webp" media="(min-width:768px)" />
+                    <img src="/assets/images/main-view02-sp.webp" alt="" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="main-view__image">
+                    <source srcset="/assets/images/main-view03-pc.webp" media="(min-width:768px)" />
+                    <img src="/assets/images/main-view03-sp.webp" alt="" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="main-view__image">
+                    <source srcset="/assets/images/main-view04-pc.webp" media="(min-width:768px)" />
+                    <img src="/assets/images/main-view04-sp.webp" alt="" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
 

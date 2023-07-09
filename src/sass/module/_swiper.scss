@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: inherit;
+}

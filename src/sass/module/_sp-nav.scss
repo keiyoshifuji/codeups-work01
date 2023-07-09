@@ -11,33 +11,3 @@
 .sp-nav__aside-right {
   width: 50%;
 }
-.sp-nav__item {
-  margin-left: rem(22);
-  list-style-position: outside;
-  list-style-image: url("../images/list-style.svg");
-  line-height: 1.125;
-}
-.sp-nav__aside-left .sp-nav__item:not(:first-of-type),
-.sp-nav__aside-right .sp-nav__item:not(:first-of-type) {
-  margin-top: rem(16);
-}
-.sp-nav__item::marker {
-  line-height: 0;
-}
-
-.sp-nav__item > a,
-.sp-nav__sub-item > a {
-  display: block;
-  color: $white;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.sp-nav__item > a {
-  font-weight: $bold;
-}
-.sp-nav__sub-item > a {
-  font-weight: $normal;
-}
-.sp-nav__sub-item {
-  line-height: 1.125;
-}
