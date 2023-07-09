@@ -14,7 +14,7 @@
     line-height: 1;
   }
 }
-.section-title__main span {
+.section-title__main::first-letter {
   color: $c-green-accent;
   text-transform: uppercase;
 }

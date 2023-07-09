@@ -7,8 +7,8 @@ jQuery(function ($) {
     $(".js-drawer-menu").fadeToggle(); //ドロワー（マスク）をfadeIn/Outする
   });
 
-  // * Swiper
-  const swiper = new Swiper(".swiper", {
+  // * Swiper01
+  const swiper01 = new Swiper(".swiper01", {
     direction: "horizontal",
     loop: true,
     effect: "fade",
@@ -16,6 +16,25 @@ jQuery(function ($) {
     allowTouchMove: false,
     autoplay: {
       delay: 3000,
+    },
+  });
+
+  const swiper02 = new Swiper(".swiper02", {
+    // loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    grabCursor: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper02 .swiper-button-next",
+      prevEl: ".swiper02 .swiper-button-prev",
+    },
+
+    breakpoints: {
+      768: {
+        spaceBetween: 40,
+      },
     },
   });
 
