@@ -21,12 +21,7 @@
   }
 }
 
-.section-top__blog.blog {
-  padding-top: rem(80);
-  @include mq {
-    padding-top: rem(100);
-  }
-}
+
 
 .section-top__voice.voice {
   padding-top: rem(60);

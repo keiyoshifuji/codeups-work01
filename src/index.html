@@ -117,7 +117,7 @@
           <div class="sp-nav__items">
             <ul class="sp-nav__aside-left navigation">
               <li class="navigation__item">
-                <a href="#campagin">キャンペーン</a>
+                <a href="#campaign">キャンペーン</a>
                 <ul class="navigation__sub-items">
                   <li class="navigation__sub-item"><a href="#">ライセンス取得</a></li>
                   <li class="navigation__sub-item"><a href="#">貸切体験ダイビング</a></li>
@@ -200,7 +200,7 @@
       </section>
 
       <!-- Campaign -->
-      <section id="canpaign" class="campaign section-top__campaign">
+      <section id="campaign" class="campaign section-top__campaign">
         <div class="campaign__inner inner">
           <div class="campaign__title section-title">
             <h2 class="section-title__main">campaign</h2>
@@ -333,6 +333,7 @@
         </div>
       </section>
 
+      <!-- Information -->
       <section id="information" class="information section-top__information">
         <div class="information__inner inner">
           <div class="information__title section-title">
@@ -356,9 +357,80 @@
         </div>
       </section>
 
-      <section id="blog" class="blog section-top__blog"></section>
+      <!-- Blog -->
+      <section id="blog" class="blog section-top__blog">
+        <div class="blog__inner inner">
+          <div class="blog__title section-title section-title--white-pc">
+            <h2 class="section-title__main">blog</h2>
+            <span class="section-title__sub">ブログ</span>
+          </div>
+
+          <div class="blog__body">
+            <ul class="blog__card-items">
+              <li class="blog__card-item card-blog">
+                <a href="#" class="card-blog__link">
+                  <figure class="card-blog__image">
+                    <img src="/assets/images/blog-card01.webp" alt="ピンク色の枝状の珊瑚" />
+                  </figure>
+                  <div class="card-blog__body">
+                    <time class="card-blog__date" datetime="2023-11-17">2023.11/17</time>
+                    <h3 class="card-blog__title">ライセンス取得</h3>
+                    <div class="card-blog__content">
+                      <p class="card-blog__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="blog__card-item card-blog">
+                <a href="#" class="card-blog__link">
+                  <figure class="card-blog__image">
+                    <img
+                      src="/assets/images/blog-card02.webp"
+                      alt="ウミガメが海中を泳いでこちらに向かってきている様子"
+                    />
+                  </figure>
+                  <div class="card-blog__body">
+                    <time class="card-blog__date" datetime="2023-11-17">2023.11/17</time>
+                    <h3 class="card-blog__title">ライセンス取得</h3>
+                    <div class="card-blog__content">
+                      <p class="card-blog__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="blog__card-item card-blog">
+                <a href="#" class="card-blog__link">
+                  <figure class="card-blog__image">
+                    <img src="/assets/images/blog-card03.webp" alt="カクレクマノミが磯巾着の中に隠れている様子" />
+                  </figure>
+                  <div class="card-blog__body">
+                    <time class="card-blog__date" datetime="2023-11-17">2023.11/17</time>
+                    <h3 class="card-blog__title">ライセンス取得</h3>
+                    <div class="card-blog__content">
+                      <p class="card-blog__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="blog__button-container">
+              <a href="#" class="blog__button-more button">view more<span class="button__arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
       <section id="voice" class="voice section-top__voice"></section>
+
       <section id="price" class="price section-top-__price"></section>
+
       <section id="contact" class="contact section-top__contact"></section>
     </main>
     <footer></footer>
@@ -415,20 +487,22 @@
       <span class="empty"></span>
 
       <!-- * card blog -->
-      <a href="#" class="card-blog">
-        <figure class="card-blog__image">
-          <img src="/assets/images/blog-card01.webp" alt="ここにaltが入ります" />
-        </figure>
-        <div class="card-blog__body">
-          <time class="card-blog__date" datetime="2023-11-17">2023.11/17</time>
-          <h3 class="card-blog__title">ライセンス取得</h3>
-          <div class="card-blog__content">
-            <p class="card-blog__text">
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-            </p>
+      <div class="card-blog">
+        <a href="#" class="card-blog__link">
+          <figure class="card-blog__image">
+            <img src="/assets/images/blog-card01.webp" alt="ここにaltが入ります" />
+          </figure>
+          <div class="card-blog__body">
+            <time class="card-blog__date" datetime="2023-11-17">2023.11/17</time>
+            <h3 class="card-blog__title">ライセンス取得</h3>
+            <div class="card-blog__content">
+              <p class="card-blog__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
       <span class="empty"></span>
 

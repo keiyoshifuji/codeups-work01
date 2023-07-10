@@ -1,6 +1,34 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(20);
+  padding-top: rem(80);
   padding-bottom: rem(20);
+
+  @include mq {
+    padding-top: rem(100);
+    background-image: url(../images/blog-bg.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.blog__body {
+  margin-top: rem(24);
+  @include mq {
+    margin-top: rem(80);
+  }
+}
+.blog__card-items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: rem(40);
+
+}
+.blog__card-item{}
+
+.blog__button-container {
+  margin-top: rem(40);
+}
+.blog__button-more {
+  margin-right: auto;
+  margin-left: auto;
 }

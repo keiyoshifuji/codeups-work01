@@ -28,6 +28,20 @@
   }
 }
 
+// modifier white
+.section-title.section-title--white-pc .section-title__main,
+.section-title.section-title--white-pc .section-title__sub {
+  @include mq {
+    color: $white;
+  }
+}
+.section-title.section-title--white-pc .section-title__main::first-letter {
+  @include mq {
+    color: $c-green02;
+  }
+}
+
+// modifier large
 .section-title.section-title--large .section-title__main {
   font-size: rem(80);
   line-height: 1;
