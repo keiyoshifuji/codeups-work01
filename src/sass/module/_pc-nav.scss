@@ -35,7 +35,23 @@
   margin-top: rem(4);
   width: 100%;
   text-align: center;
+  position: relative;
 }
-.pc-nav__link:hover .pc-nav__sub-text {
-  border-bottom: 1px solid $white;
+
+// * 中心から外に線が伸びる（下部）
+//参考：https://coco-factory.jp/ugokuweb/move01/5-3-1/
+.pc-nav__sub-text::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $white;
+  transition: transform 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+.pc-nav__link:hover .pc-nav__sub-text::after {
+  transform: scale(1, 1);
 }

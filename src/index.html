@@ -35,6 +35,7 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__inner">
         <h1 class="header__logo">
@@ -47,51 +48,51 @@
         <div class="header__pc-nav pc-nav u-desktop">
           <ul class="pc-nav__items">
             <li class="pc-nav__item">
-              <a href="#campaign" class="pc-nav__link nav-section">
+              <a href="#campaign" class="pc-nav__link">
                 <div class="pc-nav__main-text">campaign</div>
                 <div class="pc-nav__sub-text">キャンペーン</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#about-us" class="pc-nav__link nav-section">
+              <a href="#about-us" class="pc-nav__link">
                 <div class="pc-nav__main-text">about us</div>
                 <div class="pc-nav__sub-text">私たちについて</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#information" class="pc-nav__link nav-section">
+              <a href="#information" class="pc-nav__link">
                 <div class="pc-nav__main-text">information</div>
                 <div class="pc-nav__sub-text">ダイビング情報</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#blog" class="pc-nav__link nav-section">
+              <a href="#blog" class="pc-nav__link">
                 <div class="pc-nav__main-text">blog</div>
                 <div class="pc-nav__sub-text">ブログ</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#voice" class="pc-nav__link nav-section">
+              <a href="#voice" class="pc-nav__link">
                 <div class="pc-nav__main-text">voice</div>
-                <div class="pc-nav__sub-text">キャンペーン</div>
+                <div class="pc-nav__sub-text">お客様の声</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#price" class="pc-nav__link nav-section">
+              <a href="#price" class="pc-nav__link">
                 <div class="pc-nav__main-text">price</div>
-                <div class="pc-nav__sub-text">キャンペーン</div>
+                <div class="pc-nav__sub-text">料金一覧</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#faq" class="pc-nav__link nav-section">
+              <a href="#faq" class="pc-nav__link">
                 <div class="pc-nav__main-text pc-nav__main-text--large">faq</div>
-                <div class="pc-nav__sub-text">キャンペーン</div>
+                <div class="pc-nav__sub-text">よくある質問</div>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="#contact" class="pc-nav__link nav-section">
+              <a href="#contact" class="pc-nav__link">
                 <div class="pc-nav__main-text">contact</div>
-                <div class="pc-nav__sub-text">キャンペーン</div>
+                <div class="pc-nav__sub-text">お問合せ</div>
               </a>
             </li>
           </ul>
@@ -158,6 +159,7 @@
       </div>
     </header>
     <main>
+      <!-- Main view -->
       <section class="main-view">
         <div class="main-view__inner">
           <div class="main-view__body">
@@ -197,14 +199,15 @@
         </div>
       </section>
 
-      <section id="canpaign" class="campaign">
+      <!-- Campaign -->
+      <section id="canpaign" class="campaign section-top__campaign">
         <div class="campaign__inner inner">
           <div class="campaign__title section-title">
             <h2 class="section-title__main">campaign</h2>
             <span class="section-title__sub">キャンペーン</span>
           </div>
 
-          <!-- Swiper02 -->
+          <!-- swiper02 -->
           <div class="swiper swiper02">
             <ul class="swiper-wrapper campaign__items">
               <li class="swiper-slide campaign__item card-campaign">
@@ -297,12 +300,13 @@
           </div>
 
           <div class="campaign__button-container">
-            <a href="#" class="campaign__button-more button">view more</a>
+            <a href="#" class="campaign__button-more button">view more<span class="button__arrow"></span></a>
           </div>
         </div>
       </section>
 
-      <section id="about-us" class="about-us">
+      <!-- About us -->
+      <section id="about-us" class="about-us section-top__about-us">
         <div class="about-us__inner inner">
           <div class="about-us__title section-title">
             <h2 class="section-title__main">about us</h2>
@@ -321,13 +325,41 @@
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
                 <div class="about-us__button-container">
-                  <a href="#" class="about-us__button-more button">view more</a>
+                  <a href="#" class="about-us__button-more button">view more<span class="button__arrow"></span></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="information" class="information section-top__information">
+        <div class="information__inner inner">
+          <div class="information__title section-title">
+            <h2 class="section-title__main">information</h2>
+            <span class="section-title__sub">ダイビング情報</span>
+          </div>
+          <div class="information__body">
+            <figure class="information__image">
+              <img src="/assets/images/information01.webp" alt="サンゴ礁と黄色い熱帯魚" />
+            </figure>
+            <div class="information__text-container">
+              <h3 class="information__sub-title">ライセンス講習</h3>
+              <p class="information__text">
+                当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
+              </p>
+              <div class="information__button-container">
+                <a href="#" class="information__button-more button">view more<span class="button__arrow"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="blog section-top__blog"></section>
+      <section id="voice" class="voice section-top__voice"></section>
+      <section id="price" class="price section-top-__price"></section>
+      <section id="contact" class="contact section-top__contact"></section>
     </main>
     <footer></footer>
 
@@ -374,11 +406,11 @@
       <span class="empty"></span>
 
       <!-- * button -->
-      <a href="#" class="button">view more</a>
+      <a href="#" class="button">view more<span class="button__arrow"></span></a>
 
       <span class="empty"></span>
 
-      <a href="#" class="button">contact us</a>
+      <a href="#" class="button">contact us<span class="button__arrow"></span></a>
 
       <span class="empty"></span>
 

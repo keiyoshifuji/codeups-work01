@@ -1,22 +1,19 @@
 @use "global" as *;
 
 .about-us {
-  margin-top: rem(80);
-  @include mq {
-    margin-top: rem(140);
-  }
+  padding-top: rem(20);
+  padding-bottom: rem(20);
 }
 .about-us__body {
   margin-top: rem(24);
   @include mq {
+    position: relative;
     margin-top: rem(40);
   }
 }
 .about-us__images {
   position: relative;
   width: 100%;
-  // height: 61.449275%;
-
   aspect-ratio: 100 / 61.45;
 }
 .about-us__images img:nth-child(1) {
@@ -43,15 +40,36 @@
   color: $c-green-accent;
   font-size: rem(40);
   line-height: 1;
+  @include mq {
+    position: absolute;
+    top: 30.25%;
+    left: 18.5%;
+    color: $white;
+    font-size: rem(80);
+    line-height: 1.25;
+  }
 }
 .about-us__text-container {
   margin-top: rem(16);
   @include mq {
     margin-top: 0;
+
+    position: absolute;
+    top: 30.25%;
+    right: 3.7%; //40px
+    width: 100%;
+    max-width: 37%; //400px
+    // color: $white;
+    // font-size: rem(80);
+    // line-height: 1.25;
   }
 }
 .about-us__text {
   color: $c-green01;
+
+  @include mq {
+    color: $white;
+  }
 }
 .about-us__button-container {
   margin-top: rem(40);
