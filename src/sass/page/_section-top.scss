@@ -20,13 +20,10 @@
     margin-top: rem(120);
   }
 }
-
-
-
 .section-top__voice.voice {
   padding-top: rem(60);
   @include mq {
-    padding-top: rem(120);
+    padding-top: rem(100);
   }
 }
 

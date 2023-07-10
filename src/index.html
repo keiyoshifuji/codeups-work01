@@ -32,6 +32,7 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -341,7 +342,7 @@
             <span class="section-title__sub">ダイビング情報</span>
           </div>
           <div class="information__body">
-            <figure class="information__image">
+            <figure class="information__image js-colorbox">
               <img src="/assets/images/information01.webp" alt="サンゴ礁と黄色い熱帯魚" />
             </figure>
             <div class="information__text-container">
@@ -426,8 +427,71 @@
         </div>
       </section>
 
-      
-      <section id="voice" class="voice section-top__voice"></section>
+      <!-- Voice -->
+      <section id="voice" class="voice section-top__voice">
+        <div class="voice__inner inner">
+          <div class="voice__title section-title">
+            <h2 class="section-title__main">voice</h2>
+            <span class="section-title__sub">お客様の声</span>
+          </div>
+
+          <div class="voice__body">
+            <ul class="voice__card-items">
+              <li class="voice__card-item card-voice">
+                <a href="#" class="card-voice__link">
+                  <div class="card-voice__body">
+                    <div class="card-voice__flex">
+                      <div class="card-voice__heading">
+                        <div class="card-voice__sub-container">
+                          <p class="card-voice__information">20代&#040;女性&#041;</p>
+                          <span class="card-voice__category category-diving">ライセンス講習</span>
+                        </div>
+                        <h3 class="card-voice__title">ここにタイトルが入ります。ここにタイトル</h3>
+                      </div>
+                      <figure class="card-voice__image js-colorbox">
+                        <img src="/assets/images/voice01.webp" alt="ここにaltが入ります" />
+                      </figure>
+                    </div>
+
+                    <div class="card-voice__content">
+                      <p class="card-voice__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="voice__card-item card-voice">
+                <a href="#" class="card-voice__link">
+                  <div class="card-voice__body">
+                    <div class="card-voice__flex">
+                      <div class="card-voice__heading">
+                        <div class="card-voice__sub-container">
+                          <p class="card-voice__information">30代&#040;男性&#041;</p>
+                          <span class="card-voice__category category-diving">ファンダイビング</span>
+                        </div>
+                        <h3 class="card-voice__title">ここにタイトルが入ります。ここにタイトル</h3>
+                      </div>
+                      <figure class="card-voice__image js-colorbox">
+                        <img src="/assets/images/voice02.webp" alt="ここにaltが入ります" />
+                      </figure>
+                    </div>
+
+                    <div class="card-voice__content">
+                      <p class="card-voice__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="voice__button-container">
+              <a href="#" class="voice__button-more button">view more<span class="button__arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="price" class="price section-top-__price"></section>
 
@@ -507,28 +571,30 @@
       <span class="empty"></span>
 
       <!-- * card voice -->
-      <a href="#" class="card-voice">
-        <div class="card-voice__body">
-          <div class="card-voice__flex">
-            <div class="card-voice__heading">
-              <div class="card-voice__sub-container">
-                <p class="card-voice__information">20代&#040;女性&#041;</p>
-                <span class="card-voice__category category-diving">ライセンス講習</span>
+      <div class="card-voice">
+        <a href="#" class="card-voice__link">
+          <div class="card-voice__body">
+            <div class="card-voice__flex">
+              <div class="card-voice__heading">
+                <div class="card-voice__sub-container">
+                  <p class="card-voice__information">20代&#040;女性&#041;</p>
+                  <span class="card-voice__category category-diving">ライセンス講習</span>
+                </div>
+                <h3 class="card-voice__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
-              <h3 class="card-voice__title">ここにタイトルが入ります。ここにタイトル</h3>
+              <figure class="card-voice__image js-colorbox">
+                <img src="/assets/images/voice01.webp" alt="ここにaltが入ります" />
+              </figure>
             </div>
-            <figure class="card-voice__image">
-              <img src="/assets/images/voice01.webp" alt="ここにaltが入ります" />
-            </figure>
-          </div>
 
-          <div class="card-voice__content">
-            <p class="card-voice__text">
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
-            </p>
+            <div class="card-voice__content">
+              <p class="card-voice__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
 
       <span class="empty"></span>
       <span class="empty"></span>

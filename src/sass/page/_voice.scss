@@ -1,6 +1,28 @@
 @use "global" as *;
-
+// blogと構成ほぼ同じ。
 .voice {
   padding-top: rem(20);
   padding-bottom: rem(20);
+}
+
+.voice__body {
+  margin-top: rem(40);
+  @include mq {
+    margin-top: rem(30);
+  }
+}
+.voice__card-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: rem(40);
+}
+.voice__button-container {
+  margin-top: rem(40);
+  @include mq {
+    margin-top: rem(80);
+  }
+}
+.voice__button-more {
+  margin-right: auto;
+  margin-left: auto;
 }

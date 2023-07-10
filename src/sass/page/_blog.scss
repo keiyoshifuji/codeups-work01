@@ -1,5 +1,5 @@
 @use "global" as *;
-
+// voiceと構成ほぼ同じ
 .blog {
   padding-top: rem(80);
   padding-bottom: rem(20);
@@ -17,16 +17,16 @@
     margin-top: rem(80);
   }
 }
-.blog__card-items{
+.blog__card-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: rem(40);
-
 }
-.blog__card-item{}
-
 .blog__button-container {
   margin-top: rem(40);
+  @include mq {
+    margin-top: rem(80);
+  }
 }
 .blog__button-more {
   margin-right: auto;

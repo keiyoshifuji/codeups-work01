@@ -38,5 +38,34 @@ jQuery(function ($) {
     },
   });
 
+  // * 横から背景画像→imageとなるアニメーション
+  //参考：https://design-remarks.com/image-after-color/
+  let box = $(".js-colorbox");
+  let speed = 400;
+
+  //.js-colorboxの付いた全ての要素に対して下記の処理を行う
+  box.each(function () {
+    $(this).append('<div class="is-color"></div>');
+    let color = $(this).find($(".is-color"));
+    let image = $(this).find("img");
+    let counter = 0;
+
+    color.css("width", "0%");
+    image.css("opacity", "0");
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on("inview", function () {
+      if (counter == 0) {
+        $(this)
+          .delay(50)
+          .animate({ width: "100%" }, speed, function () {
+            image.css("opacity", "1");
+            $(this).css({ left: "0", right: "auto" });
+            $(this).animate({ width: "0%" }, speed);
+          });
+        counter = 1;
+      }
+    });
+  });
+
   // * END
 });
