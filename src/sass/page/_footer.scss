@@ -1,21 +1,52 @@
 @use "global" as *;
 
 footer {
-  background-color: $c-green-accent;
   padding: rem(48) 0 rem(56);
+  background-color: $c-green-accent;
   @include mq {
     padding: rem(80) 0;
+  }
+}
+.footer__logo-container {
+  @include mq {
+    display: flex;
+    align-items: baseline;
+    gap: rem(40);
   }
 }
 .footer__logo {
   width: rem(120);
 }
-.footer__nav-items {
-  display: flex;
-  gap: rem(16);
+.footer__sns-icons {
+  margin-top: rem(16);
   @include mq {
-    gap: rem(120);
+    margin-top: 0;
   }
 }
-.footer__nav-item {
+.footer__sns-icon:not(:first-of-type) {
+  margin-left: rem(16);
+}
+.footer__nav-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: rem(16);
+  max-height: 100dvh;
+  margin-top: rem(40);
+  @include mq {
+    flex-direction: row;
+    gap: rem(120);
+    margin-top: rem(24);
+  }
+}
+.footer__copy {
+  display: block;
+  margin-top: rem(40);
+  color: $white;
+  font-size: rem(12);
+  text-align: center;
+  @include mq {
+    margin-top: rem(80);
+    font-size: rem(14);
+  }
 }
