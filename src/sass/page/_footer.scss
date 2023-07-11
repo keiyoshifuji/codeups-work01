@@ -1,0 +1,21 @@
+@use "global" as *;
+
+footer {
+  background-color: $c-green-accent;
+  padding: rem(48) 0 rem(56);
+  @include mq {
+    padding: rem(80) 0;
+  }
+}
+.footer__logo {
+  width: rem(120);
+}
+.footer__nav-items {
+  display: flex;
+  gap: rem(16);
+  @include mq {
+    gap: rem(120);
+  }
+}
+.footer__nav-item {
+}

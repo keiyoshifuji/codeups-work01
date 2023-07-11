@@ -1,6 +1,39 @@
 @use "global" as *;
 
 .price {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  background-color: $c-green02;
+  @include mq {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
+}
+.price__image-sp {
+  margin-top: rem(24);
+}
+.price__body {
+  margin-top: rem(40);
+  @include mq {
+    display: flex;
+    justify-content: space-between;
+    gap: 9%;
+  }
+}
+.price__image-pc {
+  max-width: 45.5%;
+}
+
+.price__list:not(:first-child) {
+  padding-top: rem(40);
+}
+.price__button-container {
+  margin-top: rem(40);
+  @include mq {
+    margin-top: rem(80);
+  }
+}
+.price__button-more {
+  margin-right: auto;
+  margin-left: auto;
 }

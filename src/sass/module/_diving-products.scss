@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.diving-products {
+  width: 100%;
+}
+.diving-products-type {
+  width: 100%;
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $c-green-accent;
+  color: $c-green01;
+  font-weight: $bold;
+}
+.diving-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: rem(8) 0;
+  width: 100%;
+  margin-top: rem(8);
+}
+.diving-products__name {
+  color: $c-green01;
+  font-size: rem(14);
+  width: 70%;
+  text-align: left;
+}
+.diving-products__price {
+  color: $c-green01;
+  font-size: rem(14);
+  width: 30%;
+  text-align: right;
+}
