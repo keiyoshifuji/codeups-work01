@@ -1,8 +1,7 @@
 @use "global" as *;
 
 // * ARROW
-.button-slide__prev,
-.button-slide__next {
+.button-slide {
   width: 80px;
   height: 80px;
   margin: 0;
@@ -10,19 +9,18 @@
   border: 1px solid $c-green-accent;
   border-radius: 50%;
 }
-.button-slide__prev::after,
-.button-slide__next::after {
+.button-slide::after {
   content: "";
   width: rem(40);
   height: rem(6);
   border-bottom: 1px solid $c-green-accent;
   transition: border-color 0.3s;
 }
-.button-slide__prev::after {
+.button-slide--left::after {
   transform: translateX(10%) skew(-50deg);
   border-left: 1px solid $c-green-accent;
 }
-.button-slide__next::after {
+.button-slide--right::after {
   transform: translateX(-10%) skew(50deg);
   border-right: 1px solid $c-green-accent;
 }

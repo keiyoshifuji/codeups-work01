@@ -21,12 +21,12 @@
 }
 
 // * Swiper button
-.campaign__swiper-button-prev,
-.campaign__swiper-button-next {
+.campaign__swiper-prev,
+.campaign__swiper-next {
   display: none;
   position: absolute;
-  //trblはデフォルト値上書き用
-  top: auto;
+  // trbl:auto;はデフォルト値上書き用
+  top: rem(-25);
   right: auto;
   bottom: auto;
   left: auto;
@@ -36,12 +36,10 @@
   }
 }
 
-.campaign__swiper-button-prev {
-  top: -25px;
+.campaign__swiper-prev {
   right: 160px;
 }
-.campaign__swiper-button-next {
-  top: -25px;
+.campaign__swiper-next {
   right: 0;
 }
 

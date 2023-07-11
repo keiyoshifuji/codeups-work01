@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.arrow {
+  display: block;
+  position: relative;
+  width: rem(40);
+  height: rem(1);
+  background-color: blue;
+}
+.arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: rem(10);
+  height: 1px;
+  background-color: purple;
+}
+.arrow--right::after {
+  right: 0;
+  transform: rotate(35deg);
+  transform-origin: center right;
+}
+.arrow--left::after {
+  left: 0;
+  transform: rotate(-35deg);
+  transform-origin: center left;
+}
