@@ -1,15 +1,18 @@
 @use "global" as *;
 // voiceと構成ほぼ同じ
 .blog {
-  padding-top: rem(80);
   padding-bottom: rem(20);
-
+  
   @include mq {
     padding-top: rem(100);
     background-image: url(../images/blog-bg.webp);
     background-size: contain;
     background-repeat: no-repeat;
   }
+}
+.blog__inner{
+  padding-top: rem(100);
+  position: relative;
 }
 .blog__body {
   margin-top: rem(24);

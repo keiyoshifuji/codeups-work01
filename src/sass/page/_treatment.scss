@@ -1,0 +1,17 @@
+@use "global" as *;
+
+//about us
+.treatment__fish-coral {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+//about us
+.treatment__fish-seabream-white-left {
+  position: absolute;
+  top: rem(24);
+  left: rem(-80);
+  width: rem(437);
+}

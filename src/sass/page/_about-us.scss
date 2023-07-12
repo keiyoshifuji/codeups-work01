@@ -33,6 +33,13 @@
 .about-us__container {
   margin-top: rem(40);
   @include mq {
+    display: flex;
+    justify-content: end;
+    gap: rem(40);
+    position: absolute;
+    top: 30.25%;
+    right: 3.7%; //~40px
+    width: 100%; //~1080px
     margin-top: 0;
   }
 }
@@ -41,9 +48,6 @@
   font-size: rem(40);
   line-height: 1;
   @include mq {
-    position: absolute;
-    top: 30.25%;
-    left: 18.5%;
     color: $white;
     font-size: rem(80);
     line-height: 1.25;
@@ -52,21 +56,14 @@
 .about-us__text-container {
   margin-top: rem(16);
   @include mq {
-    margin-top: 0;
-
-    position: absolute;
-    top: 30.25%;
-    right: 3.7%; //40px
+    flex-shrink: 0;
     width: 100%;
     max-width: 37%; //400px
-    // color: $white;
-    // font-size: rem(80);
-    // line-height: 1.25;
+    margin-top: 0;
   }
 }
 .about-us__text {
   color: $c-green01;
-
   @include mq {
     color: $white;
   }
