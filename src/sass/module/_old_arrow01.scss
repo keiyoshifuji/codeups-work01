@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.arrow01 {
+  width: rem(40);
+  height: rem(8);
+  border-bottom: 1px solid blue;
+  border-right: 1px solid purple;
+  transform: skew(50deg);
+}
+.arrow01--mirror {
+  border-bottom: none;
+  border-top: 1px solid blue;
+  transform: skew(-50deg);
+}

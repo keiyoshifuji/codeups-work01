@@ -1,10 +1,10 @@
 @use "global" as *;
 
 // * user variables
-$hamburger-width: 32px;
-$hamburger-height: 24px;
+$hamburger-width: rem(32);
+$hamburger-height: rem(24);
 $hamburger-border-number: 3;
-$hamburger-border-height: 1px;
+$hamburger-border-height: rem(1);
 $hamburger-rotate: 36.86989deg; // = arctan(24/32)
 $hamburger-scale: 1.25; // = sqrt(32^2+24^2) / 32
 

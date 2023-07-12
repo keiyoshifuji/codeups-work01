@@ -1,26 +1,19 @@
 @use "global" as *;
 
-// * ARROW
 .button-slide {
-  width: 80px;
-  height: 80px;
+  width: rem(80);
+  height: rem(80);
   margin: 0;
   padding: 0;
-  border: 1px solid $c-green-accent;
+  border: rem(1) solid $c-green-accent;
   border-radius: 50%;
 }
-.button-slide::after {
-  content: "";
-  width: rem(40);
-  height: rem(6);
-  border-bottom: 1px solid $c-green-accent;
-  transition: border-color 0.3s;
+.button-slide__arrow {
+  background-color: $c-green-accent;
 }
-.button-slide--left::after {
-  transform: translateX(10%) skew(-50deg);
-  border-left: 1px solid $c-green-accent;
+.button-slide__arrow--left {
+  transform: rotate(180deg);
 }
-.button-slide--right::after {
-  transform: translateX(-10%) skew(50deg);
-  border-right: 1px solid $c-green-accent;
+.button-slide__arrow--up {
+  transform: rotate(-90deg);
 }

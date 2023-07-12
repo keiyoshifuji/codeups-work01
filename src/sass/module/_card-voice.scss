@@ -41,11 +41,11 @@
 .card-voice__title {
   margin-top: rem(4);
   color: $c-green01;
-  font-size: rem(16);
+  // font-size: rem(16);
   font-weight: $medium;
 
   padding-bottom: rem(4);
-  border-bottom: 2px solid $c-green-accent;
+  border-bottom: rem(2) solid $c-green-accent;
 
   @include mq {
     margin-top: rem(8);
@@ -70,5 +70,5 @@
 }
 .card-voice__text {
   color: $black;
-  font-size: rem(16);
+  // font-size: rem(16);
 }

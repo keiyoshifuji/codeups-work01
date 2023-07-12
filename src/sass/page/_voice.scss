@@ -13,7 +13,7 @@
 }
 .voice__card-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
   gap: rem(40);
 }
 .voice__button-container {

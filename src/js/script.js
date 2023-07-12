@@ -40,15 +40,13 @@ jQuery(function ($) {
 
   // * 横から背景画像→imageとなるアニメーション
   //参考：https://design-remarks.com/image-after-color/
-  let box = $(".js-colorbox");
-  let speed = 400;
-
   //.js-colorboxの付いた全ての要素に対して下記の処理を行う
-  box.each(function () {
+  $(".js-colorbox").each(function () {
     $(this).append('<div class="is-color"></div>');
     let color = $(this).find($(".is-color"));
     let image = $(this).find("img");
     let counter = 0;
+    let speed = 400;
 
     color.css("width", "0%");
     image.css("opacity", "0");
@@ -66,6 +64,40 @@ jQuery(function ($) {
       }
     });
   });
+
+  // * ～px or 100vh後にscroll-top-buttonを表示させる
+  $(window).scroll(function () {
+    // let scrollThreshold = $(this).height(); //=100vh
+    let scrollThreshold = 700;
+    let scrollPosition = $(this).scrollTop();
+    if (scrollPosition > scrollThreshold) {
+      $(".js-scroll-top-button").fadeIn();
+    } else {
+      $(".js-scroll-top-button").fadeOut();
+    }
+  });
+
+  // * スクロールトップにアニメーションで移動する
+  $(".js-scroll-top-button").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "normal");
+    return false;
+  });
+
+  // * ナビゲーションクリック時にスーッと移動する
+  // const headerHeight = $(".js-header").height();
+  // $('a[href^="#"]').click(function () {
+  //   const speed = 600;
+  //   let href = $(this).attr("href");
+  //   let target = $(href == "#" || href == "" ? "html" : href);
+
+  //   //移動先のpadding-topを取得
+  //   let paddingValue = parseInt(target.css("padding-top"), 10);
+
+  //   // ヘッダーの高さ分下げる
+  //   let position = target.offset().top - headerHeight + paddingValue;
+  //   $("body,html").animate({ scrollTop: position }, speed, "swing");
+  //   return false;
+  // });
 
   // * END
 });

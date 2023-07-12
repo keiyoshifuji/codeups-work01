@@ -20,7 +20,7 @@
   }
 }
 
-// * Swiper button
+// * Swiper button location
 .campaign__swiper-prev,
 .campaign__swiper-next {
   display: none;
@@ -32,12 +32,12 @@
   left: auto;
   transform: translateY(-50%);
   @include mq {
+    //初期値flexに戻してあげる
     display: flex;
   }
 }
-
 .campaign__swiper-prev {
-  right: 160px;
+  right: rem(160);
 }
 .campaign__swiper-next {
   right: 0;

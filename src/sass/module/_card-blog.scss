@@ -20,16 +20,16 @@
 }
 .card-blog__title {
   color: $c-green01;
-  font-size: rem(16);
+  // font-size: rem(16);
   font-weight: $normal;
 
   padding-bottom: rem(4);
-  border-bottom: 2px solid $c-green-accent;
+  border-bottom: rem(2) solid $c-green-accent;
 }
 .card-blog__content {
   margin-top: rem(16);
 }
 .card-blog__text {
   color: $c-green01;
-  font-size: rem(16);
+  // font-size: rem(16);
 }

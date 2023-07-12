@@ -4,7 +4,7 @@
 .navigation__item {
   margin-left: rem(22);
   list-style-position: outside;
-  list-style-image: url("../images/list-style.svg");
+  list-style-image: url("../images/list-style.svg"); // ヒトデ
   line-height: 1.125;
 }
 .navigation__item:not(:first-of-type){
@@ -18,8 +18,8 @@
 .navigation__sub-item > a {
   display: block;
   color: $white;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: rem(12);
+  padding-bottom: rem(12);
 }
 .navigation__item > a {
   font-weight: $bold;

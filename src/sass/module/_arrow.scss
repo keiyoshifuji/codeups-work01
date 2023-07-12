@@ -1,28 +1,22 @@
 @use "global" as *;
 
 .arrow {
-  display: block;
   position: relative;
   width: rem(40);
   height: rem(1);
-  background-color: blue;
+  background-color: black;
 }
 .arrow::after {
   content: "";
-  display: block;
   position: absolute;
   top: 0;
   width: rem(10);
-  height: 1px;
-  background-color: purple;
-}
-.arrow--right::after {
+  height: rem(1);
+  background-color: inherit;
   right: 0;
-  transform: rotate(35deg);
+  transform: rotate(40deg);
   transform-origin: center right;
 }
-.arrow--left::after {
-  left: 0;
-  transform: rotate(-35deg);
-  transform-origin: center left;
+.arrow.arrow--mirror::after {
+  transform: rotate(-40deg);
 }

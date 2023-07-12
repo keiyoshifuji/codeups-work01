@@ -1,6 +1,7 @@
 @use "global" as *;
 
 footer {
+  position: relative;
   padding: rem(48) 0 rem(56);
   background-color: $c-green-accent;
   @include mq {
@@ -48,5 +49,21 @@ footer {
   @include mq {
     margin-top: rem(80);
     font-size: rem(14);
+  }
+}
+
+.footer__scroll-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: rem(-15);
+  right: rem(15);
+  transform: scale(0.6) translateY(-100%);
+  transform-origin: right top;
+  @include mq {
+    top: rem(-20);
+    right: rem(20);
+    transform: scale(1) translateY(-100%);
   }
 }

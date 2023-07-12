@@ -38,7 +38,7 @@
   margin-top: rem(24);
 
   padding-bottom: rem(4);
-  border-bottom: 2px solid $c-green-accent;
+  border-bottom: rem(2) solid $c-green-accent;
 
   @include mq {
     font-size: rem(24);
