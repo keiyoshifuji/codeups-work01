@@ -27,16 +27,9 @@ footer {
 .footer__sns-icon:not(:first-of-type) {
   margin-left: rem(16);
 }
-.footer__nav-items {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: rem(16);
-  max-height: 100dvh;
+.footer__nav {
   margin-top: rem(40);
   @include mq {
-    flex-direction: row;
-    gap: rem(120);
     margin-top: rem(24);
   }
 }
