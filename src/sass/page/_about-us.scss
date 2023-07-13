@@ -1,13 +1,20 @@
 @use "global" as *;
 
 .about-us {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
+  position: relative;
+}
+.about-us__inner {
+  padding-top: rem(40);
+  padding-bottom: rem(80);
+  @include mq {
+    padding-top: rem(70);
+    padding-bottom: rem(140);
+  }
 }
 .about-us__body {
+  position: relative;
   margin-top: rem(24);
   @include mq {
-    position: relative;
     margin-top: rem(40);
   }
 }

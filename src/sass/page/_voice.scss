@@ -1,10 +1,16 @@
 @use "global" as *;
-// blogと構成ほぼ同じ。
-.voice {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
-}
 
+.voice {
+  position: relative;
+}
+.voice__inner {
+  padding-top: rem(40);
+  padding-bottom: rem(80);
+  @include mq {
+    padding-top: rem(70);
+    padding-bottom: rem(140);
+  }
+}
 .voice__body {
   margin-top: rem(40);
   @include mq {

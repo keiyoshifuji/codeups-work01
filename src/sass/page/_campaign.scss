@@ -1,9 +1,14 @@
 @use "global" as *;
-
 .campaign {
-  padding-top: rem(20);
-  padding-bottom: rem(20);
   overflow: hidden;
+}
+.campaign__inner {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq {
+    padding-top: rem(120);
+    padding-bottom: rem(70);
+  }
 }
 .campaign__items {
   padding-top: rem(24);
