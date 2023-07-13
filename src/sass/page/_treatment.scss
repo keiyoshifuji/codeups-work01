@@ -5,6 +5,11 @@
 // * d : a side distance from 1440px, cf) view width = 1440px + 2d
 // * y = y0 + d = y0 + 50vw - 720px
 
+.treatment{
+  position: relative;
+}
+
+
 //about-us
 .treatment__about-us {
   position: absolute;

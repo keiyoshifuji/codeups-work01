@@ -16,9 +16,11 @@
   display: flex;
   justify-content: space-between;
   height: inherit;
-  padding: 0 rem(15);
+  padding-left: rem(15);
+  padding-right: rem(15);
   @include mq {
-    padding: 0 rem(40);
+    padding-left: rem(40);
+    padding-right: rem(20);
   }
 }
 .header__logo {

@@ -1,7 +1,6 @@
 @use "global" as *;
-// voiceと構成ほぼ同じ
+
 .blog {
-  position: relative;
   @include mq {
     background-image: url(../images/blog-bg.webp);
     background-size: contain;

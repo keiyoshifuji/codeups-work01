@@ -3,12 +3,14 @@
 .pc-nav__items {
   height: inherit;
   display: flex;
-  gap: rem(40);
+  // gap: rem(40);
 }
 .pc-nav__item {
   height: inherit;
 }
 .pc-nav__link {
+  padding-left: rem(20);
+  padding-right: rem(20);
   height: inherit;
   color: $white;
   display: flex;
