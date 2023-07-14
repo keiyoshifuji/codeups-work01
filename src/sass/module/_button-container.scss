@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container__button {
+  // button疑似要素分の調整
+  margin-right: rem(5);
+  margin-bottom: rem(5);
+}

@@ -5,8 +5,7 @@
 }
 .diving-products-type {
   width: 100%;
-  padding-bottom: rem(4);
-  border-bottom: rem(1) solid $c-green-accent;
+  border-bottom: rem(2) solid $c-green-accent;
   color: $c-green01;
   font-weight: $bold;
 }
@@ -14,19 +13,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: rem(8) 0;
+  gap: rem(11) 0;
   width: 100%;
-  margin-top: rem(8);
+  margin-top: rem(9);
+  font-family: "Noto Sans JP", "sans-serif";
 }
 .diving-products__name {
+  width: 80%;
   color: $c-green01;
   font-size: rem(14);
-  width: 70%;
   text-align: left;
 }
 .diving-products__price {
+  width: 20%;
   color: $c-green01;
   font-size: rem(14);
-  width: 30%;
+  font-family: "Noto Sans JP", "sans-serif";
   text-align: right;
 }

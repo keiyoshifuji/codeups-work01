@@ -21,9 +21,11 @@
   }
 }
 .navigation__item {
-  list-style-position: outside;
-  list-style-image: url("../images/list-style.svg"); // ヒトデ
-  margin-left: rem(24);
+  //list-style-positionだと位置調整不可のためBGで設定。
+  padding-left: rem(22);
+  background-image: url("../images/list-style.svg");
+  background-position: top 9px left;
+  background-repeat: no-repeat;
 }
 .navigation__item:not(:first-of-type) {
   margin-top: rem(16);

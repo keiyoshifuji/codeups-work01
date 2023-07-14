@@ -2,16 +2,16 @@
 
 .arrow {
   position: relative;
-  width: rem(40);
-  height: rem(1);
+  width: rem(44);
+  height: rem(2);
   background-color: black;
 }
 .arrow::after {
   content: "";
   position: absolute;
   top: 0;
-  width: rem(10);
-  height: rem(1);
+  width: rem(16);
+  height: rem(2);
   background-color: inherit;
   right: 0;
   transform: rotate(40deg);

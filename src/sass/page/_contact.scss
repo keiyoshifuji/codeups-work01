@@ -17,7 +17,7 @@
   }
 }
 .contact__access {
-  padding: 0 rem(50);
+  padding: 0 rem(25);
   @include mq {
     width: 50%;
     padding: 0 rem(50);
@@ -69,7 +69,10 @@
   height: inherit;
 }
 .contact__guide {
-  padding: rem(40) rem(15) 0;
+  padding-top: rem(48);
+  padding-right: rem(15);
+  padding-left: rem(15);
+  padding-bottom: 0;
   @include mq {
     width: calc(50% - rem(32) * 2);
     margin: 0 rem(32);
@@ -79,7 +82,7 @@
 }
 
 .contact__text {
-  margin-top: rem(8);
+  margin-top: rem(4);
   color: $c-green-accent;
   font-size: rem(14);
   line-height: calc(18 / 14);
@@ -87,8 +90,4 @@
 }
 .contact__button-container {
   margin-top: rem(40);
-}
-.contact__button-more {
-  margin-right: auto;
-  margin-left: auto;
 }

@@ -11,26 +11,29 @@
   width: 100%;
 }
 .card-campaign__body {
-  padding: rem(16) rem(16) rem(24);
+  padding-top: rem(16);
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-bottom: rem(20);
   @include mq {
     padding-top: rem(24);
     padding-bottom: rem(40);
   }
 }
 .card-campaign__title {
-  margin-top: rem(4);
+  margin-top: rem(7);
   color: $c-green01;
   font-weight: $medium;
-  // font-size: rem(16);
+  font-size: rem(16);
 
-  padding-bottom: rem(8);
+  padding-bottom: rem(4);
   border-bottom: rem(2) solid $c-green-accent;
 }
 .card-campaign__content {
   text-align: center;
 }
 .card-campaign__text {
-  margin-top: rem(8);
+  margin-top: rem(9);
   color: $c-green01;
   font-size: rem(14);
   line-height: calc(24 / 14);
@@ -40,7 +43,7 @@
   }
 }
 .card-campaign__prices {
-  margin-top: rem(8);
+  margin-top: rem(6);
 }
 .card-campaign__price-before,
 .card-campaign__price-after {
@@ -68,7 +71,7 @@
   background-color: $c-red;
 }
 .card-campaign__price-after {
-  margin-left: rem(16);
+  margin-left: rem(14);
   color: $c-green-accent;
   font-size: rem(32);
   line-height: 1;

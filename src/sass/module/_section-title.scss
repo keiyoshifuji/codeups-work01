@@ -20,7 +20,7 @@
 }
 .section-title__sub {
   display: inline-block;
-  margin-top: rem(4);
+  margin-top: rem(6);
   color: $c-green-accent;
   font-size: rem(12);
   @include mq {
@@ -44,7 +44,7 @@
 // modifier large
 .section-title.section-title--large .section-title__main {
   font-size: rem(80);
-  line-height: 1;
+  line-height: 0.8;
 }
 .section-title.section-title--large .section-title__sub {
   margin-top: 0;

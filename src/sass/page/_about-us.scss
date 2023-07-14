@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .about-us__inner {
-  padding-top: rem(40);
+  padding-top: rem(39);
   padding-bottom: rem(80);
   @include mq {
     padding-top: rem(70);
@@ -58,7 +58,7 @@
   }
 }
 .about-us__text-container {
-  margin-top: rem(16);
+  margin-top: rem(19);
   @include mq {
     flex-shrink: 0;
     width: 100%;
@@ -73,9 +73,5 @@
   }
 }
 .about-us__button-container {
-  margin-top: rem(40);
-}
-.about-us__button-more {
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: rem(37);
 }

@@ -1,11 +1,12 @@
 @use "global" as *;
 
 .button-slide {
-  width: rem(80);
-  height: rem(80);
-  margin: 0;
-  padding: 0;
-  border: rem(1) solid $c-green-accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: rem(2) solid $c-green-accent;
   border-radius: 50%;
 }
 .button-slide__arrow {

@@ -10,16 +10,15 @@
     padding-bottom: rem(70);
   }
 }
-.campaign__items {
-  padding-top: rem(24);
+.campaign__swiper {
+  margin-top: rem(24);
   @include mq {
-    padding-top: rem(40);
+    margin-top: rem(40);
   }
 }
 .campaign__item {
   width: 100%;
   max-width: rem(280);
-  margin-bottom: rem(10);
   @include mq {
     max-width: rem(333);
   }
@@ -29,13 +28,15 @@
 .campaign__swiper-prev,
 .campaign__swiper-next {
   display: none;
+  width: rem(80);
+  height: rem(80);
   position: absolute;
   // trbl:auto;はデフォルト値上書き用
   top: rem(-25);
   right: auto;
   bottom: auto;
   left: auto;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   @include mq {
     //初期値flexに戻してあげる
     display: flex;
@@ -53,8 +54,4 @@
   @include mq {
     margin-top: rem(80);
   }
-}
-.campaign__button-more {
-  margin-right: auto;
-  margin-left: auto;
 }

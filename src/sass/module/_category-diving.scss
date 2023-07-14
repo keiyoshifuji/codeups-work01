@@ -3,11 +3,14 @@
 .category-diving {
   display: inline-block;
   padding: rem(8) rem(12);
+  padding-top: 10px;
+  padding-right: 11px;
+  padding-bottom: 6px;
+  padding-left: 11px;
   border: rem(1) solid $c-green-accent;
   color: $c-green-accent;
   font-size: rem(12);
   line-height: 1;
-
   @include mq {
     padding: rem(10) rem(16);
   }

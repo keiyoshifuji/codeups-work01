@@ -5,8 +5,12 @@ $hamburger-width: rem(32);
 $hamburger-height: rem(24);
 $hamburger-border-number: 3;
 $hamburger-border-height: rem(1);
-$hamburger-rotate: 36.86989deg; // = arctan(24/32)
-$hamburger-scale: 1.25; // = sqrt(32^2+24^2) / 32
+// ! デザイン上のwidthとheight合わせの数字
+// $hamburger-rotate: 36.86989deg; // = arctan(24/32)
+// $hamburger-scale: 1.25; // = sqrt(32^2+24^2) / 32
+// ! デザイン重ね合わせ調整の数字
+$hamburger-rotate: 45deg;
+$hamburger-scale: 1.414;
 
 .hamburger {
   display: flex;
@@ -21,6 +25,7 @@ $hamburger-scale: 1.25; // = sqrt(32^2+24^2) / 32
   display: inline-block;
   width: 100%;
   height: $hamburger-border-height;
+  border-radius: $hamburger-border-height;
   background-color: $white;
   transition: transform 0.3s, opacity 0.1s;
 }

@@ -14,49 +14,43 @@
 .information__body {
   margin-top: rem(24);
   @include mq {
-    margin-top: rem(40);
     display: flex;
+    margin-top: rem(40);
   }
 }
 .information__image {
   @include mq {
-    width: 50%;
     flex-shrink: 0;
+    width: 50%;
   }
 }
 .information__text-container {
   @include mq {
-    margin-left: rem(48);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: rem(48);
   }
 }
 .information__sub-title {
-  color: $c-green01;
-  font-size: rem(20);
-  font-weight: $bold;
-  line-height: 1.2;
-  margin-top: rem(24);
-
-  padding-bottom: rem(4);
+  margin-top: rem(28);
   border-bottom: rem(2) solid $c-green-accent;
-
+  color: $c-green01;
+  font-weight: $bold;
+  font-size: rem(20);
+  line-height: 1.2;
   @include mq {
-    font-size: rem(24);
-    padding-bottom: rem(8);
-    line-height: 1;
     margin-top: 0;
+    padding-bottom: rem(8);
+    font-size: rem(24);
+    line-height: 1;
   }
 }
 .information__text {
+  margin-top: rem(6);
   color: $c-green01;
-  margin-top: rem(8);
+  font-family: "Noto Sans JP", "sans-serif";
 }
 .information__button-container {
   margin-top: rem(40);
-}
-.information__button-more {
-  margin-right: auto;
-  margin-left: auto;
 }
