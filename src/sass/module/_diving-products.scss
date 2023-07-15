@@ -17,12 +17,19 @@
   width: 100%;
   margin-top: rem(9);
   font-family: $second-font-family;
+  @include mq {
+    gap: rem(7) 0;
+    margin-top: rem(8);
+  }
 }
 .diving-products__name {
   width: 80%;
   color: $c-green01;
   font-size: rem(14);
   text-align: left;
+  @include mq {
+    font-size: rem(16);
+  }
 }
 .diving-products__price {
   width: 20%;
@@ -30,4 +37,7 @@
   font-size: rem(14);
   font-family: $second-font-family;
   text-align: right;
+  @include mq {
+    font-size: rem(16);
+  }
 }

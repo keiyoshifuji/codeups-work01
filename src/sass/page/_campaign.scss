@@ -13,7 +13,7 @@
 .campaign__swiper {
   margin-top: rem(24);
   @include mq {
-    margin-top: rem(40);
+    margin-top: rem(36);
   }
 }
 .campaign__item {
@@ -31,7 +31,9 @@
   width: rem(80);
   height: rem(80);
   position: absolute;
-  // trbl:auto;はデフォルト値上書き用
+  // trbl:auto;,m0p0はデフォルト値上書き用
+  margin: 0;
+  padding: 0;
   top: rem(-25);
   right: auto;
   bottom: auto;
@@ -52,6 +54,6 @@
 .campaign__button-container {
   margin-top: rem(40);
   @include mq {
-    margin-top: rem(80);
+    margin-top: rem(79);
   }
 }

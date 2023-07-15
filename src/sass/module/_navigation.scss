@@ -10,14 +10,14 @@
   @include mq {
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0 rem(120);
+    gap: 0 120px;
     max-height: none;
   }
 }
 .navigation__items {
   width: 50%;
   @include mq {
-    width: none;
+    width: initial;
   }
 }
 .navigation__item {

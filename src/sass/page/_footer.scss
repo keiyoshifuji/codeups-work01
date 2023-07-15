@@ -11,17 +11,21 @@ footer {
 .footer__logo-container {
   @include mq {
     display: flex;
-    align-items: baseline;
+    align-items: end;
     gap: rem(40);
   }
 }
 .footer__logo {
   width: rem(120);
+  @include mq {
+    width: rem(200);
+  }
 }
 .footer__sns-icons {
   margin-top: rem(16);
   @include mq {
     margin-top: 0;
+    margin-bottom: rem(-2);
   }
 }
 .footer__sns-icon:not(:first-of-type) {
@@ -30,7 +34,7 @@ footer {
 .footer__nav {
   margin-top: rem(22);
   @include mq {
-    margin-top: rem(24);
+    margin-top: rem(16);
   }
 }
 .footer__copy {
@@ -40,7 +44,7 @@ footer {
   font-size: rem(12);
   text-align: center;
   @include mq {
-    margin-top: rem(80);
+    margin-top: rem(73);
     font-size: rem(14);
   }
 }
@@ -54,7 +58,7 @@ footer {
   transform: scale(0.6) translateY(-100%);
   transform-origin: right top;
   @include mq {
-    top: rem(-20);
+    top: rem(-21);
     right: rem(20);
     transform: scale(1) translateY(-100%);
   }

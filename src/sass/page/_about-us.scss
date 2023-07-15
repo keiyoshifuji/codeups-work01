@@ -12,13 +12,16 @@
   position: relative;
   margin-top: rem(24);
   @include mq {
-    margin-top: rem(40);
+    margin-top: rem(36);
   }
 }
 .about-us__images {
   position: relative;
   width: 100%;
   aspect-ratio: 100 / 61.44;
+  @include mq{
+    aspect-ratio: 100 / 61.25;
+  }
 }
 .about-us__images img:nth-child(1) {
   position: absolute;
@@ -42,7 +45,7 @@
     gap: rem(40);
     position: absolute;
     top: 30.25%;
-    right: 3.7%; //~40px
+    right: 3.8%; //~40px
     width: 100%; //~1080px
     margin-top: 0;
   }
@@ -63,7 +66,7 @@
     flex-shrink: 0;
     width: 100%;
     max-width: 37%; //400px
-    margin-top: 0;
+    margin-top: rem(2);
   }
 }
 .about-us__text {

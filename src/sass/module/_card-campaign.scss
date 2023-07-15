@@ -17,7 +17,7 @@
   padding-bottom: rem(20);
   @include mq {
     padding-top: rem(24);
-    padding-bottom: rem(40);
+    padding-bottom: rem(37);
   }
 }
 .card-campaign__title {
@@ -39,11 +39,17 @@
   line-height: calc(24 / 14);
   @include mq {
     margin-top: rem(16);
-    // font-size: rem(16);
+    font-size: rem(16);
+    margin-right: 1em;
   }
 }
 .card-campaign__prices {
   margin-top: rem(5);
+  @include mq {
+    margin-top: rem(3);
+    text-align: left;
+    margin-left: 19px;
+  }
 }
 .card-campaign__price-before,
 .card-campaign__price-after {
@@ -76,7 +82,7 @@
   font-size: rem(32);
   line-height: 1;
   @include mq {
-    margin-left: rem(24);
+    margin-left: rem(22);
     font-size: rem(40);
   }
 }

@@ -19,6 +19,12 @@
   left: 50%;
   z-index: zi(just-above);
   transform: translate(-50%, -50%);
+  @include mq {
+    top: 55.6%;
+  }
+}
+.main-view__swiper {
+  height: inherit;
 }
 .main-view__text-large {
   margin-right: -0.525em;
@@ -38,6 +44,9 @@
   font-size: rem(20);
   text-align: center;
   line-height: 1.7;
+  @include mq{
+    margin-top: rem(1);
+  }
 }
 
 .main-view__image,
