@@ -17,18 +17,18 @@
 .price__body {
   margin-top: rem(43);
   @include mq {
-    margin-top: rem(36);
+    margin-top: rem(35);
     display: flex;
     justify-content: space-between;
-    gap: 9%;
+    gap: 8.8%;
   }
 }
 .price__lists {
-  margin-top: rem(2);
+  margin-top: rem(3);
 }
 .price__image-pc {
   width: 100%;
-  max-width: 45.5%;
+  max-width: 45.6%;
 }
 
 .price__list:not(:first-child) {

@@ -79,11 +79,11 @@
   padding-bottom: 0;
   padding-left: rem(15);
   padding-right: rem(15);
-  padding-top: rem(48);
+  padding-top: rem(46);
   @include mq {
     width: calc(50% - rem(32) * 2);
     margin: 0 rem(32);
-    padding-top: rem(27);
+    padding-top: rem(26);
     border-left: rem(1) solid $c-green-accent;
   }
 }
