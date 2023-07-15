@@ -3,11 +3,11 @@
   overflow: hidden;
 }
 .campaign__inner {
-  padding-top: rem(40);
   padding-bottom: rem(40);
+  padding-top: rem(40);
   @include mq {
-    padding-top: rem(120);
     padding-bottom: rem(70);
+    padding-top: rem(120);
   }
 }
 .campaign__swiper {
@@ -28,17 +28,17 @@
 .campaign__swiper-prev,
 .campaign__swiper-next {
   display: none;
-  width: rem(80);
-  height: rem(80);
   position: absolute;
-  // trbl:auto;,m0p0はデフォルト値上書き用
-  margin: 0;
-  padding: 0;
   top: rem(-25);
   right: auto;
   bottom: auto;
   left: auto;
   transform: translateY(-100%);
+  width: rem(80);
+  height: rem(80);
+  // trbl:auto;,m0p0はデフォルト値上書き用
+  margin: 0;
+  padding: 0;
   @include mq {
     //初期値flexに戻してあげる
     display: flex;

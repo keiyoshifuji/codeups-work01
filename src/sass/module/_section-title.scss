@@ -5,10 +5,9 @@
 }
 .section-title__main {
   color: $c-green01;
-  font-size: rem(32);
   font-weight: $normal;
+  font-size: rem(32);
   line-height: 1.25;
-
   @include mq {
     font-size: rem(40);
     line-height: 1;

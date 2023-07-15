@@ -17,14 +17,14 @@
   }
 }
 .contact__access {
-  padding-top: 0;
   padding-bottom: 0;
-  padding-right: rem(25);
   padding-left: rem(25);
+  padding-right: rem(25);
+  padding-top: 0;
   @include mq {
     width: 50%;
-    padding-right: rem(50);
     padding-left: rem(50);
+    padding-right: rem(50);
   }
 }
 .contact__logo {

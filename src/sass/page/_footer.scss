@@ -53,10 +53,10 @@ footer {
   position: absolute;
   top: rem(-17);
   right: rem(15);
-  width: rem(80);
-  height: rem(80);
   transform: scale(0.6) translateY(-100%);
   transform-origin: right top;
+  width: rem(80);
+  height: rem(80);
   @include mq {
     top: rem(-21);
     right: rem(20);

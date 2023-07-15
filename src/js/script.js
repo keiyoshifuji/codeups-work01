@@ -19,6 +19,7 @@ jQuery(function ($) {
     },
   });
 
+  // * Swiper02
   const swiper02 = new Swiper(".swiper02", {
     // loop: true,
     slidesPerView: "auto",
@@ -66,16 +67,16 @@ jQuery(function ($) {
   });
 
   // * ～px or 100vh後にscroll-top-buttonを表示させる
-  $(window).scroll(function () {
-    // let scrollThreshold = $(this).height(); //=100vh
-    let scrollThreshold = 700;
-    let scrollPosition = $(this).scrollTop();
-    if (scrollPosition > scrollThreshold) {
-      $(".js-scroll-top-button").fadeIn();
-    } else {
-      $(".js-scroll-top-button").fadeOut();
-    }
-  });
+  // $(window).scroll(function () {
+  //   // let scrollThreshold = $(this).height(); //=100vh
+  //   let scrollThreshold = 700;
+  //   let scrollPosition = $(this).scrollTop();
+  //   if (scrollPosition > scrollThreshold) {
+  //     $(".js-scroll-top-button").fadeIn();
+  //   } else {
+  //     $(".js-scroll-top-button").fadeOut();
+  //   }
+  // });
 
   // * スクロールトップにアニメーションで移動する
   $(".js-scroll-top-button").click(function () {

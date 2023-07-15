@@ -10,12 +10,12 @@
   content: "";
   position: absolute;
   top: 0;
-  width: rem(10);
-  height: rem(2);
-  background-color: inherit;
   right: 0;
   transform: rotate(40deg);
   transform-origin: center right;
+  width: rem(10);
+  height: rem(2);
+  background-color: inherit;
 }
 .arrow.arrow--mirror::after {
   transform: rotate(-40deg);

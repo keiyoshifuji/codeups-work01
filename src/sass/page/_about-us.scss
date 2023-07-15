@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .about-us__inner {
-  padding-top: rem(40);
   padding-bottom: rem(80);
+  padding-top: rem(40);
   @include mq {
-    padding-top: rem(70);
     padding-bottom: rem(140);
+    padding-top: rem(70);
   }
 }
 .about-us__body {
@@ -19,7 +19,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 100 / 61.44;
-  @include mq{
+  @include mq {
     aspect-ratio: 100 / 61.25;
   }
 }

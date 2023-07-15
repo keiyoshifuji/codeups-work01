@@ -51,7 +51,6 @@
   position: absolute;
   top: rem(54);
   right: max(rem(15), calc(rem(0) + 50vw - rem(375)));
-
   width: rem(109);
   @include mq {
     top: rem(100);

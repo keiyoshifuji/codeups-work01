@@ -22,6 +22,9 @@
 }
 .navigation__item {
   //list-style-positionだと位置調整不可のためBGで設定。
+  //   list-style-position: outside;
+  //   list-style-image: url("../images/list-style.svg"); // ヒトデ
+  //   margin-left: rem(22);
   padding-left: rem(22);
   background-image: url("../images/list-style.svg");
   background-position: top 9px left;
@@ -36,8 +39,8 @@
 .navigation__item > a,
 .navigation__sub-item > a {
   display: block;
-  padding-top: rem(12);
   padding-bottom: rem(12);
+  padding-top: rem(12);
   color: $white;
   line-height: 1.125;
 }
