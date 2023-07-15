@@ -2,8 +2,7 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-// $inner: 1080px;
-$inner: rem(1080);
+$inner: 1080px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -15,7 +14,7 @@ $padding-sp: 15px;
 ////////////////////
 
 $base-font-family: "Gotu", "Noto Sans JP", "sans-serif";
-$second-font-family: "Gotu", "Noto Serif JP", "serif";
+$second-font-family: "Noto Sans JP", "sans-serif";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {

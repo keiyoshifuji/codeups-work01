@@ -45,7 +45,7 @@
 }
 .contact__store-info {
   font-style: normal;
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: $second-font-family;
   text-align: center;
   @include mq {
     text-align: left;

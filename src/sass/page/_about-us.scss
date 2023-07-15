@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .about-us__inner {
-  padding-top: rem(39);
+  padding-top: rem(40);
   padding-bottom: rem(80);
   @include mq {
     padding-top: rem(70);
@@ -18,7 +18,7 @@
 .about-us__images {
   position: relative;
   width: 100%;
-  aspect-ratio: 100 / 61.45;
+  aspect-ratio: 100 / 61.44;
 }
 .about-us__images img:nth-child(1) {
   position: absolute;
@@ -35,7 +35,7 @@
   width: 81.449275%;
 }
 .about-us__container {
-  margin-top: rem(40);
+  margin-top: rem(39);
   @include mq {
     display: flex;
     justify-content: end;

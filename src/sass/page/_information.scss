@@ -33,7 +33,7 @@
   }
 }
 .information__sub-title {
-  margin-top: rem(28);
+  margin-top: rem(27);
   border-bottom: rem(2) solid $c-green-accent;
   color: $c-green01;
   font-weight: $bold;
@@ -47,9 +47,9 @@
   }
 }
 .information__text {
-  margin-top: rem(6);
+  margin-top: rem(7);
   color: $c-green01;
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: $second-font-family;
 }
 .information__button-container {
   margin-top: rem(40);

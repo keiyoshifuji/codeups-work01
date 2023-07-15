@@ -16,7 +16,7 @@
   gap: rem(11) 0;
   width: 100%;
   margin-top: rem(9);
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: $second-font-family;
 }
 .diving-products__name {
   width: 80%;
@@ -28,6 +28,6 @@
   width: 20%;
   color: $c-green01;
   font-size: rem(14);
-  font-family: "Noto Sans JP", "sans-serif";
+  font-family: $second-font-family;
   text-align: right;
 }
