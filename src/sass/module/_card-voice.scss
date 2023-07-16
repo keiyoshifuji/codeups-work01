@@ -50,7 +50,7 @@
   margin-top: rem(3);
 }
 .card-voice__title {
-  margin-top: rem(5);
+  margin-top: rem(7);
   padding-bottom: rem(2);
   border-bottom: rem(1) solid $c-green-accent;
   color: $c-green01;
@@ -73,7 +73,7 @@
   }
 }
 .card-voice__content {
-  margin-top: rem(18);
+  margin-top: rem(17);
   @include mq {
     margin-top: rem(43);
   }

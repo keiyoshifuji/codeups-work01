@@ -15,7 +15,7 @@
   margin-top: rem(23);
 }
 .price__body {
-  margin-top: rem(43);
+  margin-top: rem(45);
   @include mq {
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,8 @@
   }
 }
 .price__lists {
-  margin-top: rem(3);
   @include mq {
+    margin-top: rem(3);
     padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
   }
 }
