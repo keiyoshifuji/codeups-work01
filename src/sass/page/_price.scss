@@ -25,7 +25,9 @@
 }
 .price__lists {
   margin-top: rem(3);
-  padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
+  @include mq {
+    padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
+  }
 }
 .price__image-pc {
   @include mq {
@@ -39,7 +41,7 @@
   padding-top: rem(44);
 }
 .price__button-container {
-  margin-top: rem(41);
+  margin-top: rem(40);
   @include mq {
     margin-top: rem(80);
   }

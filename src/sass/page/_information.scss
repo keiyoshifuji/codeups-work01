@@ -40,17 +40,17 @@
   font-size: rem(20);
   line-height: 1.2;
   @include mq {
-    margin-top: rem(4);
+    margin-top: rem(3);
     padding-bottom: rem(4);
     font-size: rem(24);
     line-height: 1;
   }
 }
 .information__text {
-  margin-top: rem(6);
+  margin-top: rem(7);
   color: $c-green01;
   font-family: $second-font-family;
 }
 .information__button-container {
-  margin-top: rem(40);
+  margin-top: rem(39);
 }

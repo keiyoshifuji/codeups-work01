@@ -12,9 +12,14 @@
 .button-slide__arrow {
   background-color: $c-green-accent;
 }
+.button-slide__arrow--right,
+.button-slide__arrow--left {
+  margin-top: rem(4);
+}
 .button-slide__arrow--left {
   transform: rotate(180deg);
 }
 .button-slide__arrow--up {
   transform: rotate(-90deg);
+  margin-left: rem(3);
 }

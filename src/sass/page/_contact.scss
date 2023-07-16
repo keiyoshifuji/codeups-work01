@@ -43,7 +43,7 @@
   }
 }
 .contact__flex {
-  margin-top: rem(16);
+  margin-top: rem(15);
   @include mq {
     display: flex;
     justify-content: space-between;
@@ -79,7 +79,7 @@
   padding-bottom: 0;
   padding-left: rem(15);
   padding-right: rem(15);
-  padding-top: rem(46);
+  padding-top: rem(48);
   @include mq {
     width: calc(50% - rem(32) * 2);
     margin: 0 rem(32);
@@ -89,7 +89,7 @@
 }
 
 .contact__text {
-  margin-top: rem(4);
+  margin-top: rem(6);
   color: $c-green-accent;
   font-size: rem(14);
   line-height: calc(18 / 14);
@@ -99,5 +99,5 @@
   }
 }
 .contact__button-container {
-  margin-top: rem(40);
+  margin-top: rem(37);
 }

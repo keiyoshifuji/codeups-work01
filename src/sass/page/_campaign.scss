@@ -10,7 +10,7 @@
 }
 .campaign__swiper {
   margin-top: rem(24);
-  // ! inner外にもカードを表示させるため初期値を上書き。
+  // ! inner外にもカードを表示させるためswiper初期値を上書き。
   // ! 参考：https://b-risk.jp/blog/2022/04/swiper/
   overflow: visible;
   @include mq {
