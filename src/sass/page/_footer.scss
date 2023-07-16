@@ -2,10 +2,12 @@
 
 footer {
   position: relative;
-  padding: rem(48) 0 rem(56);
+  padding-top: rem(48);
+  padding-bottom: rem(56);
   background-color: $c-green-accent;
   @include mq {
-    padding: rem(80) 0;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
   }
 }
 .footer__logo-container {

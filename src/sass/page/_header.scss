@@ -42,7 +42,7 @@
 }
 .header__pc-nav {
   height: inherit;
-  margin-left: rem(40);
+  margin-left: rem(20);
 }
 
 // * HAMBURGER
@@ -63,6 +63,12 @@
   width: 100vw;
   height: 100dvh;
   background-color: $c-green-accent;
+  overflow-y: auto;
+}
+.header__drawer-inner {
+  width: 100%;
+  padding-left: rem(15);
+  padding-right: rem(15);
 }
 .header__sp-nav {
   width: 100%;

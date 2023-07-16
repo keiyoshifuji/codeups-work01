@@ -14,8 +14,12 @@
   justify-content: center;
   align-items: center;
   height: inherit;
-  padding-left: rem(20);
-  padding-right: rem(20);
+  // padding-left: rem(20);
+  // padding-right: rem(20);
+  // ! nav padding = 30px ~ 0.05*(100vw - 1080px) + 40px ~ 40px
+  // ! navigation 文字数が多くなった時は30pxをもっと小さくすればいい。
+  padding-left: clamp(rem(15), calc(2.5vw - 27px + rem(20)), rem(20));
+  padding-right: clamp(rem(15), calc(2.5vw - 27px + rem(20)), rem(20));
   color: $white;
 }
 .pc-nav__main-text {

@@ -3,15 +3,13 @@
 .blog {
   @include mq {
     background-image: url(../images/blog-bg.webp);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 }
 .blog__inner {
-  padding-bottom: rem(40);
   padding-top: rem(80);
   @include mq {
-    padding-bottom: rem(70);
     padding-top: rem(100);
   }
 }

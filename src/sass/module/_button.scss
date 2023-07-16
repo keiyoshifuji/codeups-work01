@@ -4,9 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: rem(8);
   position: relative;
   z-index: 1;
-  width: 14.428571em;
+  // width: 14.428571em;
+  min-width: rem(202);
+  margin-right: rem(5); //:before用調整
+  margin-bottom: rem(5); //:before用調整
   padding: rem(15) rem(39);
   border: rem(1) solid $c-green-accent;
   background-color: $c-green-accent;
@@ -14,6 +18,8 @@
   font-size: rem(14);
   line-height: calc(22 / 14);
   transition: color 0.3s;
+}
+.button p {
 }
 .button p:first-letter {
   text-transform: capitalize;
@@ -48,6 +54,7 @@
   transition: cubic-bezier(0.45, 0, 0.55, 1) 0.2s;
 }
 .button__arrow {
+  flex-shrink: 0;
   margin-top: rem(2);
   background-color: white;
   transition: background-color 0.3s;

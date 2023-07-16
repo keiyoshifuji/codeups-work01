@@ -3,15 +3,16 @@
   overflow: hidden;
 }
 .campaign__inner {
-  padding-bottom: rem(40);
   padding-top: rem(40);
   @include mq {
-    padding-bottom: rem(70);
     padding-top: rem(120);
   }
 }
 .campaign__swiper {
   margin-top: rem(24);
+  // ! inner外にもカードを表示させるため初期値を上書き。
+  // ! 参考：https://b-risk.jp/blog/2022/04/swiper/
+  overflow: visible;
   @include mq {
     margin-top: rem(36);
   }
@@ -50,7 +51,11 @@
 .campaign__swiper-next {
   right: 0;
 }
-
+.campaign__swiper-prev::after,
+.campaign__swiper-next::after {
+  // ! swiper 初期矢印打消し用
+  content: none;
+}
 .campaign__button-container {
   margin-top: rem(40);
   @include mq {

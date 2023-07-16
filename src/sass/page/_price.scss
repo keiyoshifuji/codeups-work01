@@ -25,10 +25,14 @@
 }
 .price__lists {
   margin-top: rem(3);
+  padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
 }
 .price__image-pc {
-  width: 100%;
-  max-width: 45.6%;
+  @include mq {
+    width: 100%;
+    max-width: 45.6%;
+    flex-shrink: 0;
+  }
 }
 
 .price__list:not(:first-child) {

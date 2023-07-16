@@ -2,10 +2,10 @@
 
 .voice__inner {
   padding-bottom: rem(80);
-  padding-top: rem(40);
+  padding-top: rem(80);
   @include mq {
     padding-bottom: rem(140);
-    padding-top: rem(70);
+    padding-top: rem(140);
   }
 }
 .voice__body {
@@ -18,6 +18,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
   gap: rem(40);
+  @include mq {
+    grid-template-columns: repeat(2, minmax(rem(290), 1fr));
+  }
 }
 .voice__button-container {
   margin-top: rem(38);

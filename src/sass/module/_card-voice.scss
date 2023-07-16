@@ -7,7 +7,7 @@
   padding-left: rem(16);
   padding-right: rem(16);
   padding-top: rem(15);
-  box-shadow: 2px 2px 10px 0 rgba($black, 0.25);
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
   background: $white;
   @include mq {
     padding-left: rem(24);
@@ -40,6 +40,7 @@
   color: $c-green01;
   font-size: rem(12);
   font-family: $second-font-family;
+  flex-shrink: 0;
 }
 .card-voice__title {
   margin-top: rem(8);

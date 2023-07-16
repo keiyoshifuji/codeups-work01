@@ -12,7 +12,7 @@
   @include mq {
     display: flex;
     padding: rem(80) 0;
-    box-shadow: 4px 4px 10px 0 rgba($black, 0.25);
+    box-shadow: rem(4) rem(4) rem(10) 0 rgba($black, 0.25);
     background: #ffffff;
   }
 }

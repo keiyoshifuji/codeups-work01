@@ -1,7 +1,0 @@
-@use "global" as *;
-
-// ! inner外にもカードを表示させるためデフォルト値を上書き。
-// ! 参考：https://b-risk.jp/blog/2022/04/swiper/
-.swiper02 {
-  overflow: visible;
-}
