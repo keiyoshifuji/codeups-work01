@@ -35,7 +35,7 @@
   width: 20%;
   color: $c-green01;
   font-size: rem(14);
-  font-family: $second-font-family;
+  // font-family: $second-font-family;
   text-align: right;
   @include mq {
     font-size: rem(16);

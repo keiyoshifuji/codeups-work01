@@ -61,7 +61,7 @@
   }
 }
 .about-us__text-container {
-  margin-top: rem(19);
+  margin-top: rem(18);
   @include mq {
     flex-shrink: 0;
     width: 100%;
@@ -76,5 +76,5 @@
   }
 }
 .about-us__button-container {
-  margin-top: rem(36);
+  margin-top: rem(37);
 }
