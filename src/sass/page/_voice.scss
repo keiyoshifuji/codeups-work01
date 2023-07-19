@@ -10,16 +10,20 @@
 }
 .voice__body {
   margin-top: rem(39);
+  max-width: rem(520);
+  margin-right: auto;
+  margin-left: auto;
   @include mq {
+    max-width: none;
     margin-top: rem(25);
   }
 }
 .voice__card-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
+  grid-template-columns: repeat(1, minmax(rem(280), 1fr));
   gap: rem(40);
   @include mq {
-    grid-template-columns: repeat(2, minmax(rem(290), 1fr));
+    grid-template-columns: repeat(2, minmax(rem(280), 1fr));
   }
 }
 .voice__button-container {
