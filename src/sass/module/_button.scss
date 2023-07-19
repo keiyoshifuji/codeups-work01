@@ -62,11 +62,17 @@
 
 // * hover
 .button:hover {
-  color: $c-green-accent;
+  @include mq {
+    color: $c-green-accent;
+  }
 }
 .button:hover .button__arrow {
-  background-color: $c-green-accent;
+  @include mq {
+    background-color: $c-green-accent;
+  }
 }
 .button:hover::after {
-  transform: scale(1, 1);
+  @include mq {
+    transform: scale(1, 1);
+  }
 }
