@@ -3,14 +3,21 @@
 .card-blog {
   display: block;
   width: 100%;
-  padding: rem(16) rem(16) rem(21);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
   background: $white;
 }
 .card-blog__link {
   display: block;
   width: 100%;
+  padding: rem(16) rem(16) rem(21);
 }
+// hover
+.card-blog__link:hover {
+  @include mq {
+    opacity: 0.8;
+  }
+}
+
 .card-blog__body {
   margin-top: rem(20);
 }

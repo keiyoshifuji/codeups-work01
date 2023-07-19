@@ -6,10 +6,17 @@
   box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
   background: $white;
 }
-.campaign__link {
+.card-campaign__link {
   display: block;
   width: 100%;
 }
+// hover
+.card-campaign__link:hover{
+  @include mq{
+    opacity: .8;
+  }
+}
+
 .card-campaign__body {
   padding-bottom: rem(20);
   padding-left: rem(16);

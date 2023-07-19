@@ -44,6 +44,14 @@
   color: $white;
   line-height: 1.125;
 }
+// hover
+.navigation__item > a:hover,
+.navigation__sub-item > a:hover {
+  @include mq {
+    opacity: 0.8;
+  }
+}
+
 .navigation__item > a {
   font-weight: $bold;
 }

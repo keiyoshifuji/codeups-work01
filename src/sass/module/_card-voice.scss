@@ -3,22 +3,29 @@
 .card-voice {
   display: block;
   width: 100%;
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
+  background: $white;
+}
+.card-voice__link {
+  display: block;
+  width: 100%;
   padding-bottom: rem(21);
   padding-left: rem(16);
   padding-right: rem(16);
   padding-top: rem(18);
-  box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
-  background: $white;
   @include mq {
     padding-left: rem(24);
     padding-right: rem(24);
     padding-top: rem(24);
   }
 }
-.card-voice__link {
-  display: block;
-  width: 100%;
+// hover
+.card-voice__link:hover {
+  @include mq {
+    opacity: 0.8;
+  }
 }
+
 .card-voice__flex {
   display: flex;
   justify-content: space-between;
