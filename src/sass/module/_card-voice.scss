@@ -45,11 +45,11 @@
   }
 }
 .card-voice__information {
+  flex-shrink: 0;
   color: $c-green01;
   font-size: rem(12);
-  font-family: $second-font-family;
-  flex-shrink: 0;
   line-height: 1;
+  font-family: $second-font-family;
   @include mq {
     line-height: 1.5;
   }
@@ -74,12 +74,31 @@
 }
 .card-voice__image {
   flex-shrink: 0;
+  position: relative;
   width: rem(151);
   max-width: 49%;
   @include mq {
     width: rem(180);
   }
 }
+.card-voice__image::before {
+  content: "";
+  display: block;
+  padding-top: 77.8%;
+  // sp 117/151 = 77.483444%
+  // pc 140/180 = 77.777778%
+}
+.card-voice__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
 .card-voice__content {
   margin-top: rem(17);
   @include mq {
