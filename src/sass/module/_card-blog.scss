@@ -18,6 +18,27 @@
     opacity: 0.8;
   }
 }
+.card-blog__image {
+  position: relative;
+  width: 100%;
+}
+.card-blog__image::before {
+  content: "";
+  display: block;
+  padding-top: 66.8%;
+  // sp 201/301 = 66.777409%
+  // pc 201/301 = 66.777409%
+}
+.card-blog__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 
 .card-blog__body {
   margin-top: rem(20);

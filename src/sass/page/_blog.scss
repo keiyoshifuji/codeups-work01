@@ -42,9 +42,13 @@
   gap: rem(40);
   padding-left: rem(6);
   padding-right: rem(6);
+  justify-items: center;
   @include mq {
     padding: 0;
   }
+}
+.blog__card-item {
+  max-width: rem(333);
 }
 .blog__button-container {
   margin-top: rem(40);
