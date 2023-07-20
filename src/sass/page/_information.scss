@@ -23,10 +23,29 @@
   }
 }
 .information__image {
+  width: 100%;
+  position: relative;
   @include mq {
     flex-shrink: 0;
     width: 50%;
   }
+}
+.information__image::before {
+  content: "";
+  display: block;
+  padding-top: 65.8%;
+  // sp 227/345 = 65.797101%
+  // pc 356/540 = 65.925926%
+}
+.information__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 .information__text-container {
   @include mq {
