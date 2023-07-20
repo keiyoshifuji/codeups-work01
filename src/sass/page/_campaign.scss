@@ -17,9 +17,13 @@
     margin-top: rem(36);
   }
 }
+.campaign__items{
+  align-items: stretch;
+}
 .campaign__item {
-  // ! 【修正】width管理はSwiperのJS側ですること！
   width: 100%;
+  height: auto;
+  // ! 【修正】width管理はSwiperのJS側ですること！
   max-width: rem(280);
   @include mq {
     max-width: rem(333);
