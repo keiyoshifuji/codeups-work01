@@ -12,7 +12,26 @@
   }
 }
 .price__image-sp {
+  position: relative;
+  width: 100%;
   margin-top: rem(23);
+}
+.price__image-sp::before {
+  content: "";
+  display: block;
+  padding-top: 65.8%;
+  // sp 227/345 = 65.797101%
+  // pc none
+}
+.price__image-sp img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 .price__body {
   margin-top: rem(43);
@@ -31,9 +50,31 @@
 }
 .price__image-pc {
   @include mq {
+    position: relative;
     width: 100%;
     max-width: 45.6%;
     flex-shrink: 0;
+  }
+}
+.price__image-pc::before {
+  @include mq {
+    content: "";
+    display: block;
+    padding-top: 151.6%;
+    // sp none
+    // pc 746/492 = 151.626016%
+  }
+}
+.price__image-pc img {
+  @include mq {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 }
 

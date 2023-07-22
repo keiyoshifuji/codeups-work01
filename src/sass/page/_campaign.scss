@@ -1,7 +1,5 @@
 @use "global" as *;
-.campaign {
-  overflow: hidden;
-}
+
 .campaign__inner {
   padding-top: rem(40);
   @include mq {
@@ -9,24 +7,10 @@
   }
 }
 .campaign__swiper {
+  position: relative;
   margin-top: rem(24);
-  // ! inner外にもカードを表示させるためswiper初期値を上書き。
-  // ! 参考：https://b-risk.jp/blog/2022/04/swiper/
-  overflow: visible;
   @include mq {
     margin-top: rem(36);
-  }
-}
-.campaign__items {
-  align-items: stretch;
-}
-.campaign__item {
-  width: 100%;
-  height: auto;
-  // ! 【修正】width管理はSwiperのJS側ですること！
-  max-width: rem(280);
-  @include mq {
-    max-width: rem(333);
   }
 }
 
@@ -62,8 +46,9 @@
   content: none;
 }
 .campaign__button-container {
-  margin-top: rem(40);
+  // 15pxはswiperのpadding分
+  margin-top: calc(rem(40) - rem(15));
   @include mq {
-    margin-top: rem(79);
+    margin-top: calc(rem(79) - rem(15));
   }
 }

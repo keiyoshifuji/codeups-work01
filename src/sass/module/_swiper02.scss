@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.swiper02 .swiper {
+  padding-right: calc((100vw - 100%) / 2);
+  box-sizing: content-box;
+  width: 100%;
+}
+.swiper02 .swiper-wrapper {
+  padding-bottom: 15px;
+}
+.swiper02 .swiper-slide {
+  height: auto;
+}
