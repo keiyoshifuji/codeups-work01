@@ -62,13 +62,17 @@
   margin-top: rem(4);
 }
 .contact__map {
+  max-width: rem(600);
   height: rem(160);
   margin-top: rem(16);
+  margin-right: auto;
+  margin-left: auto;
   @include mq {
     flex-shrink: 0;
     width: 62%;
+    max-width: none;
     height: rem(148);
-    margin-top: 0;
+    margin: 0;
   }
 }
 .contact__map iframe {

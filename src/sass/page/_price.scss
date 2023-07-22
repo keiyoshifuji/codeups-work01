@@ -14,7 +14,6 @@
 .price__image-sp {
   position: relative;
   width: 100%;
-  margin-top: rem(23);
 }
 .price__image-sp::before {
   content: "";
@@ -34,15 +33,20 @@
   object-position: 50% 50%;
 }
 .price__body {
-  margin-top: rem(43);
+  max-width: rem(600);
+  margin-top: rem(23);
+  margin-right: auto;
+  margin-left: auto;
   @include mq {
     display: flex;
     justify-content: space-between;
     gap: 8.8%;
+    max-width: none;
     margin-top: rem(35);
   }
 }
 .price__lists {
+  margin-top: rem(43);
   @include mq {
     margin-top: rem(3);
     padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
@@ -50,10 +54,11 @@
 }
 .price__image-pc {
   @include mq {
+    flex-shrink: 0;
     position: relative;
     width: 100%;
     max-width: 45.6%;
-    flex-shrink: 0;
+    margin-right: rem(3);
   }
 }
 .price__image-pc::before {

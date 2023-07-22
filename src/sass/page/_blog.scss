@@ -9,7 +9,7 @@
   @include mq {
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: rem(500);
     z-index: zi(just-below);
   }
 }
