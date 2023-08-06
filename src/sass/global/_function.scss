@@ -9,14 +9,13 @@
   @return $number;
 }
 
-
 @function vw($window_width, $size) {
-	@return math.div($size, $window_width) * 100vw;
+  @return math.div($size, $window_width) * 100vw;
 }
 
 // remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
 @function rem($px) {
-  @return calc($px /16 * 1rem);
+  @return calc($px / 16 * 1rem);
 }
 
 //重なり順（z-index）
@@ -28,7 +27,8 @@ $z-index-layer: (
   modal: 8000,
   hamburger: 7000,
   button-top-page: 6000,
-  drawer: 5000,
+  header-logo: 5000,
+  drawer: 4000,
   header: 3000,
   just-above: 1000,
   default: 1,

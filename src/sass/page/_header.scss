@@ -24,6 +24,7 @@
   }
 }
 .header__logo {
+  z-index: zi(header-logo);
   width: rem(102);
   height: inherit;
   font-weight: $normal;
@@ -62,13 +63,18 @@
   z-index: zi(drawer);
   width: 100vw;
   height: 100dvh;
-  background-color: $c-green-accent;
   overflow-y: auto;
+  background-color: $c-green-accent;
+  padding-top: rem(80);
 }
 .header__drawer-inner {
   width: 100%;
   padding-left: rem(15);
   padding-right: rem(15);
+}
+.header__logo--drawer {
+  position: fixed;
+  top: 0;
 }
 .header__sp-nav {
   width: 100%;
