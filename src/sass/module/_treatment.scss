@@ -13,7 +13,8 @@
 .treatment__about-us {
   position: absolute;
   right: max(rem(25), calc(rem(83) + 50vw - rem(720)));
-  bottom: rem(50);
+  bottom: 0;
+  transform: translateY(50%);
 }
 
 //blog

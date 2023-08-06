@@ -2,8 +2,6 @@
 
 .price {
   background-color: $c-green02;
-}
-.price__inner {
   padding-bottom: rem(80);
   padding-top: rem(80);
   @include mq {

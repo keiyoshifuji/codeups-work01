@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.campaign__inner {
-  padding-top: rem(40);
-  @include mq {
-    padding-top: rem(120);
-  }
-}
 .campaign__swiper {
   position: relative;
   margin-top: rem(24);
@@ -42,7 +36,7 @@
 }
 .campaign__swiper-prev::after,
 .campaign__swiper-next::after {
-  // ! swiper 初期矢印打消し用
+  // ! swiper 初期矢印打消し用 for firefox
   content: none;
 }
 .campaign__button-container {
