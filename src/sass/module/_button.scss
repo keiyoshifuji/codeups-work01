@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .button {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   gap: rem(8);
@@ -18,8 +18,6 @@
   font-size: rem(14);
   line-height: calc(22 / 14);
   transition: color 0.3s;
-}
-.button p {
 }
 .button p:first-letter {
   text-transform: capitalize;

@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .price {
-  background-color: $c-green02;
   padding-bottom: rem(80);
   padding-top: rem(80);
+  background-color: $c-green02;
   @include mq {
     padding-bottom: rem(100);
     padding-top: rem(100);
@@ -86,6 +86,7 @@
 }
 .price__button-container {
   margin-top: rem(40);
+  text-align: center;
   @include mq {
     margin-top: rem(80);
   }

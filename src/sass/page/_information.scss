@@ -1,28 +1,28 @@
 @use "global" as *;
 
 .information {
-  background-color: $c-green02;
   padding-bottom: rem(80);
   padding-top: rem(80);
+  background-color: $c-green02;
   @include mq {
     padding-bottom: rem(100);
     padding-top: rem(100);
   }
 }
 .information__body {
-  margin-top: rem(23);
   max-width: rem(600);
+  margin-top: rem(23);
   margin-right: auto;
   margin-left: auto;
   @include mq {
-    max-width: none;
     display: flex;
+    max-width: none;
     margin-top: rem(35);
   }
 }
 .information__image {
-  width: 100%;
   position: relative;
+  width: 100%;
   @include mq {
     flex-shrink: 0;
     width: 50%;
@@ -74,4 +74,5 @@
 }
 .information__button-container {
   margin-top: rem(39);
+  text-align: center;
 }

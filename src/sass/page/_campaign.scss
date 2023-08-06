@@ -42,6 +42,7 @@
 .campaign__button-container {
   // 15pxはswiperのpadding分
   margin-top: calc(rem(40) - rem(15));
+  text-align: center;
   @include mq {
     margin-top: calc(rem(79) - rem(15));
   }
