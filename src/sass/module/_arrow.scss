@@ -4,7 +4,7 @@
   position: relative;
   width: rem(40);
   height: rem(2);
-  background-color: black;
+  background-color: $white;
 }
 .arrow::after {
   content: "";
@@ -19,4 +19,7 @@
 }
 .arrow.arrow--mirror::after {
   transform: rotate(-40deg);
+}
+.arrow.arrow--green {
+  background-color: $c-green-accent;
 }

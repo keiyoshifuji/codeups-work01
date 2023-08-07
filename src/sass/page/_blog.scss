@@ -25,7 +25,7 @@
     object-position: center;
   }
 }
-.blog__card-items {
+.blog__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
   justify-items: center;
@@ -42,10 +42,10 @@
     padding: 0;
   }
 }
-.blog__card-item {
+.blog__card {
   max-width: rem(333);
 }
-.blog__button-container {
+.blog__button {
   margin-top: rem(40);
   text-align: center;
   @include mq {

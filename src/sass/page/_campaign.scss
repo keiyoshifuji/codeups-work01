@@ -39,7 +39,7 @@
   // ! swiper 初期矢印打消し用 for firefox
   content: none;
 }
-.campaign__button-container {
+.campaign__button {
   // 15pxはswiperのpadding分
   margin-top: calc(rem(40) - rem(15));
   text-align: center;

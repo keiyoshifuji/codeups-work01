@@ -75,7 +75,7 @@
     line-height: 1.25;
   }
 }
-.about-us__text-container {
+.about-us__text-box {
   margin-top: rem(18);
   @include mq {
     flex-shrink: 0;
@@ -90,7 +90,7 @@
     color: $white;
   }
 }
-.about-us__button-container {
+.about-us__button {
   margin-top: rem(37);
   text-align: center;
 }

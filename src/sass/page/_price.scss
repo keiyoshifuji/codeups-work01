@@ -84,7 +84,7 @@
 .price__list:not(:first-child) {
   padding-top: rem(44);
 }
-.price__button-container {
+.price__button {
   margin-top: rem(40);
   text-align: center;
   @include mq {

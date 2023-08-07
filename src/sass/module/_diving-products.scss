@@ -3,14 +3,14 @@
 .diving-products {
   width: 100%;
 }
-.diving-products-type {
+.diving-products__category {
   width: 100%;
   border-bottom: rem(2) solid $c-green-accent;
   color: $c-green01;
   font-weight: $bold;
   font-size: rem(16);
 }
-.diving-products-list {
+.diving-products__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

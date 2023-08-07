@@ -45,7 +45,7 @@
   object-fit: cover;
   object-position: 50% 50%;
 }
-.information__text-container {
+.information__text-box {
   @include mq {
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
   color: $c-green01;
   font-family: $second-font-family;
 }
-.information__button-container {
+.information__button {
   margin-top: rem(39);
   text-align: center;
 }

@@ -36,7 +36,7 @@
     gap: rem(16);
   }
 }
-.card-voice__sub-container {
+.card-voice__meta {
   @include mq {
     display: flex;
     flex-direction: row;
