@@ -5,8 +5,8 @@
   margin-top: rem(24);
   @include mq {
     margin-top: rem(36);
+    padding-bottom: 20.37037%; // 220px/1080px
     padding-top: 18.518519%; // 200px/1080px
-    padding-bottom: 20.370370%; // 220px/1080px
   }
 }
 .about-us__images-box {
@@ -26,12 +26,12 @@
   }
 }
 .about-us__image01 {
-  aspect-ratio: 128 / 194;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -10;
   width: 37.101449%;
+  aspect-ratio: 128 / 194;
 
   & img {
     width: 100%;
@@ -41,12 +41,12 @@
   }
 }
 .about-us__image02 {
-  aspect-ratio: 281 / 186;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -11;
   width: 81.449275%;
+  aspect-ratio: 281 / 186;
 
   & img {
     width: 100%;
@@ -59,11 +59,10 @@
   margin-top: rem(41);
   @include mq {
     display: flex;
-    justify-content: end;
     gap: rem(40);
-    padding-right: 3.703704%; // 40px/1080px
     width: 100%; //~1080px
     margin-top: 0;
+    padding-left: 18.518519%; // 200px/1080px
   }
 }
 .about-us__heading {

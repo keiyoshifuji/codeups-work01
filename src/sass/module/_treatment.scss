@@ -1,7 +1,7 @@
 @use "global" as *;
 
 // * y : left or right distance in absolute
-// * y0 : pixel value under view width is 1440px
+// * y0 : pixel value under view width is 1440px const
 // * d : a side distance from 1440px, cf) view width = 1440px + 2d
 // * y = y0 + d = y0 + 50vw - 720px
 
@@ -28,14 +28,14 @@
 //voice
 .treatment__voice {
   position: absolute;
-  top: rem(20);
+  top: rem(-120);
   left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
   width: rem(301);
 }
 .treatment__voice02 {
   position: absolute;
   right: max(rem(25), calc(rem(180) + 50vw - rem(720)));
-  bottom: rem(73);
+  bottom: rem(-64);
   width: rem(71);
 }
 
