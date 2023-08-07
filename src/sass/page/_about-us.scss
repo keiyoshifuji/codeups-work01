@@ -2,8 +2,12 @@
 
 .about-us__body {
   position: relative;
+  max-width: rem(600);
   margin-top: rem(24);
+  margin-right: auto;
+  margin-left: auto;
   @include mq {
+    max-width: none;
     margin-top: rem(36);
     padding-bottom: 20.37037%; // 220px/1080px
     padding-top: 18.518519%; // 200px/1080px

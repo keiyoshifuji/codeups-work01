@@ -10,6 +10,14 @@ footer {
     padding-bottom: rem(80);
   }
 }
+.footer__body{
+  max-width: rem(600);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq {
+    max-width: none;
+  }
+}
 .footer__logo-container {
   @include mq {
     display: flex;
