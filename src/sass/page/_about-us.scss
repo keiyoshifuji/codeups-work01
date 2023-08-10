@@ -8,13 +8,14 @@
   margin-left: auto;
   @include mq {
     max-width: none;
+    aspect-ratio: 1080 / 661;
     margin-top: rem(36);
-    padding-bottom: 20.37037%; // 220px/1080px
     padding-top: 18.518519%; // 200px/1080px
   }
 }
 .about-us__images-box {
   width: 100%;
+  height: 100%;
   @include mq {
     position: absolute;
     top: 0;
@@ -26,7 +27,8 @@
   width: 100%;
   aspect-ratio: 345 / 212;
   @include mq {
-    aspect-ratio: 1080 / 661;
+    aspect-ratio: unset;
+    height: 100%;
   }
 }
 .about-us__image01 {
