@@ -86,7 +86,7 @@
   line-height: calc(24 / 14);
   @include mq {
     margin-top: rem(16);
-    margin-right: 1em;
+    // margin-right: 1em; //デザイン上はあるが中央揃えでOK。
     font-size: rem(16);
   }
 }
