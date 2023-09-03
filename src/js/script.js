@@ -23,12 +23,13 @@ jQuery(function ($) {
   // * Swiper02
   const swiper02 = new Swiper(".swiper02 .swiper", {
     loop: true,
-    slidesPerView: 1, // initial value
+    slidesPerView: "auto",
     spaceBetween: 24,
     grabCursor: true,
     breakpoints: {
       768: {
         spaceBetween: 16,
+        slidesPerView: 3,
       },
       1024: {
         spaceBetween: 40,
@@ -40,25 +41,6 @@ jQuery(function ($) {
       nextEl: ".swiper02 .swiper-button-next",
       prevEl: ".swiper02 .swiper-button-prev",
     },
-  });
-  swiper02.on("resize", function () {
-    let viewportWidth = document.body.clientWidth; //100vwを取得
-    let slidesInView;
-    let swiperWidth = this.width;
-    let swiperBetween = this.params.spaceBetween;
-
-    if (viewportWidth >= 768) {
-      slidesInView = 3;
-    } else {
-      let slideWidth = 280;
-      // swiper-slide幅を280pxで固定する。
-      // ! swiper-slide-width = (swiper.width - (slidesPerView - 1) * swiperBetween) / slidesPerView, then
-      slidesInView = (swiperWidth + swiperBetween) / (slideWidth + swiperBetween);
-    }
-    this.params.slidesPerView = slidesInView;
-    this.update();
-    // console.log("slidesInView is " + slidesInView);
-    // console.log("spaceBetween is " + swiperBetween);
   });
 
   // * 横から背景画像→imageとなるアニメーション
