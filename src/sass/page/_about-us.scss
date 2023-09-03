@@ -87,8 +87,8 @@
   margin-top: rem(18);
   @include mq {
     flex-shrink: 0;
-    width: 100%;
-    max-width: 37%; //400px
+    width: 45.454545%; //400px/880px;
+    max-width: rem(400);
     margin-top: rem(3);
   }
 }
