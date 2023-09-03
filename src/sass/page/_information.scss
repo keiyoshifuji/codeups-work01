@@ -20,13 +20,16 @@
     margin-top: rem(35);
   }
 }
-.information__image {
-  position: relative;
+.information__image-container {
   width: 100%;
   @include mq {
     flex-shrink: 0;
     width: 50%;
   }
+}
+.information__image {
+  position: relative;
+  width: 100%;
 }
 .information__image::before {
   content: "";
@@ -47,9 +50,8 @@
 }
 .information__text-box {
   @include mq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    padding-top: rem(60);
     margin-left: rem(48);
   }
 }
