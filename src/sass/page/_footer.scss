@@ -1,16 +1,18 @@
 @use "global" as *;
 
 footer {
+  margin-top: rem(100);
   position: relative;
   padding-top: rem(48);
   padding-bottom: rem(56);
   background-color: $c-green-accent;
   @include mq {
+    margin-top: rem(160);
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
 }
-.footer__body{
+.footer__body {
   max-width: rem(600);
   margin-right: auto;
   margin-left: auto;
