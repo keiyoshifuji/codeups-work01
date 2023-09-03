@@ -24,7 +24,8 @@
   }
 }
 .main-view__text-large {
-  margin-right: -0.525em;
+  // margin-right: -0.525em;
+  text-indent: 0.525em;
   color: $white;
   font-weight: $normal;
   font-size: rem(40);
