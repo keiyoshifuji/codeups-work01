@@ -13,6 +13,10 @@
 .treatment {
   position: relative;
 }
+.treatment::before,
+.treatment::after {
+  z-index: 10; //個別指定でもいいけど。
+}
 
 .treatment.about-us::after {
   @include mq {
@@ -110,7 +114,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   @include mq {
     top: rem(-40);
     // right: max(rem(25), calc(rem(50) + 50vw - rem(720)));

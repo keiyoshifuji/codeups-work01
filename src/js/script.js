@@ -33,6 +33,7 @@ jQuery(function ($) {
       },
       1024: {
         spaceBetween: 40,
+        slidesPerView: 3,
       },
     },
 

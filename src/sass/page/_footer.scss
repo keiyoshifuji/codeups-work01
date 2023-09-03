@@ -69,6 +69,7 @@ footer {
   transform-origin: right top;
   width: rem(80);
   height: rem(80);
+  cursor: pointer;
   @include mq {
     top: rem(-21);
     right: rem(20);

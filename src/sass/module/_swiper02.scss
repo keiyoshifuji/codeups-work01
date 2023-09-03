@@ -11,7 +11,7 @@
 .swiper02 .swiper-slide {
   width: rem(280);
   height: auto;
-  
+
   @include mq {
     width: auto; //pcはjsで数（幅）管理。
   }
