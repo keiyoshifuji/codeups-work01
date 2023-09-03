@@ -7,8 +7,9 @@
     padding-top: rem(100);
   }
 }
-.blog__background {
+.blog::before {
   @include mq {
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -16,34 +17,20 @@
     z-index: zi(just-below);
     width: 100%;
     height: rem(500);
-  }
-}
-.blog__background img {
-  @include mq {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    background-image: url(../images/blog-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 .blog__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
-  justify-items: center;
-  gap: rem(40);
-  max-width: rem(600);
   margin-top: rem(24);
   margin-right: auto;
   margin-left: auto;
-  padding-left: rem(6);
-  padding-right: rem(6);
+
   @include mq {
-    max-width: none;
     margin-top: rem(76);
-    padding: 0;
   }
-}
-.blog__card {
-  max-width: rem(333);
 }
 .blog__button {
   margin-top: rem(40);

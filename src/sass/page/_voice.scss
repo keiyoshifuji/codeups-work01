@@ -10,14 +10,6 @@
     margin-top: rem(25);
   }
 }
-.voice__cards {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(rem(280), 1fr));
-  gap: rem(40);
-  @include mq {
-    grid-template-columns: repeat(2, minmax(rem(280), 1fr));
-  }
-}
 .voice__button {
   margin-top: rem(40);
   text-align: center;
