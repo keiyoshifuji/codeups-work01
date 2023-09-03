@@ -5,57 +5,117 @@
 // * d : a side distance from 1440px, cf) view width = 1440px + 2d
 // * y = y0 + d = y0 + 50vw - 720px
 
+// * HIROKIさん推奨手法
+// * right: calc(50% - min(48%, XXXpx))
+// * ⇒要素の右端を基準に、画面が大きくなるまでは2％ずれで、大きくなってからは中心からXXXpx。
+// * ちなみにあしらいはメイン要素ではないので疑似要素で作った方がよい。
+
 .treatment {
   position: relative;
 }
 
-//about-us
-.treatment__about-us {
-  position: absolute;
-  right: max(rem(25), calc(rem(83) + 50vw - rem(720)));
-  bottom: 0;
-  transform: translateY(50%);
+.treatment.about-us::after {
+  @include mq {
+    content: "";
+    position: absolute;
+    // right: max(rem(25), calc(rem(83) + 50vw - rem(720)));
+    right: calc(50% - min(48%, rem(640)));
+    bottom: 0;
+    transform: translateY(50%);
+    width: rem(194);
+    height: rem(181);
+    background-image: url(../images/fish-coral.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 //blog
-.treatment__blog {
-  position: absolute;
-  top: rem(24);
-  left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
-  width: rem(437);
+.treatment.blog::after {
+  @include mq {
+    content: "";
+    position: absolute;
+    top: rem(24);
+    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
+    left: calc(50% - min(48%, rem(620)));
+    width: rem(437);
+    height: rem(201);
+    background-image: url(../images/fish-sea-bream-white-left.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 //voice
-.treatment__voice {
-  position: absolute;
-  top: rem(-120);
-  left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
-  width: rem(301);
+.treatment.voice::before {
+  @include mq {
+    content: "";
+    position: absolute;
+    top: rem(-120);
+    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
+    left: calc(50% - min(48%, rem(620)));
+    width: rem(301);
+    height: rem(138);
+    background-image: url(../images/fish-sea-bream-right.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-.treatment__voice02 {
-  position: absolute;
-  right: max(rem(25), calc(rem(180) + 50vw - rem(720)));
-  bottom: rem(-64);
-  width: rem(71);
+.treatment.voice::after {
+  @include mq {
+    content: "";
+    position: absolute;
+    // right: max(rem(25), calc(rem(180) + 50vw - rem(720)));
+    right: calc(50% - min(48%, rem(540)));
+    bottom: rem(-64);
+    width: rem(71);
+    height: rem(162);
+    background-image: url(../images/fish-seahorse.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 //price
-.treatment__price {
-  position: absolute;
-  bottom: rem(60);
-  left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
-  width: rem(437);
+.treatment.price::after {
+  @include mq {
+    content: "";
+    position: absolute;
+    bottom: rem(60);
+    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
+    left: calc(50% - min(48%, rem(620)));
+    width: rem(437);
+    height: rem(200);
+    background-image: url(../images/fish-sea-bream-left.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 //contact
-.treatment__contact {
+.treatment.contact::after {
+  content: "";
   position: absolute;
   top: rem(54);
-  right: max(rem(15), calc(rem(0) + 50vw - rem(375)));
+  // right: max(rem(15), calc(rem(0) + 50vw - rem(375)));
+  right: calc(50% - min(48%, rem(540)));
   width: rem(109);
+  height: rem(50);
+  background-image: url(../images/fish-sea-bream-left.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   @include mq {
     top: rem(100);
-    right: max(rem(25), calc(rem(50) + 50vw - rem(720)));
+    // right: max(rem(25), calc(rem(50) + 50vw - rem(720)));
+    right: calc(50% - min(48%, rem(670)));
     width: rem(301);
+    height: rem(138);
   }
 }
