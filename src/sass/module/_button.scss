@@ -6,7 +6,7 @@
   align-items: center;
   gap: rem(8);
   position: relative;
-  z-index: 1;
+  z-index: 2;
   // width: 14.428571em;
   min-width: rem(202);
   margin-right: rem(5); //:before用調整
@@ -19,6 +19,9 @@
   line-height: calc(22 / 14);
   transition: color 0.3s;
 }
+.button p {
+  z-index: 2;
+}
 .button p:first-letter {
   text-transform: capitalize;
 }
@@ -29,7 +32,7 @@
   position: absolute;
   right: rem(-4);
   bottom: rem(-4);
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
   // 親要素と高さ幅を完全一致させるためoutlineを採用
@@ -43,7 +46,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   transform: scale(0, 1);
   transform-origin: left top;
   width: 100%;
@@ -53,6 +56,7 @@
 }
 .button__arrow {
   flex-shrink: 0;
+  z-index: 2;
   margin-top: rem(2);
   transition: background-color 0.3s;
 }

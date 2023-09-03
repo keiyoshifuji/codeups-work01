@@ -35,7 +35,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 37.101449%;
   aspect-ratio: 128 / 194;
 
@@ -50,7 +50,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: 1;
   width: 81.449275%;
   aspect-ratio: 281 / 186;
 
@@ -64,7 +64,7 @@
 .about-us__container {
   margin-top: rem(41);
   position: relative;
-  z-index: 2;
+  z-index: 3;
   @include mq {
     display: flex;
     gap: rem(40);
