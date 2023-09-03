@@ -49,6 +49,7 @@
 // * HAMBURGER
 .header__hamburger {
   position: fixed;
+  z-index: zi(hamburger);
   top: rem(28);
   right: rem(15);
 }
@@ -66,6 +67,15 @@
   padding-top: rem(80);
   overflow-y: auto;
   background-color: $c-green-accent;
+}
+.header__drawer-mask {
+  width: 100%;
+  height: rem(80);
+  background-color: $c-green-accent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 .header__drawer-inner {
   width: 100%;
