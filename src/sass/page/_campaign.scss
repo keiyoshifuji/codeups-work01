@@ -7,6 +7,22 @@
     margin-top: rem(36);
   }
 }
+.campaign__swiper .swiper {
+  width: 100%;
+  padding-right: calc((100vw - 100%) / 2);
+  box-sizing: content-box;
+}
+.campaign__swiper .swiper-wrapper {
+  padding-bottom: rem(15);
+}
+.campaign__swiper .swiper-slide {
+  width: rem(280);
+  height: auto;
+
+  @include mq {
+    width: auto; //pcはjsで数（幅）管理。
+  }
+}
 
 // * Swiper button location
 .campaign__swiper-prev,
