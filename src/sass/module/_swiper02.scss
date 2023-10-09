@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.swiper02 .swiper {
+.js-campaign-swiper .swiper {
   width: 100%;
   padding-right: calc((100vw - 100%) / 2);
   box-sizing: content-box;
 }
-.swiper02 .swiper-wrapper {
+.js-campaign-swiper .swiper-wrapper {
   padding-bottom: rem(15);
 }
-.swiper02 .swiper-slide {
+.js-campaign-swiper .swiper-slide {
   width: rem(280);
   height: auto;
 

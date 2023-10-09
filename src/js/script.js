@@ -7,8 +7,8 @@ jQuery(function ($) {
     $(".js-drawer-menu").fadeToggle(); //ドロワー（マスク）をfadeIn/Outする
   });
 
-  // * Swiper01
-  const swiper01 = new Swiper(".swiper01 .swiper", {
+  // * Main-view-swiper
+  const mainViewSwiper = new Swiper(".js-main-view-swiper .swiper", {
     direction: "horizontal",
     loop: true,
     slidesPerView: 1,
@@ -20,8 +20,8 @@ jQuery(function ($) {
     },
   });
 
-  // * Swiper02
-  const swiper02 = new Swiper(".swiper02 .swiper", {
+  // * Campaign-swiper
+  const campaignSwiper = new Swiper(".js-campaign-swiper .swiper", {
     loop: true,
     slidesPerView: "auto",
     spaceBetween: 24,
@@ -39,8 +39,8 @@ jQuery(function ($) {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper02 .swiper-button-next",
-      prevEl: ".swiper02 .swiper-button-prev",
+      nextEl: ".js-campaign-swiper .swiper-button-next",
+      prevEl: ".js-campaign-swiper .swiper-button-prev",
     },
   });
 
