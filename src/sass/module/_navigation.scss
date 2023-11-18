@@ -23,10 +23,10 @@
 .navigation__item {
   //list-style-positionだと位置調整不可のためBGで設定。
   //   list-style-position: outside;
-  //   list-style-image: url("../images/list-style.svg"); // ヒトデ
+  //   list-style-image: url("..common/list-style.svg"); // ヒトデ
   //   margin-left: rem(22);
   padding-left: rem(22);
-  background-image: url("../images/list-style.svg");
+  background-image: url("../images/common/list-style.svg");
   background-position: top rem(9) left;
   background-repeat: no-repeat;
 }
