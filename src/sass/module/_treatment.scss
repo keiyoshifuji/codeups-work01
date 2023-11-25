@@ -128,6 +128,7 @@
   @include mq {
     content: "";
     position: absolute;
+    z-index: zi(just-below) ;
     top: rem(-70);
     // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
     left: calc(50% - min(48%, rem(620)));

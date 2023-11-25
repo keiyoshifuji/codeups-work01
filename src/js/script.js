@@ -105,5 +105,11 @@ jQuery(function ($) {
   //   return false;
   // });
 
+  // * カテゴリータグをactiveにする
+  $(".js-category-item").click(function(){
+    $(".js-category-item").removeClass("is-active");
+    $(this).addClass("is-active");
+  }) 
+
   // * END
 });
