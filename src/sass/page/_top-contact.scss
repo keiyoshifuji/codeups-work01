@@ -6,3 +6,10 @@
     margin-top: rem(140);
   }
 }
+
+.top-contact.top-contact--page {
+  margin-top: rem(106);
+  @include mq {
+    margin-top: rem(140);
+  }
+}

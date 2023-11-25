@@ -106,10 +106,16 @@ jQuery(function ($) {
   // });
 
   // * カテゴリータグをactiveにする
-  $(".js-category-item").click(function(){
+  $(".js-category-item").click(function () {
     $(".js-category-item").removeClass("is-active");
     $(this).addClass("is-active");
-  }) 
+  });
+
+  // * ページネーションをactiveにする
+  $(".js-pagination-number").click(function () {
+    $(".js-pagination-number").removeClass("is-active");
+    $(this).addClass("is-active");
+  });
 
   // * END
 });
