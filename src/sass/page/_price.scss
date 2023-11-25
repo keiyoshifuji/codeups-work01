@@ -48,7 +48,8 @@
   margin-top: rem(43);
   @include mq {
     margin-top: rem(3);
-    padding-bottom: rem(32); // 行増えたときに背景の魚と被らないように。
+    padding-bottom: rem(32);
+    // 行増えたときに背景の魚と被らないように。
   }
 }
 .price__image-pc {

@@ -10,7 +10,7 @@
     max-width: none;
     aspect-ratio: 1080 / 661;
     margin-top: rem(36);
-    padding-top: 18.518519%; // 200px/1080px
+    padding-top: 18.518519%;
   }
 }
 .about-us__images-box {
@@ -68,9 +68,9 @@
   @include mq {
     display: flex;
     gap: rem(40);
-    width: 100%; //~1080px
+    width: 100%;
     margin-top: 0;
-    padding-left: 18.518519%; // 200px/1080px
+    padding-left: 18.518519%;
   }
 }
 .about-us__heading {
@@ -87,7 +87,7 @@
   margin-top: rem(18);
   @include mq {
     flex-shrink: 0;
-    width: 45.454545%; //400px/880px;
+    width: 45.454545%;
     max-width: rem(400);
     margin-top: rem(3);
   }

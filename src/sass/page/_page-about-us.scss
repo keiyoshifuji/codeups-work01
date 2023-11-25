@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.page-about-us__body {
+  width: 100%;
+  max-width: rem(520);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq {
+    display: flex;
+    align-items: baseline;
+    gap: rem(40);
+    max-width: none;
+    aspect-ratio: 1080 / 661;
+    padding-left: 18.518519%;
+    padding-top: 18.518519%;
+    background-image: url(../images/about-us/about-us01.webp), url(../images/about-us/about-us02.webp);
+    background-position: top left, bottom right;
+    background-size: 37.037%, 81.4814%;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+.page-about-us__heading {
+  aspect-ratio: 345/228;
+  padding: rem(24);
+  background-image: url(../images/about-us/about-us02.webp);
+  background-position: top center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: $white;
+  font-size: rem(40);
+  line-height: 1;
+
+  @include mq {
+    aspect-ratio: none;
+    padding: 0;
+    background: none;
+    font-size: rem(80);
+    line-height: 1.25;
+  }
+}
+.page-about-us__text {
+  margin-top: rem(40);
+  color: $c-green01;
+
+  @include mq {
+    flex-shrink: 0;
+    width: 45.454545%;
+    max-width: rem(400);
+    margin-top: 0;
+    color: $white;
+  }
+}

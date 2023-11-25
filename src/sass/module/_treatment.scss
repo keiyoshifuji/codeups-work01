@@ -15,7 +15,7 @@
 }
 .treatment::before,
 .treatment::after {
-  z-index: 10; //個別指定でもいいけど。
+  z-index: 10;
 }
 
 .treatment.about-us::after {
@@ -124,19 +124,38 @@
 }
 
 //under pages
-.treatment.top-page::after {
+.treatment.page-top::after {
+  content: "";
+  position: absolute;
+  z-index: zi(just-below);
+  top: rem(-24);
+  // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
+  left: calc(50% - min(46%, rem(620)));
+  width: rem(120);
+  height: rem(55);
+  background-image: url(../images/ornaments/fish-sea-bream-right.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq {
+    width: rem(301);
+    height: rem(138);
+    top: rem(-70);
+  }
+}
+
+//gallery
+.treatment.gallery::after {
   @include mq {
     content: "";
     position: absolute;
-    z-index: zi(just-below) ;
-    top: rem(-70);
-    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
-    left: calc(50% - min(48%, rem(620)));
-    width: rem(301);
-    height: rem(138);
-    background-image: url(../images/ornaments/fish-sea-bream-right.svg);
+    background-image: url(../images/ornaments/fish-sea-bream-left.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    top: rem(-40);
+    right: calc(50% - min(48%, rem(640)));
+    width: rem(301);
+    height: rem(138);
   }
 }
