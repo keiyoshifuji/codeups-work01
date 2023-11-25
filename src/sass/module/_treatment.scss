@@ -122,3 +122,20 @@
     height: rem(138);
   }
 }
+
+//under pages
+.treatment.top-page::after {
+  @include mq {
+    content: "";
+    position: absolute;
+    top: rem(-70);
+    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
+    left: calc(50% - min(48%, rem(620)));
+    width: rem(301);
+    height: rem(138);
+    background-image: url(../images/ornaments/fish-sea-bream-right.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

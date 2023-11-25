@@ -3,21 +3,21 @@
 .card-campaign {
   display: block;
   width: 100%;
+  height: 100%;
+  padding-bottom: rem(20);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
   background: $white;
 
-  padding-bottom: rem(20);
   @include mq {
     padding-bottom: rem(37);
   }
 }
 .card-campaign__link {
   display: block;
-  width: 100%;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 // hover
 .card-campaign__link:hover {
@@ -47,20 +47,12 @@
   object-fit: cover;
   object-position: 50% 50%;
 }
-.card-campaign__body {
-  padding-bottom: rem(20);
-  padding-left: rem(16);
-  padding-right: rem(16);
-  padding-top: rem(16);
-  @include mq {
-    padding-bottom: rem(37);
-    padding-top: rem(24);
-  }
-}
+
 .card-campaign__meta {
+  margin-top: rem(16);
   padding-left: rem(16);
   padding-right: rem(16);
-  margin-top: rem(16);
+
   @include mq {
     margin-top: rem(24);
   }
@@ -74,28 +66,29 @@
   font-size: rem(16);
 }
 .card-campaign__content {
-  text-align: center;
-  margin-top: auto;
   padding-left: rem(16);
   padding-right: rem(16);
+  text-align: center;
 }
 .card-campaign__text {
   margin-top: rem(9);
   color: $c-green01;
   font-size: rem(14);
   line-height: calc(24 / 14);
+
   @include mq {
     margin-top: rem(16);
+
     // margin-right: 1em; //デザイン上はあるが中央揃えでOK。
     font-size: rem(16);
   }
 }
 .card-campaign__prices {
   margin-top: rem(6);
+
   @include mq {
     margin-top: rem(4);
-    margin-left: rem(19);
-    text-align: left;
+    text-align: center;
   }
 }
 .card-campaign__price-before,
@@ -108,6 +101,7 @@
   position: relative;
   color: $c-green01;
   font-size: rem(20);
+
   @include mq {
     font-size: rem(24);
   }
@@ -128,8 +122,75 @@
   color: $c-green-accent;
   font-size: rem(32);
   line-height: 1;
+
   @include mq {
     margin-left: rem(22);
     font-size: rem(40);
+  }
+}
+.card-campaign__main-text {
+  text-align: left;
+}
+// Modifier
+.card-campaign--large {
+  & .card-campaign__body {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  & .card-campaign__meta {
+    @include mq {
+      padding-left: rem(24);
+      padding-right: rem(24);
+    }
+  }
+  & .card-campaign__title {
+    @include mq {
+      font-size: rem(24);
+    }
+  }
+  & .card-campaign__content {
+    @include mq {
+      padding-left: rem(24);
+      padding-right: rem(24);
+    }
+  }
+
+  & .card-campaign__main-text {
+    margin-top: rem(8);
+    color: $c-green01;
+    font-size: rem(15);
+    @include mq {
+      margin-top: rem(24);
+      font-size: rem(16);
+    }
+  }
+  & .card-campaign__contact {
+    margin-top: auto;
+  }
+  & .card-campaign__term {
+    margin-top: rem(8);
+    color: $c-green-accent;
+    font-size: rem(16);
+    line-height: calc(18 / 14);
+    font-family: $third-font-family;
+    text-align: center;
+    font-weight: $bold;
+    @include mq {
+      margin-top: rem(32);
+    }
+  }
+  & .card-campaign__contact-text {
+    margin-top: rem(6);
+    color: $c-green-accent;
+    font-size: rem(14);
+    line-height: calc(18 / 14);
+    text-align: center;
+  }
+  & .card-campaign__button {
+    margin-top: rem(16);
+    text-align: center;
   }
 }

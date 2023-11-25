@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.categories {
+}
+.categories__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: rem(16) rem(2);
+
+  @include mq {
+    justify-content: flex-start;
+    gap: rem(16) rem(32);
+  }
+}
+.categories__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: rem(162);
+  height: rem(34);
+  border: 1px solid $c-green-accent;
+  color: $c-green-accent;
+  font-size: rem(14);
+  font-family: $second-font-family;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+.categories__item.is-active {
+  background-color: $c-green-accent;
+  color: $white;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

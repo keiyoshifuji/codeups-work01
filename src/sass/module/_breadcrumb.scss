@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.breadcrumb {
+  margin-top: rem(8);
+}
+.breadcrumb__text {
+  font-size: rem(14);
+  line-height: 1;
+  color: $c-green01;
+  font-family: $second-font-family;
+}

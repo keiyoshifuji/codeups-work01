@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.top-page {
+  margin-top: rem(52);
+  @include mq {
+    margin-top: rem(150);
+  }
+}
