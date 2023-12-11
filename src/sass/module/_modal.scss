@@ -3,6 +3,7 @@
 .modal {
   visibility: hidden;
   opacity: 0;
+  height: 0;
 }
 
 @include mq {
