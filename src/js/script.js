@@ -117,5 +117,24 @@ jQuery(function ($) {
     $(this).addClass("is-active");
   });
 
+  // * About us Modal
+  const open = $(".js-modal-open"),
+    close = $(".js-modal__close"),
+    modal = $(".js-modal");
+
+  //開くボタンをクリックしたらモーダルを表示する
+  open.on("click", function () {
+    let imageSrc = $(this).children("img").attr("src");
+    let imageAlt = $(this).children("img").attr("alt");
+    $(".js-modal__img").attr("src", imageSrc);
+    $(".js-modal__img").attr("alt", imageAlt);
+    modal.addClass("is-open");
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.add(modal).on("click", function () {
+    modal.removeClass("is-open");
+  });
+
   // * END
 });

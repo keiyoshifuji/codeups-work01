@@ -226,19 +226,48 @@
             <h2 class="section-title__ja">フォト</h2>
           </div>
 
-          <div class="gallery__items ">
-            <img src="./assets/images/gallery/gallery01.webp" alt="サンゴ礁と黄色い熱帯魚" />
-            <img
-              src="./assets/images/gallery/gallery02.webp"
-              alt="透き通った海の砂浜近くに小型ボートが停泊している様子"
-            />
-            <img
-              src="./assets/images/gallery/gallery03.webp"
-              alt="白と黄色と黒のストライプ柄の熱帯魚が2匹で泳いでいる様子"
-            />
-            <img src="./assets/images/gallery/gallery04.webp" alt="全身黄色の熱帯魚が右側に向かって泳ぐ様子" />
-            <img src="./assets/images/gallery/gallery05.webp" alt="透き通った海を泳ぐ小さなピンク色の魚の群れ" />
-            <img src="./assets/images/gallery/gallery06.webp" alt="サンゴ礁の海を緋色の小魚の群れが泳いでいる様子" />
+          <!-- photos -->
+          <div class="gallery__blocks">
+            <div class="gallery__block">
+              <figure class="gallery__photo js-modal-open">
+                <img src="./assets/images/gallery/gallery01.webp" alt="サンゴ礁と黄色い熱帯魚" />
+              </figure>
+              <figure class="gallery__photo js-modal-open">
+                <img
+                  src="./assets/images/gallery/gallery02.webp"
+                  alt="透き通った海の砂浜近くに小型ボートが停泊している様子"
+                />
+              </figure>
+              <figure class="gallery__photo js-modal-open">
+                <img
+                  src="./assets/images/gallery/gallery03.webp"
+                  alt="白と黄色と黒のストライプ柄の熱帯魚が2匹で泳いでいる様子"
+                />
+              </figure>
+            </div>
+            <div class="gallery__block">
+              <figure class="gallery__photo js-modal-open">
+                <img src="./assets/images/gallery/gallery04.webp" alt="全身黄色の熱帯魚が右側に向かって泳ぐ様子" />
+              </figure>
+              <figure class="gallery__photo js-modal-open">
+                <img src="./assets/images/gallery/gallery05.webp" alt="透き通った海を泳ぐ小さなピンク色の魚の群れ" />
+              </figure>
+              <figure class="gallery__photo js-modal-open">
+                <img
+                  src="./assets/images/gallery/gallery06.webp"
+                  alt="サンゴ礁の海を緋色の小魚の群れが泳いでいる様子"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <div class="gallery__modal modal js-modal js-modal__close">
+            <div class="modal__body">
+              <figure class="modal__photo">
+                <img class="modal__img js-modal__img" />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
