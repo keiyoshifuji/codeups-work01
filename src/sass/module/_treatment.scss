@@ -127,7 +127,6 @@
 .treatment.page-top::after {
   content: "";
   position: absolute;
-  z-index: zi(just-below);
   top: rem(-24);
   // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
   left: calc(50% - min(46%, rem(620)));
@@ -138,6 +137,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   @include mq {
+    z-index: zi(just-below);
     width: rem(301);
     height: rem(138);
     top: rem(-70);
