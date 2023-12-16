@@ -105,22 +105,16 @@ jQuery(function ($) {
   //   return false;
   // });
 
-  // * カテゴリータグをactiveにする
-  $(".js-category-item").click(function () {
-    $(".js-category-item").removeClass("is-active");
-    $(this).addClass("is-active");
-  });
-
   // * ページネーションをactiveにする
   $(".js-pagination-number").click(function () {
     $(".js-pagination-number").removeClass("is-active");
     $(this).addClass("is-active");
   });
 
-  // * About us Modal
-  const open = $(".js-modal-open"),
-    close = $(".js-modal__close"),
-    modal = $(".js-modal");
+  // * About us モーダル
+  const open = $(".js-modal-open");
+  const close = $(".js-modal__close");
+  const modal = $(".js-modal");
 
   //開くボタンをクリックしたらモーダルを表示する
   open.on("click", function () {
@@ -134,6 +128,18 @@ jQuery(function ($) {
   //閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
+  });
+
+  // * カテゴリータグをactiveにする & Information記事を切り替える
+  const categoryButton = $(".js-category-button");
+  const categoryContent = $(".js-category-content");
+  categoryButton.on("click", function () {
+    let index = categoryButton.index(this);
+
+    categoryButton.removeClass("is-active");
+    $(this).addClass("is-active");
+    categoryContent.removeClass("is-active");
+    categoryContent.eq(index).addClass("is-active");
   });
 
   // * END

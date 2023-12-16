@@ -4,6 +4,8 @@
 // * y0 : pixel value under view width is 1440px const
 // * d : a side distance from 1440px, cf) view width = 1440px + 2d
 // * y = y0 + d = y0 + 50vw - 720px
+// * right: max(rem(25), calc(rem(83) + 50vw - rem(720)));
+// * left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
 
 // * HIROKIさん推奨手法
 // * right: calc(50% - min(48%, XXXpx))
@@ -22,7 +24,6 @@
   @include mq {
     content: "";
     position: absolute;
-    // right: max(rem(25), calc(rem(83) + 50vw - rem(720)));
     right: calc(50% - min(48%, rem(640)));
     bottom: 0;
     transform: translateY(50%);
@@ -41,7 +42,6 @@
     content: "";
     position: absolute;
     top: rem(24);
-    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
     left: calc(50% - min(48%, rem(620)));
     width: rem(437);
     height: rem(201);
@@ -58,7 +58,6 @@
     content: "";
     position: absolute;
     top: rem(-120);
-    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
     left: calc(50% - min(48%, rem(620)));
     width: rem(301);
     height: rem(138);
@@ -72,7 +71,6 @@
   @include mq {
     content: "";
     position: absolute;
-    // right: max(rem(25), calc(rem(180) + 50vw - rem(720)));
     right: calc(50% - min(48%, rem(540)));
     bottom: rem(-64);
     width: rem(71);
@@ -90,7 +88,6 @@
     content: "";
     position: absolute;
     bottom: rem(60);
-    // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
     left: calc(50% - min(48%, rem(620)));
     width: rem(437);
     height: rem(200);
@@ -106,7 +103,6 @@
   content: "";
   position: absolute;
   top: rem(-26);
-  // right: max(rem(15), calc(rem(0) + 50vw - rem(375)));
   right: calc(50% - min(46%, rem(540)));
   width: rem(109);
   height: rem(50);
@@ -114,9 +110,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   @include mq {
     top: rem(-40);
-    // right: max(rem(25), calc(rem(50) + 50vw - rem(720)));
     right: calc(50% - min(48%, rem(670)));
     width: rem(301);
     height: rem(138);
@@ -128,18 +124,24 @@
   content: "";
   position: absolute;
   top: rem(-24);
-  // left: max(rem(25), calc(rem(100) + 50vw - rem(720)));
   left: calc(50% - min(46%, rem(620)));
+  z-index: zi(just-below);
   width: rem(120);
   height: rem(55);
   background-image: url(../images/ornaments/fish-sea-bream-right.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   @include mq {
-    z-index: zi(just-below);
+    top: rem(-70);
     width: rem(301);
     height: rem(138);
+  }
+}
+.treatment.page-top.page-top--long::after {
+  top: rem(-93);
+  @include mq {
     top: rem(-70);
   }
 }
@@ -149,13 +151,13 @@
   @include mq {
     content: "";
     position: absolute;
-    background-image: url(../images/ornaments/fish-sea-bream-left.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: rem(-40);
     right: calc(50% - min(48%, rem(640)));
     width: rem(301);
     height: rem(138);
+    background-image: url(../images/ornaments/fish-sea-bream-left.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

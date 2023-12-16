@@ -6,3 +6,10 @@
     margin-top: rem(150);
   }
 }
+
+.page-top.page-top--long {
+  margin-top: rem(121);
+  @include mq {
+    margin-top: rem(150);
+  }
+}
