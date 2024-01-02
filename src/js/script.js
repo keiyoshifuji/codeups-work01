@@ -142,5 +142,11 @@ jQuery(function ($) {
     categoryContent.eq(index).addClass("is-active");
   });
 
+  // * アーカイブ年をクリックしたときにアコーディオンする
+  const archiveButton = $(".js-archive-button");
+  archiveButton.on("click", function () {
+    $(this).toggleClass("is-active");
+  });
+
   // * END
 });

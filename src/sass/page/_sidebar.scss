@@ -9,8 +9,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-left: rem(8) $cGreenAccent solid;
   padding-left: rem(24);
+  border-left: rem(8) $cGreenAccent solid;
 }
 
 .sidebar__title-icon {
@@ -22,12 +22,12 @@
 }
 
 .sidebar__title-text {
-  font-size: rem(24);
-  color: $cGreen01;
-  font-weight: $normal;
-  padding-top: rem(10);
   padding-bottom: rem(4);
   padding-left: rem(8);
+  padding-top: rem(10);
+  color: $cGreen01;
+  font-weight: $normal;
+  font-size: rem(24);
 }
 
 // * 人気記事
@@ -62,3 +62,42 @@
 }
 
 // * アーカイブ
+.sidebar__archive-lists {
+  margin-top: rem(24);
+  color: $cGreenAccent;
+  font-size: rem(24);
+  font-family: $second-font-family;
+}
+
+.sidebar__archive-list {
+  margin-top: rem(4);
+}
+.sidebar__archive-year {
+  cursor: pointer;
+}
+
+.sidebar__archive-year,
+.sidebar__archive-month {
+  padding-left: rem(32);
+  background-image: url("../images/common/list-polygon.png");
+  background-position: center left rem(4);
+  background-size: rem(20);
+  background-repeat: no-repeat;
+}
+.sidebar__archive-year.is-active {
+  background-image: url("../images/common/list-polygon-open.png");
+  background-position: top 80% left;
+  background-size: rem(24);
+}
+
+.sidebar__archive-months {
+  display: none;
+  padding-left: rem(24);
+}
+.is-active ~ .sidebar__archive-months {
+  display: block;
+}
+
+.sidebar__archive-month {
+  margin-top: rem(4);
+}

@@ -5,6 +5,12 @@
   width: 100%;
   box-shadow: rem(2) rem(2) rem(10) 0 rgba($black, 0.25);
   background: $white;
+
+  @include mq {
+    &:hover .card-blog__image img {
+      transform: scale(1.35);
+    }
+  }
 }
 .card-blog__link {
   display: block;
@@ -21,6 +27,7 @@
 .card-blog__image {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 .card-blog__image::before {
   content: "";
@@ -38,6 +45,9 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  @include mq {
+    transition: transform 0.5s;
+  }
 }
 
 .card-blog__body {
@@ -61,3 +71,5 @@
   color: $cGreen01;
   font-size: rem(16);
 }
+
+// モディファイヤー
