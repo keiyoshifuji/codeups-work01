@@ -7,11 +7,9 @@
   margin-left: auto;
   @include mq {
     max-width: none;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
-.page-voice__pagination{
+.page-voice__pagination {
   display: flex;
   justify-content: center;
   margin-top: rem(80);
