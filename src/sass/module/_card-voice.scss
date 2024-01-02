@@ -47,7 +47,7 @@
 }
 .card-voice__information {
   flex-shrink: 0;
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(12);
   line-height: 1;
   font-family: $second-font-family;
@@ -61,8 +61,8 @@
 .card-voice__title {
   margin-top: rem(7);
   padding-bottom: rem(2);
-  border-bottom: rem(1) solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: rem(1) solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $medium;
   font-size: rem(16);
   line-height: calc(23 / 16);

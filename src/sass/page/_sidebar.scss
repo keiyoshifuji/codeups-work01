@@ -1,0 +1,64 @@
+@use "global" as *;
+
+// * 共通部分
+.sidebar__article:not(:first-child) {
+  margin-top: rem(80);
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: rem(8) $cGreenAccent solid;
+  padding-left: rem(24);
+}
+
+.sidebar__title-icon {
+  width: rem(50);
+  height: rem(50);
+  & img {
+    filter: brightness(0);
+  }
+}
+
+.sidebar__title-text {
+  font-size: rem(24);
+  color: $cGreen01;
+  font-weight: $normal;
+  padding-top: rem(10);
+  padding-bottom: rem(4);
+  padding-left: rem(8);
+}
+
+// * 人気記事
+.sidebar__popular-article-cards {
+  margin-top: rem(24);
+}
+
+.sidebar__popular-article-card:not(:first-child) {
+  margin-top: rem(24);
+}
+
+// * 口コミ
+.sidebar__review-cards {
+  margin-top: rem(24);
+}
+
+.sidebar__button-review {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+// * キャンペーン
+.sidebar__campaign-cards {
+  margin-top: rem(24);
+}
+.sidebar__campaign-card:not(:first-child) {
+  margin-top: rem(40);
+}
+.sidebar__button-campaign {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+// * アーカイブ

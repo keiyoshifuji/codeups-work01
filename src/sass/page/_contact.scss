@@ -22,7 +22,7 @@
 .contact__logo {
   width: 100%;
   padding-bottom: rem(6);
-  border-bottom: rem(1) solid $c-green-accent;
+  border-bottom: rem(1) solid $cGreenAccent;
   @include mq {
     padding-bottom: rem(6);
   }
@@ -80,13 +80,13 @@
     width: calc(50% - rem(32) * 2);
     margin: 0 rem(32);
     padding-top: rem(26);
-    border-left: rem(1) solid $c-green-accent;
+    border-left: rem(1) solid $cGreenAccent;
   }
 }
 
 .contact__text {
   margin-top: rem(6);
-  color: $c-green-accent;
+  color: $cGreenAccent;
   font-size: rem(14);
   line-height: calc(18 / 14);
   text-align: center;

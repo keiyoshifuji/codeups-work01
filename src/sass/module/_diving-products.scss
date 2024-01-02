@@ -5,8 +5,8 @@
 }
 .diving-products__category {
   width: 100%;
-  border-bottom: rem(2) solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: rem(2) solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $bold;
   font-size: rem(16);
 }
@@ -25,7 +25,7 @@
 }
 .diving-products__name {
   width: 80%;
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(14);
   text-align: left;
   @include mq {
@@ -34,7 +34,7 @@
 }
 .diving-products__price {
   width: 20%;
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(14);
   // font-family: $second-font-family;
   text-align: right;

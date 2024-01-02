@@ -7,7 +7,7 @@
   left: 0;
   z-index: zi(header);
   height: rem(80);
-  background-color: rgba($c-green01, 0.68);
+  background-color: rgba($cGreen01, 0.68);
   @include mq {
     height: rem(90);
   }
@@ -66,12 +66,12 @@
   height: 100dvh;
   padding-top: rem(80);
   overflow-y: auto;
-  background-color: $c-green-accent;
+  background-color: $cGreenAccent;
 }
 .header__drawer-mask {
   width: 100%;
   height: rem(80);
-  background-color: $c-green-accent;
+  background-color: $cGreenAccent;
   position: fixed;
   top: 0;
   right: 0;

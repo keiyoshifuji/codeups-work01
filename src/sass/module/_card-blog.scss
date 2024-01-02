@@ -44,13 +44,13 @@
   margin-top: rem(20);
 }
 .card-blog__date {
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(12);
 }
 .card-blog__title {
   margin-top: rem(1);
-  border-bottom: rem(2) solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: rem(2) solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $normal;
   font-size: rem(16);
 }
@@ -58,6 +58,6 @@
   margin-top: rem(18);
 }
 .card-blog__text {
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(16);
 }

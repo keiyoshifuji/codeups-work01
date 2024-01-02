@@ -41,7 +41,7 @@
 }
 .page-about-us__text {
   margin-top: rem(40);
-  color: $c-green01;
+  color: $cGreen01;
 
   @include mq {
     flex-shrink: 0;

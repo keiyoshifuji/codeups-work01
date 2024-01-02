@@ -4,7 +4,7 @@
   text-align: center;
 }
 .section-title__en {
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(32);
   line-height: 1.25;
   @include mq {
@@ -13,13 +13,13 @@
   }
 }
 .section-title__en::first-letter {
-  color: $c-green-accent;
+  color: $cGreenAccent;
   text-transform: uppercase;
 }
 .section-title__ja {
   display: inline-block;
   margin-top: rem(6);
-  color: $c-green-accent;
+  color: $cGreenAccent;
   font-weight: $normal;
   font-size: rem(12);
   @include mq {
@@ -36,7 +36,7 @@
 }
 .section-title.section-title--white-pc .section-title__en::first-letter {
   @include mq {
-    color: $c-green02;
+    color: $cGreen02;
   }
 }
 

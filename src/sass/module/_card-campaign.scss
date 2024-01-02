@@ -60,8 +60,8 @@
 .card-campaign__title {
   margin-top: rem(7);
   padding-bottom: rem(4);
-  border-bottom: rem(2) solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: rem(2) solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $medium;
   font-size: rem(16);
 }
@@ -72,7 +72,7 @@
 }
 .card-campaign__text {
   margin-top: rem(9);
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(14);
   line-height: calc(24 / 14);
 
@@ -99,7 +99,7 @@
 }
 .card-campaign__price-before {
   position: relative;
-  color: $c-green01;
+  color: $cGreen01;
   font-size: rem(20);
 
   @include mq {
@@ -115,11 +115,11 @@
   transform: translateY(-50%);
   width: 100%;
   height: rem(3);
-  background-color: $c-red;
+  background-color: $cRed;
 }
 .card-campaign__price-after {
   margin-left: rem(14);
-  color: $c-green-accent;
+  color: $cGreenAccent;
   font-size: rem(32);
   line-height: 1;
 
@@ -131,8 +131,9 @@
 .card-campaign__main-text {
   text-align: left;
 }
-// Modifier
-.card-campaign--large {
+
+// Modifier--large
+.card-campaign.card-campaign--large {
   & .card-campaign__body {
     display: block;
     display: flex;
@@ -160,7 +161,7 @@
 
   & .card-campaign__main-text {
     margin-top: rem(8);
-    color: $c-green01;
+    color: $cGreen01;
     font-size: rem(15);
     @include mq {
       margin-top: rem(24);
@@ -172,7 +173,7 @@
   }
   & .card-campaign__term {
     margin-top: rem(8);
-    color: $c-green-accent;
+    color: $cGreenAccent;
     font-size: rem(16);
     line-height: calc(18 / 14);
     font-family: $third-font-family;
@@ -184,7 +185,7 @@
   }
   & .card-campaign__contact-text {
     margin-top: rem(6);
-    color: $c-green-accent;
+    color: $cGreenAccent;
     font-size: rem(14);
     line-height: calc(18 / 14);
     text-align: center;
@@ -192,5 +193,35 @@
   & .card-campaign__button {
     margin-top: rem(16);
     text-align: center;
+  }
+}
+
+// Modifier--sidebar
+.card-campaign.card-campaign--sidebar {
+  padding-bottom: rem(24);
+  & .card-campaign__body {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  & .card-campaign__meta {
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
+  & .card-campaign__title {
+    text-align: center;
+    margin-top: initial;
+  }
+  & .card-campaign__text {
+    font-size: rem(14);
+  }
+  & .card-campaign__price-before {
+    font-size: rem(20);
+  }
+  & .card-campaign__price-after {
+    font-size: rem(32);
+    margin-left: rem(14);
   }
 }

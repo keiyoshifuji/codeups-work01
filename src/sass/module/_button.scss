@@ -12,8 +12,8 @@
   margin-right: rem(5); //:before用調整
   margin-bottom: rem(5); //:before用調整
   padding: rem(15) rem(39);
-  border: rem(1) solid $c-green-accent;
-  background-color: $c-green-accent;
+  border: rem(1) solid $cGreenAccent;
+  background-color: $cGreenAccent;
   color: $white;
   font-size: rem(14);
   line-height: calc(22 / 14);
@@ -36,8 +36,8 @@
   width: 100%;
   height: 100%;
   // 親要素と高さ幅を完全一致させるためoutlineを採用
-  // border: rem(1) solid $c-green-accent;
-  outline: rem(1) solid $c-green-accent;
+  // border: rem(1) solid $cGreenAccent;
+  outline: rem(1) solid $cGreenAccent;
 }
 
 // * background on hover
@@ -64,12 +64,12 @@
 // * hover
 .button:hover {
   @include mq {
-    color: $c-green-accent;
+    color: $cGreenAccent;
   }
 }
 .button:hover .button__arrow {
   @include mq {
-    background-color: $c-green-accent;
+    background-color: $cGreenAccent;
   }
 }
 .button:hover::after {

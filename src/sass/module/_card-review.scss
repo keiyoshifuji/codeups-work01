@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.card-review {
+}
+
+.card-review__image {
+  aspect-ratio: 294 / 218;
+  width: 100%;
+  max-width: rem(294);
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.card-review__tag {
+  font-size: rem(12);
+  color: $cGreen01;
+  margin-top: rem(16);
+}
+
+.card-review__title {
+  font-size: rem(24);
+  color: $cGreen01;
+  font-weight: $medium;
+  margin-top: rem(8);
+}

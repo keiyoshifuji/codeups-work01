@@ -21,7 +21,7 @@
   padding-left: rem(24);
   padding-right: rem(24);
   padding-top: rem(24);
-  border: 1px solid $c-green-accent;
+  border: 1px solid $cGreenAccent;
   background-color: $white;
 }
 .page-information__container.is-active {
@@ -44,8 +44,8 @@
 }
 
 .page-information__title {
-  border-bottom: 1px solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: 1px solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $bold;
   font-size: rem(24);
 

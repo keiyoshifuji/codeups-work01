@@ -3,7 +3,7 @@
 .information {
   padding-bottom: rem(80);
   padding-top: rem(80);
-  background-color: $c-green02;
+  background-color: $cGreen02;
   @include mq {
     padding-bottom: rem(100);
     padding-top: rem(100);
@@ -57,8 +57,8 @@
 }
 .information__sub-title {
   margin-top: rem(27);
-  border-bottom: rem(2) solid $c-green-accent;
-  color: $c-green01;
+  border-bottom: rem(2) solid $cGreenAccent;
+  color: $cGreen01;
   font-weight: $bold;
   font-size: rem(20);
   line-height: 1.2;
@@ -71,7 +71,7 @@
 }
 .information__text {
   margin-top: rem(6);
-  color: $c-green01;
+  color: $cGreen01;
   font-family: $second-font-family;
 }
 .information__button {

@@ -74,7 +74,7 @@
   }
 }
 .about-us__heading {
-  color: $c-green-accent;
+  color: $cGreenAccent;
   font-size: rem(40);
   line-height: 1;
   @include mq {
@@ -93,7 +93,7 @@
   }
 }
 .about-us__text {
-  color: $c-green01;
+  color: $cGreen01;
   @include mq {
     color: $white;
   }

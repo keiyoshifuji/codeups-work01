@@ -13,8 +13,8 @@
   width: 100%;
   height: rem(60);
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
-  background-color: $c-green02;
-  color: $c-green-accent;
+  background-color: $cGreen02;
+  color: $cGreenAccent;
   font-size: rem(14);
   font-family: $second-font-family;
   text-align: center;
@@ -29,7 +29,7 @@
   }
 }
 .categories-with-whale__item.is-active {
-  background-color: $c-green-accent;
+  background-color: $cGreenAccent;
   color: $white;
   &:hover {
     opacity: 0.95;

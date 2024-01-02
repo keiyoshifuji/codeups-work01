@@ -12,9 +12,9 @@
   align-items: center;
   width: rem(38);
   height: rem(38);
-  border: 1px solid $c-green-accent;
+  border: 1px solid $cGreenAccent;
   background-color: $white;
-  color: $c-green-accent;
+  color: $cGreenAccent;
   font-weight: $bold;
   font-size: rem(16);
   line-height: 1;
@@ -38,6 +38,6 @@
   }
 }
 .pagination__number.is-active {
-  background-color: $c-green-accent;
+  background-color: $cGreenAccent;
   color: $white;
 }
