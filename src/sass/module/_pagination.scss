@@ -19,12 +19,23 @@
   font-size: rem(16);
   line-height: 1;
   font-family: $second-font-family;
-
+}
+.pagination__number {
   &:hover {
     opacity: 0.8;
     cursor: pointer;
   }
 }
+.pagination__prev,
+.pagination__next {
+  &:hover {
+    border: 1px solid $white;
+    background-color: $cGreenAccent;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
 .pagination__prev {
   margin-right: rem(28);
 }
@@ -33,6 +44,7 @@
 }
 .pagination__number:nth-of-type(n + 6) {
   display: none;
+
   @include mq {
     display: flex;
   }
@@ -40,4 +52,14 @@
 .pagination__number.is-active {
   background-color: $cGreenAccent;
   color: $white;
+}
+
+// Modifier Blog-single
+.pagination.pagination--blog-single {
+  & .pagination__prev {
+    margin-right: rem(35);
+  }
+  & .pagination__next {
+    margin-left: rem(35);
+  }
 }
