@@ -40,6 +40,9 @@
 .sub-view__text::first-letter {
   text-transform: uppercase;
 }
+.sub-view__text.sub-view__text--uppercase {
+  text-transform: uppercase;
+}
 .sub-view__image,
 .sub-view__image img {
   width: 100%;

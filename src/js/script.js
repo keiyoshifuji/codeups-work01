@@ -116,7 +116,7 @@ jQuery(function ($) {
   const close = $(".js-modal__close");
   const modal = $(".js-modal");
 
-  //開くボタンをクリックしたらモーダルを表示する
+  // 開くボタンをクリックしたらモーダルを表示する
   open.on("click", function () {
     let imageSrc = $(this).children("img").attr("src");
     let imageAlt = $(this).children("img").attr("alt");
@@ -125,7 +125,7 @@ jQuery(function ($) {
     modal.addClass("is-open");
   });
 
-  //閉じるボタンをクリックしたらモーダルを閉じる
+  // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
   });
@@ -146,6 +146,16 @@ jQuery(function ($) {
   const archiveButton = $(".js-archive-button");
   archiveButton.on("click", function () {
     $(this).toggleClass("is-active");
+  });
+
+  // * FAQのQをクリックしたときにアコーディオンする
+  const faqQuestion = $(".page-faq__question");
+  const faqAnswer = $(".page-faq__answer");
+  faqQuestion.addClass("is-open");
+  faqAnswer.css("display", "block");
+  faqQuestion.on("click", function () {
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
   });
 
   // * END
