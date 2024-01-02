@@ -8,10 +8,18 @@
   }
 }
 
-.page-blog__pagination {
+.page-blog__pagination,
+.page-blog__pagination-single {
   display: flex;
   justify-content: center;
   margin-top: rem(80);
+}
+.page-blog__pagination-single {
+  margin-top: rem(40);
+
+  @include mq {
+    margin-top: rem(80);
+  }
 }
 
 .page-blog__left-side {
@@ -34,12 +42,17 @@
 
     margin-inline: initial;
   }
-
   margin-inline: auto;
 }
 
 // * 個別ページ
 .page-blog__article {
+  width: 100%;
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq {
+    max-width: none;
+  }
 }
 
 .page-blog__date {
@@ -53,6 +66,7 @@
   color: $cGreen01;
   font-weight: $medium;
   font-size: rem(24);
+
   @include mq {
     font-size: rem(32);
   }
@@ -61,6 +75,7 @@
 .page-blog__image {
   aspect-ratio: 345 / 231;
   margin-top: rem(24);
+
   @include mq {
     margin-top: rem(40);
   }
@@ -74,6 +89,7 @@
 
 .page-blog__text {
   margin-top: rem(24);
+
   @include mq {
     margin-top: rem(40);
   }
@@ -81,6 +97,7 @@
 
 .page-blog__lists {
   margin-top: rem(24);
+
   @include mq {
     margin-top: rem(40);
   }

@@ -28,6 +28,7 @@
 }
 .pagination__prev,
 .pagination__next {
+  transition: border 0.2s, background-color 0.2s, color 0.2s;
   &:hover {
     border: 1px solid $white;
     background-color: $cGreenAccent;
