@@ -15,9 +15,9 @@
     align-items: flex-start;
   }
 }
-.form__item:first-child {
-  padding-top: initial;
-}
+// .form__item:first-child {
+//   padding-top: initial;
+// }
 .form__item dt {
   font-weight: $bold;
 
@@ -85,7 +85,34 @@
   margin-top: rem(40);
 }
 
-// ! === Form Style Start ===
+// ! === Form Error  ===
+.form__error {
+  display: none;
+  margin-inline: auto;
+  width: 100%;
+  color: $cRed;
+  font-size: rem(14);
+  justify-content: center;
+  align-items: center;
+}
+.form.is-error {
+  & .form__error {
+    display: flex;
+  }
+  & input:required,
+  & select:required,
+  & textarea:required {
+    border: 1px solid $cRed;
+    background: rgba(201, 72, 0, 0.2);
+  }
+  & input::placeholder,
+  & select::placeholder,
+  & textarea::placeholder {
+    color: $white;
+  }
+}
+
+// ! === Form Common Style ===
 /* === デフォルト色の指定 === */
 $border-cr-default: $cGreenAccent; //デフォルト時のボーダーの色
 $border-cr: $cGreenAccent; //inputのhover or focus時の色
@@ -353,4 +380,10 @@ textarea {
   width: 100%;
   max-width: rem(600);
   height: $textarea-height;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: $cGreen02;
 }
