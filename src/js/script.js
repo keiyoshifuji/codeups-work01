@@ -4,6 +4,7 @@ jQuery(function ($) {
   // * hamburger and drawer
   $(".js-hamburger , .js-drawer-menu").click(function () {
     $(".js-hamburger").toggleClass("is-active"); //.is-activeクラスをtoggleする
+    $("body").toggleClass("hamburger__body-scroll"); //overflow:hiddenをbodyにtoggleする
     $(".js-drawer-menu").fadeToggle(); //ドロワー（マスク）をfadeIn/Outする
   });
 

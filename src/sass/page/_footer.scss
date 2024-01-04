@@ -18,6 +18,12 @@
     margin-top: rem(120);
   }
 }
+.footer.footer--404 {
+  margin-top: initial;
+  @include mq {
+    margin-top: initial;
+  }
+}
 .footer__body {
   max-width: rem(600);
   margin-right: auto;

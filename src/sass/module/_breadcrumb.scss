@@ -4,8 +4,21 @@
   margin-top: rem(8);
 }
 .breadcrumb__text {
+  color: $cGreen01;
   font-size: rem(14);
   line-height: 1;
-  color: $cGreen01;
   font-family: $second-font-family;
+  cursor: pointer;
+}
+
+.breadcrumb.breadcrumb--404 {
+  margin-top: initial;
+  padding-top: rem(88);
+  background-color: $cGreenAccent;
+  @include mq {
+    padding-top: rem(98);
+  }
+  & .breadcrumb__text {
+    color: $white;
+  }
 }

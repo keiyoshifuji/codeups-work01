@@ -7,10 +7,9 @@
   gap: rem(8);
   position: relative;
   z-index: 2;
-  // width: 14.428571em;
   min-width: rem(202);
-  margin-right: rem(5); //:before用調整
-  margin-bottom: rem(5); //:before用調整
+  margin-right: rem(5);
+  margin-bottom: rem(5);
   padding: rem(15) rem(39);
   border: rem(1) solid $cGreenAccent;
   background-color: $cGreenAccent;
@@ -19,7 +18,7 @@
   line-height: calc(22 / 14);
   transition: color 0.3s;
 }
-.button p{
+.button p {
   z-index: 2;
 }
 .button p:first-letter {
@@ -75,5 +74,35 @@
 .button:hover::after {
   @include mq {
     transform: scale(1, 1);
+  }
+}
+
+// Modifier
+.button.button--white {
+  border: rem(1) solid $white;
+  background-color: $white;
+  color: $cGreenAccent;
+
+  &:before {
+    outline: rem(1) solid $white;
+  }
+
+  &::after {
+    background-color: $cGreenAccent;
+  }
+  & .button__arrow {
+    background-color: $cGreenAccent;
+  }
+
+  // hover
+  &:hover {
+    @include mq {
+      color: $white;
+    }
+  }
+  &:hover .button__arrow {
+    @include mq {
+      background-color: $white;
+    }
   }
 }
