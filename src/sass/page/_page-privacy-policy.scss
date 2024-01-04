@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.page-privacy-policy__body {
+  max-width: rem(600);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq {
+    max-width: rem(800);
+  }
+}
+
+.page-privacy-policy__title {
+  color: $cGreen01;
+  font-weight: $medium;
+  font-size: rem(24);
+
+  @include mq {
+    font-size: rem(32);
+  }
+}
+
+.page-privacy-policy__text {
+  margin-top: rem(40);
+  color: $cGreen01;
+  line-height: 2;
+
+  & > p:not(:first-child),
+  & > ul:first-of-type {
+    margin-top: 2em;
+  }
+  & li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin-left: 1.4em;
+  }
+}

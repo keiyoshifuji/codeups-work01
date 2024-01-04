@@ -17,6 +17,7 @@
   height: inherit;
 }
 .sub-view__heading {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +43,12 @@
 }
 .sub-view__text.sub-view__text--uppercase {
   text-transform: uppercase;
+}
+.sub-view__text.sub-view__text--capitalize {
+  text-transform: capitalize;
+  & span {
+    text-transform: lowercase;
+  }
 }
 .sub-view__image,
 .sub-view__image img {
