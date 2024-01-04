@@ -12,6 +12,12 @@
     padding-bottom: rem(80);
   }
 }
+.footer.footer--thanks {
+  margin-top: rem(144);
+  @include mq {
+    margin-top: rem(120);
+  }
+}
 .footer__body {
   max-width: rem(600);
   margin-right: auto;

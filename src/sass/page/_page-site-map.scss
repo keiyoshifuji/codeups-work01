@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.page-site-map__body {
+  max-width: rem(600);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq {
+    max-width: none;
+  }
+}
