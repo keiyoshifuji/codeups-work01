@@ -151,7 +151,7 @@
   @include mq {
     content: "";
     position: absolute;
-    top: rem(-40);
+    top: rem(-80);
     right: calc(50% - min(48%, rem(640)));
     width: rem(301);
     height: rem(138);

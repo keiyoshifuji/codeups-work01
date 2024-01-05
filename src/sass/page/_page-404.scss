@@ -11,9 +11,9 @@
   background-color: $cGreenAccent;
   text-align: center;
   @include mq {
-    padding-bottom: rem(153);
-    padding-top: rem(120);
-    background-position: top -25% left calc(50% + rem(349) - rem(540));
+    padding-bottom: rem(147);
+    padding-top: rem(124);
+    background-position: top rem(-20) left calc(50% + rem(349) - rem(540));
     background-size: rem(698);
   }
 }
@@ -48,7 +48,7 @@
   line-height: 1.5;
 
   @include mq {
-    margin-top: rem(24);
+    margin-top: rem(43);
   }
 }
 
@@ -56,6 +56,6 @@
   margin-top: rem(38);
 
   @include mq {
-    margin-top: rem(80);
+    margin-top: rem(78);
   }
 }

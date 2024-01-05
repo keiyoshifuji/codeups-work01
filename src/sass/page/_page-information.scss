@@ -23,6 +23,10 @@
   padding-top: rem(20);
   border: 1px solid $cGreenAccent;
   background-color: $white;
+  @include mq {
+    padding-bottom: rem(22);
+    padding-top: rem(23);
+  }
 }
 .page-information__container.is-active {
   display: block;

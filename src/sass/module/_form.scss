@@ -10,7 +10,7 @@
   border-bottom: 1px dashed $cGreenAccent;
 
   @include mq {
-    padding-bottom: rem(40);
+    padding-bottom: rem(37);
     padding-top: rem(40);
     display: flex;
     justify-content: flex-start;
@@ -24,14 +24,14 @@
   font-weight: $bold;
 
   @include mq {
-    width: 31%;
+    width: 31.4%;
   }
 }
 .form__item dd {
   margin-top: rem(15);
 
   @include mq {
-    width: 68%;
+    width: 68.6%;
     margin-top: initial;
   }
 }

@@ -25,10 +25,10 @@
   cursor: pointer;
 
   @include mq {
-    padding-bottom: rem(25);
+    padding-bottom: rem(21);
     padding-left: rem(40);
     padding-right: rem(40);
-    padding-top: rem(25);
+    padding-top: rem(29);
     font-size: rem(20);
   }
 
@@ -68,9 +68,9 @@
   line-height: 1.45;
   @include mq {
     margin-top: rem(16);
-    padding-bottom: rem(40);
+    padding-bottom: rem(36);
     padding-left: rem(40);
     padding-right: rem(40);
-    padding-top: rem(40);
+    padding-top: rem(41);
   }
 }
