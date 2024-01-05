@@ -124,11 +124,13 @@ jQuery(function ($) {
     $(".js-modal__img").attr("src", imageSrc);
     $(".js-modal__img").attr("alt", imageAlt);
     modal.addClass("is-open");
+    $("body").addClass("hamburger__body-scroll"); //overflow:hiddenをbodyにaddする
   });
 
   // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
+    $("body").removeClass("hamburger__body-scroll"); //overflow:hiddenをbodyにaddする
   });
 
   // * カテゴリータグをactiveにする & Information記事を切り替える
