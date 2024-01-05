@@ -9,22 +9,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: rem(24);
+  padding-left: rem(20);
   border-left: rem(8) $cGreenAccent solid;
 }
 
 .sidebar__title-icon {
-  width: rem(50);
-  height: rem(50);
+  width: rem(40);
+  height: rem(40);
   & img {
     filter: brightness(0);
   }
 }
 
 .sidebar__title-text {
-  padding-bottom: rem(4);
-  padding-left: rem(8);
-  padding-top: rem(10);
+  padding-bottom: rem(2);
+  padding-left: rem(13);
+  padding-top: rem(12);
   color: $cGreen01;
   font-weight: $normal;
   font-size: rem(24);
@@ -70,7 +70,7 @@
 }
 
 .sidebar__archive-list {
-  margin-top: rem(4);
+  margin-top: rem(3);
 }
 .sidebar__archive-year {
   cursor: pointer;
@@ -99,5 +99,5 @@
 }
 
 .sidebar__archive-month {
-  margin-top: rem(4);
+  margin-top: rem(3);
 }

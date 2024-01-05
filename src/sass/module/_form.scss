@@ -5,19 +5,21 @@
 }
 
 .form__item {
-  padding-bottom: rem(40);
-  padding-top: rem(40);
+  padding-bottom: rem(22);
+  padding-top: rem(24);
   border-bottom: 1px dashed $cGreenAccent;
 
   @include mq {
+    padding-bottom: rem(40);
+    padding-top: rem(40);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
 }
-// .form__item:first-child {
-//   padding-top: initial;
-// }
+.form__item:first-child {
+  padding-top: initial;
+}
 .form__item dt {
   font-weight: $bold;
 
@@ -26,7 +28,7 @@
   }
 }
 .form__item dd {
-  margin-top: rem(16);
+  margin-top: rem(15);
 
   @include mq {
     width: 68%;
@@ -34,11 +36,10 @@
   }
 }
 .form__required {
-  margin-left: rem(8);
-  padding-bottom: rem(2);
+  margin-left: rem(4);
   padding-left: rem(16);
-  padding-right: rem(16);
-  padding-top: rem(2);
+  padding-right: rem(12);
+  padding-top: rem(3);
   background-color: $cRed;
   color: $white;
   font-weight: $normal;
@@ -98,6 +99,9 @@
 .form.is-error {
   & .form__error {
     display: flex;
+  }
+  & .form__item:first-child {
+    padding-top: rem(37);
   }
   & input:required,
   & select:required,

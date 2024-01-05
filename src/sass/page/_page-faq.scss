@@ -11,20 +11,15 @@
     max-width: rem(700);
   }
 }
-.page-faq__item {
-}
 .page-faq__item:not(:first-child) {
   margin-top: rem(40);
 }
-.page-faq__qa {
-}
-
 .page-faq__question {
   position: relative;
-  padding-bottom: rem(16);
+  padding-bottom: rem(13);
   padding-left: rem(16);
   padding-right: rem(16);
-  padding-top: rem(16);
+  padding-top: rem(18);
   background-color: $cGreenAccent;
   color: $white;
   cursor: pointer;
@@ -63,13 +58,14 @@
 }
 
 .page-faq__answer {
-  padding-bottom: rem(24);
+  padding-bottom: rem(21);
   padding-left: rem(16);
   padding-right: rem(16);
   padding-top: rem(24);
   border: 1px solid $cGreenAccent;
   background-color: $white;
   color: $cGreen01;
+  line-height: 1.45;
   @include mq {
     margin-top: rem(16);
     padding-bottom: rem(40);

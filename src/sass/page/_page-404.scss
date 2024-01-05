@@ -2,7 +2,7 @@
 
 .page-404 {
   position: relative;
-  padding-bottom: rem(44);
+  padding-bottom: rem(40);
   padding-top: rem(50);
   background-image: url(../images/ornaments/fish-whale-white-big.png);
   background-position: top -100% center;
@@ -35,14 +35,15 @@
   font-family: $third-font-family;
   letter-spacing: 0.5em;
   text-indent: 0.5em;
-
+  line-height: 1;
+  margin-top: rem(16);
   @include mq {
     font-size: rem(160);
   }
 }
 
 .page-404__text {
-  margin-top: rem(0);
+  margin-top: rem(6);
   color: $white;
   line-height: 1.5;
 
@@ -52,7 +53,7 @@
 }
 
 .page-404__button {
-  margin-top: rem(40);
+  margin-top: rem(38);
 
   @include mq {
     margin-top: rem(80);

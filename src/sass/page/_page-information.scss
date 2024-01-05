@@ -20,7 +20,7 @@
   padding-bottom: rem(24);
   padding-left: rem(24);
   padding-right: rem(24);
-  padding-top: rem(24);
+  padding-top: rem(20);
   border: 1px solid $cGreenAccent;
   background-color: $white;
 }
@@ -55,7 +55,7 @@
 }
 
 .page-information__text {
-  margin-top: rem(8);
+  margin-top: rem(9);
   font-size: rem(16);
 }
 
@@ -63,7 +63,7 @@
   flex-shrink: 0;
   width: 100%;
   aspect-ratio: 297 / 189;
-  margin-top: rem(8);
+  margin-top: rem(5);
 
   @include mq {
     max-width: rem(492);

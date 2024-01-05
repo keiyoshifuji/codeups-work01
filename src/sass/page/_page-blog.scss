@@ -15,7 +15,7 @@
   margin-top: rem(80);
 }
 .page-blog__pagination-single {
-  margin-top: rem(40);
+  margin-top: rem(36);
 
   @include mq {
     margin-top: rem(80);
@@ -61,12 +61,11 @@
 }
 
 .page-blog__title {
-  padding-bottom: rem(4);
   border-bottom: 1px solid $cGreenAccent;
   color: $cGreen01;
   font-weight: $medium;
   font-size: rem(24);
-
+  margin-top: rem(4);
   @include mq {
     font-size: rem(32);
   }
@@ -74,7 +73,7 @@
 
 .page-blog__image {
   aspect-ratio: 345 / 231;
-  margin-top: rem(24);
+  margin-top: rem(22);
 
   @include mq {
     margin-top: rem(40);
@@ -88,7 +87,7 @@
 }
 
 .page-blog__text {
-  margin-top: rem(24);
+  margin-top: rem(27);
 
   @include mq {
     margin-top: rem(40);
@@ -103,7 +102,7 @@
   }
 }
 .page-blog__list {
-  padding-left: rem(22);
+  padding-left: rem(27);
   background-image: url("../images/common/list-style-green.svg");
   background-position: top left;
   background-repeat: no-repeat;

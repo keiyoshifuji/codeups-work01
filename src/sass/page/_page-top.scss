@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .page-top {
-  margin-top: rem(52);
+  margin-top: rem(56);
   @include mq {
-    margin-top: rem(150);
+    margin-top: rem(154);
   }
 }
 
 .page-top.page-top--long {
-  margin-top: rem(121);
+  margin-top: rem(125);
   @include mq {
-    margin-top: rem(150);
+    margin-top: rem(154);
   }
 }

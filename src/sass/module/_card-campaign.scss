@@ -198,7 +198,6 @@
 
 // Modifier--sidebar
 .card-campaign.card-campaign--sidebar {
-  padding-bottom: rem(24);
   & .card-campaign__body {
     display: block;
     display: flex;
@@ -212,6 +211,7 @@
     padding-top: 63.9%;
   }
   & .card-campaign__meta {
+    margin-top: rem(18);
     padding-left: rem(24);
     padding-right: rem(24);
   }
@@ -220,7 +220,7 @@
     margin-top: initial;
   }
   & .card-campaign__text {
-    margin-top: rem(8);
+    margin-top: rem(10);
     font-size: rem(14);
   }
   & .card-campaign__price-before {
