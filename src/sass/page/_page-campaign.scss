@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.page-campaign__categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .page-campaign__cards {
   max-width: rem(520);
   margin-top: rem(40);

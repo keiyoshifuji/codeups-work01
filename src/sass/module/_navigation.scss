@@ -64,9 +64,9 @@
   & .navigation__item > a,
   & .navigation__sub-item > a {
     color: $cGreen01;
-    text-shadow: 1px 1px 0 $white, -1px -1px 0 $white,
-    -1px 1px 0 $white,  1px -1px 0 $white,
-    1px 0 0 $white, -1px  0 0 $white,
-    0 1px 0 $white,  0 -1px 0 $white;
+    text-shadow: 2px 2px 0 $white, -2px -2px 0 $white,
+    -2px 2px 0 $white,  2px -2px 0 $white,
+    2px 0 0 $white, -2px  0 0 $white,
+    0 2px 0 $white,  0 -2px 0 $white;
   }
 }

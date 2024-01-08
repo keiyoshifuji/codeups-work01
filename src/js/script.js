@@ -1,6 +1,12 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
+  // * 画面幅
+  let windowWidth = $(window).width();
+  $(window).on("resize", function () {
+    windowWidth = $(this).width();
+  });
+
   // * hamburger and drawer
   $(".js-hamburger , .js-drawer-menu").click(function () {
     $(".js-hamburger").toggleClass("is-active"); //.is-activeクラスをtoggleする
@@ -116,21 +122,32 @@ jQuery(function ($) {
   const open = $(".js-modal-open");
   const close = $(".js-modal__close");
   const modal = $(".js-modal");
+  const specifiedWidth = 768;
 
   // 開くボタンをクリックしたらモーダルを表示する
   open.on("click", function () {
-    let imageSrc = $(this).children("img").attr("src");
-    let imageAlt = $(this).children("img").attr("alt");
-    $(".js-modal__img").attr("src", imageSrc);
-    $(".js-modal__img").attr("alt", imageAlt);
-    modal.addClass("is-open");
-    $("body").addClass("hamburger__body-scroll"); //overflow:hiddenをbodyにaddする
+    if (windowWidth >= specifiedWidth) {
+      let imageSrc = $(this).children("img").attr("src");
+      let imageAlt = $(this).children("img").attr("alt");
+      let newImg = $("<img>", {
+        class: "modal__img js-modal__img",
+        src: imageSrc,
+        alt: imageAlt,
+      });
+      $(".js-modal__figure").append(newImg);
+      modal.addClass("is-open");
+      //overflow:hiddenをbodyにaddする
+      $("body").addClass("hamburger__body-scroll");
+    }
   });
 
   // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
-    $("body").removeClass("hamburger__body-scroll"); //overflow:hiddenをbodyにaddする
+    $(".js-modal__img").remove();
+
+    //overflow:hiddenをbodyにaddする
+    $("body").removeClass("hamburger__body-scroll");
   });
 
   // * カテゴリータグをactiveにする & Information記事を切り替える

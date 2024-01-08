@@ -1,5 +1,9 @@
 @use "global" as *;
-
+.page-voice__categories{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .page-voice__cards {
   max-width: rem(520);
   margin-top: rem(40);
