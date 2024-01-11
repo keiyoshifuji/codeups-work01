@@ -1,16 +1,18 @@
 @use "global" as *;
 
-.page-about-us__body {
-  width: 100%;
-  max-width: rem(520);
-  margin-right: auto;
-  margin-left: auto;
+.page-about-us__inner {
+  max-width: rem(560);
 
+  @include mq {
+    max-width: none;
+  }
+}
+
+.page-about-us__body {
   @include mq {
     display: flex;
     align-items: baseline;
     gap: rem(40);
-    max-width: none;
     aspect-ratio: 1080 / 661;
     padding-left: 18.518519%;
     padding-top: 18.518519%;

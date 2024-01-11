@@ -24,9 +24,7 @@ $hamburger-scale: 1.414;
   background-color: $white;
   transition: transform 0.3s, opacity 0.1s;
 }
-.hamburger__body-scroll{
-  overflow: hidden;
-}
+
 
 // * is-active
 .is-active .hamburger__border {

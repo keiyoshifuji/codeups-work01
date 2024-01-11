@@ -136,18 +136,18 @@ jQuery(function ($) {
       });
       $(".js-modal__figure").append(newImg);
       modal.addClass("is-open");
-      //overflow:hiddenをbodyにaddする
-      $("body").addClass("hamburger__body-scroll");
+      //スクロールバーを表示したまま背景固定する
+      $("body").css({"overflow": "hidden"});
     }
   });
-
+  
   // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
     $(".js-modal__img").remove();
-
-    //overflow:hiddenをbodyにaddする
-    $("body").removeClass("hamburger__body-scroll");
+    
+    //スクロールバーを表示したまま背景固定する
+    $("body").css({"overflow": ""});
   });
 
   // * カテゴリータグをactiveにする & Information記事を切り替える
