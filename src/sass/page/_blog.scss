@@ -23,13 +23,20 @@
     background-size: cover;
   }
 }
+.blog__inner{
+  max-width: rem(560);
+}
 .blog__cards {
   margin-top: rem(24);
   margin-right: auto;
   margin-left: auto;
+  padding-left: rem(6);
+  padding-right: rem(6);
 
   @include mq {
     margin-top: rem(76);
+    padding: 0;
+
   }
 }
 .blog__button {

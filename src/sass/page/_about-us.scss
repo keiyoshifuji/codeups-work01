@@ -1,13 +1,12 @@
 @use "global" as *;
 
+.about-us__inner{
+  max-width: rem(560);
+}
 .about-us__body {
   position: relative;
-  max-width: rem(600);
   margin-top: rem(24);
-  margin-right: auto;
-  margin-left: auto;
   @include mq {
-    max-width: none;
     aspect-ratio: 1080 / 661;
     margin-top: rem(36);
     padding-top: 18.518519%;

@@ -1,17 +1,15 @@
 @use "global" as *;
+
+.page-voice__inner{
+  max-width: rem(560);
+}
 .page-voice__categories{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .page-voice__cards {
-  max-width: rem(520);
   margin-top: rem(40);
-  margin-right: auto;
-  margin-left: auto;
-  @include mq {
-    max-width: none;
-  }
 }
 .page-voice__pagination {
   display: flex;

@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.page-blog__inner {
+  max-width: rem(560);
+}
 .page-blog__body {
   @include mq {
     display: flex;
@@ -24,25 +27,32 @@
 
 .page-blog__left-side {
   width: 100%;
-  max-width: rem(704);
+
+  @include mq {
+    width: 65.37%;
+  }
 }
 .page-blog__cards {
   width: 100%;
-
   margin-inline: auto;
+  padding-left: rem(6);
+  padding-right: rem(6);
+
+  @include mq {
+    padding: 0;
+  }
 }
 
 .page-blog__right-side {
   width: rem(294);
   margin-top: rem(80);
+  margin-inline: auto;
 
   @include mq {
     flex-shrink: 0;
     margin-top: initial;
-
     margin-inline: initial;
   }
-  margin-inline: auto;
 }
 
 // * 個別ページ
@@ -50,6 +60,7 @@
   width: 100%;
   max-width: rem(600);
   margin-inline: auto;
+
   @include mq {
     max-width: none;
   }
@@ -61,11 +72,12 @@
 }
 
 .page-blog__title {
+  margin-top: rem(4);
   border-bottom: 1px solid $cGreenAccent;
   color: $cGreen01;
   font-weight: $medium;
   font-size: rem(24);
-  margin-top: rem(4);
+
   @include mq {
     font-size: rem(32);
   }
@@ -78,6 +90,7 @@
   @include mq {
     margin-top: rem(35);
   }
+
   & img {
     width: 100%;
     height: 100%;

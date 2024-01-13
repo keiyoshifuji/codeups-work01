@@ -50,6 +50,7 @@
 .form__checkbox {
   display: flex;
   flex-direction: column;
+  gap: rem(1);
 }
 .form__item.form__item--acceptance {
   display: flex;

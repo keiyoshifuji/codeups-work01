@@ -1,15 +1,11 @@
 @use "global" as *;
 
-.page-privacy-policy__body {
-  max-width: rem(600);
-  margin-right: auto;
-  margin-left: auto;
-
+.page-privacy-policy__inner.inner {
+  max-width: rem(560);
   @include mq {
-    max-width: rem(800);
+    max-width: rem(850);
   }
 }
-
 .page-privacy-policy__title {
   color: $cGreen01;
   font-weight: $medium;

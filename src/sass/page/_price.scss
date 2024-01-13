@@ -9,6 +9,9 @@
     padding-top: rem(100);
   }
 }
+.price__inner {
+  max-width: rem(560);
+}
 .price__image-sp {
   position: relative;
   width: 100%;
@@ -31,16 +34,12 @@
   object-position: 50% 50%;
 }
 .price__body {
-  max-width: rem(600);
   margin-top: rem(23);
-  margin-right: auto;
-  margin-left: auto;
   @include mq {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 8.8%;
-    max-width: none;
     margin-top: rem(35);
   }
 }

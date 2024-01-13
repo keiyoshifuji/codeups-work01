@@ -9,14 +9,13 @@
     padding-top: rem(100);
   }
 }
+.information__inner {
+  max-width: rem(560);
+}
 .information__body {
-  max-width: rem(600);
   margin-top: rem(23);
-  margin-right: auto;
-  margin-left: auto;
   @include mq {
     display: flex;
-    max-width: none;
     margin-top: rem(35);
   }
 }

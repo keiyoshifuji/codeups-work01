@@ -2,17 +2,22 @@
 
 .cards01 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+  grid-template-columns: repeat(1,1fr);
   justify-items: center;
   gap: rem(40) rem(40);
-  max-width: rem(600);
-  padding-left: rem(6);
-  padding-right: rem(6);
 
   @include mq {
     gap: rem(80) rem(40);
-    max-width: none;
-    padding: 0;
+  }
+}
+.cards01.cards01--c2 {
+  @include mq {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cards01.cards01--c3 {
+  @include mq {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .cards01__card {

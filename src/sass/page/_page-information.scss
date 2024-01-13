@@ -1,12 +1,8 @@
 @use "global" as *;
 
-.page-information__body {
-  max-width: rem(600);
-  @include mq {
-    max-width: none;
-  }
+.page-information__inner{
+  max-width: rem(560);
 
-  margin-inline: auto;
 }
 .page-information__containers {
   margin-top: rem(16);
@@ -64,13 +60,11 @@
 }
 
 .page-information__photo {
-  flex-shrink: 0;
   width: 100%;
   aspect-ratio: 297 / 189;
   margin-top: rem(5);
 
   @include mq {
-    max-width: rem(492);
     aspect-ratio: 492 / 313;
     margin-top: rem(0);
   }

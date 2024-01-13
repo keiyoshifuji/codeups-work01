@@ -1,15 +1,11 @@
 @use "global" as *;
 
-.page-terms-of-service__body {
-  max-width: rem(600);
-  margin-right: auto;
-  margin-left: auto;
-
+.page-terms-of-service__inner.inner {
+  max-width: rem(560);
   @include mq {
-    max-width: rem(800);
+    max-width: rem(850);
   }
 }
-
 .page-terms-of-service__title {
   color: $cGreen01;
   font-weight: $medium;
@@ -19,7 +15,6 @@
     font-size: rem(32);
   }
 }
-
 .page-terms-of-service__text {
   margin-top: rem(40);
   color: $cGreen01;

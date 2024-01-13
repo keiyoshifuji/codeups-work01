@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.contact__inner {
+  max-width: rem(560);
+}
 .contact__body {
   @include mq {
     display: flex;
@@ -20,7 +23,6 @@
   }
 }
 .contact__logo {
-  width: 100%;
   padding-bottom: rem(6);
   border-bottom: rem(1) solid $cGreenAccent;
   @include mq {
@@ -54,7 +56,6 @@
   margin-top: rem(4);
 }
 .contact__map {
-  max-width: rem(480);
   height: rem(160);
   margin-top: rem(16);
   margin-right: auto;
@@ -62,7 +63,6 @@
   @include mq {
     flex-shrink: 0;
     width: 62%;
-    max-width: none;
     height: rem(148);
     margin: 0;
   }
