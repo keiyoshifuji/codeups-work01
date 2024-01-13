@@ -79,25 +79,31 @@
 .sidebar__archive-year,
 .sidebar__archive-month {
   padding-left: rem(32);
-  background-image: url("../images/common/list-polygon.png");
-  background-position: center left rem(4);
-  background-size: rem(20);
-  background-repeat: no-repeat;
-}
-.sidebar__archive-year.is-active {
-  background-image: url("../images/common/list-polygon-open.png");
-  background-position: top 80% left;
-  background-size: rem(24);
+  position: relative;
 }
 
 .sidebar__archive-months {
-  display: none;
   padding-left: rem(24);
+  display: none;
 }
-.is-active ~ .sidebar__archive-months {
-  display: block;
-}
-
 .sidebar__archive-month {
   margin-top: rem(3);
+}
+.sidebar__archive-year::before,
+.sidebar__archive-month::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 24%;
+  width: rem(24);
+  height: rem(24);
+  background-image: url("../images/common/list-polygon.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+}
+.sidebar__archive-year.is-active::before {
+  transform: rotate(90deg);
 }

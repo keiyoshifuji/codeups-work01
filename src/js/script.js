@@ -137,17 +137,17 @@ jQuery(function ($) {
       $(".js-modal__figure").append(newImg);
       modal.addClass("is-open");
       //スクロールバーを表示したまま背景固定する
-      $("body").css({"overflow": "hidden"});
+      $("body").css({ overflow: "hidden" });
     }
   });
-  
+
   // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
     modal.removeClass("is-open");
     $(".js-modal__img").remove();
-    
+
     //スクロールバーを表示したまま背景固定する
-    $("body").css({"overflow": ""});
+    $("body").css({ overflow: "" });
   });
 
   // * カテゴリータグをactiveにする & Information記事を切り替える
@@ -163,9 +163,13 @@ jQuery(function ($) {
   });
 
   // * アーカイブ年をクリックしたときにアコーディオンする
+  const archiveButtonActive = $(".js-archive-button.is-active");
   const archiveButton = $(".js-archive-button");
+  archiveButtonActive.next().css({ display: "block" });
+  // archiveButton.next().css({ display: "none" });
   archiveButton.on("click", function () {
     $(this).toggleClass("is-active");
+    $(this).next().slideToggle(300);
   });
 
   // * FAQのQをクリックしたときにアコーディオンする
