@@ -31,6 +31,7 @@
     cursor: pointer;
   }
 }
+.categories__item:hover,
 .categories__item.is-active {
   background-color: $cGreenAccent;
   color: $white;
