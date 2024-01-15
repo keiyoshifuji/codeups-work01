@@ -18,22 +18,23 @@
   font-size: rem(14);
   font-family: $second-font-family;
   text-align: center;
+  // transition: background-color 0.3s, opacity 0.3s, color 0.3s;
   @include mq {
     max-width: rem(300);
     height: rem(90);
     font-size: rem(24);
   }
-  &:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
 }
+.categories-with-whale__item:hover {
+  background-color: $cGreenAccent;
+  color: $white;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .categories-with-whale__item.is-active {
   background-color: $cGreenAccent;
   color: $white;
-  &:hover {
-    opacity: 0.95;
-  }
 }
 
 .categories-with-whale__icon {
@@ -47,7 +48,8 @@
     object-position: 50% 50%;
   }
 }
-.categories-with-whale__item.is-active .categories-with-whale__icon {
+.categories-with-whale__item.is-active .categories-with-whale__icon,
+.categories-with-whale__item:hover .categories-with-whale__icon {
   & img {
     filter: brightness(0) invert(100%);
   }

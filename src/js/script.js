@@ -1,5 +1,6 @@
 jQuery(function ($) {
   // ! 「jQuery(function ($) {}」内であればWordpressでも「$」が使用可能になる
+  // console.log()
 
   // ! 共通項目
   // * ヘッダー高さ
@@ -14,16 +15,16 @@ jQuery(function ($) {
 
   // ! function  // function myFunction(arg1, arg2) {}
   // リンクからヘッダー分下げてスクロール
-  function linkScrollHeader(argLinkClass) {
-    let targetElement = $($(argLinkClass).attr("href"));
-    const duration = 500;
-    $("html, body").animate(
-      {
-        scrollTop: targetElement.offset().top - headerHeightDefault,
-      },
-      duration
-    );
-  }
+  // function linkScrollHeader(argLinkClass) {
+  //   let targetElement = $($(argLinkClass).attr("href"));
+  //   const duration = 500;
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: targetElement.offset().top - headerHeightDefault,
+  //     },
+  //     duration
+  //   );
+  // }
 
   // ! 個別動作
 
@@ -148,18 +149,32 @@ jQuery(function ($) {
   const categoryContent = $(".js-category-content");
   categoryButton.on("click", function () {
     let index = categoryButton.index(this);
-
     categoryButton.removeClass("is-active");
-    $(this).addClass("is-active");
     categoryContent.removeClass("is-active");
+    $(this).addClass("is-active");
     categoryContent.eq(index).addClass("is-active");
+  });
+  // *　target-id付リンクを踏んだ時にリンク先のInformation記事を切り替える
+  $(function () {
+    let linkId = new URL(window.location.href).searchParams.get("id");
+    if (linkId) {
+      // console.log(new URL(window.location.href))
+      // console.log(linkId)
+      categoryButton.removeClass("is-active");
+      categoryContent.removeClass("is-active");
+      let button = $("[data-target='" + linkId + "']");
+      let content = $("#" + linkId);
+      button.addClass("is-active");
+      content.addClass("is-active");
+    } else {
+      // console.log("no target-id");
+    }
   });
 
   // * アーカイブ年をクリックしたときにアコーディオンする
   const archiveButtonActive = $(".js-archive-button.is-active");
   const archiveButton = $(".js-archive-button");
   archiveButtonActive.next().css({ display: "block" });
-  // archiveButton.next().css({ display: "none" });
   archiveButton.on("click", function () {
     $(this).toggleClass("is-active");
     $(this).next().slideToggle(300);
