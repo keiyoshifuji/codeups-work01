@@ -19,22 +19,17 @@
   font-size: rem(16);
   line-height: 1;
   font-family: $second-font-family;
-}
-.pagination__number {
-  &:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-}
-.pagination__prev,
-.pagination__next {
   transition: border 0.2s, background-color 0.2s, color 0.2s;
   &:hover {
-    border: 1px solid $white;
+    opacity: 0.95;
     background-color: $cGreenAccent;
     color: $white;
     cursor: pointer;
   }
+}
+.pagination__number.is-active {
+  background-color: $cGreenAccent;
+  color: $white;
 }
 
 .pagination__prev {
@@ -49,10 +44,6 @@
   @include mq {
     display: flex;
   }
-}
-.pagination__number.is-active {
-  background-color: $cGreenAccent;
-  color: $white;
 }
 
 // Modifier Blog-single
