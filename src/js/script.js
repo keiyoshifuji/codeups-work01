@@ -2,10 +2,18 @@ jQuery(function ($) {
   // ! 「jQuery(function ($) {}」内であればWordpressでも「$」が使用可能になる
   // console.log()
 
-  // ! 共通項目
-  // * ヘッダー高さ
-  const headerHeightDefault = $("header").height();
+  // ! function  // function myFunction(arg1, arg2) {}
+  function headerDown(linkAnchor, durationTime, easeType, a) {
+    $("html, body").animate(
+      {
+        scrollTop: $("#" + linkAnchor).offset().top - headerHeightDefault * a,
+      },
+      durationTime,
+      easeType
+    );
+  }
 
+  // ! 共通
   // * 画面幅
   const windowWidthDefault = $(window).width();
   let windowWidth = $(window).width();
@@ -13,18 +21,24 @@ jQuery(function ($) {
     windowWidth = $(this).width();
   });
 
-  // ! function  // function myFunction(arg1, arg2) {}
-  // リンクからヘッダー分下げてスクロール
-  // function linkScrollHeader(argLinkClass) {
-  //   let targetElement = $($(argLinkClass).attr("href"));
-  //   const duration = 500;
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: targetElement.offset().top - headerHeightDefault,
-  //     },
-  //     duration
-  //   );
-  // }
+  // * ヘッダー高さ
+  const headerHeightDefault = $("header").height();
+
+  // * URLにアンカーがある場合はローディング後にヘッダー高さ分を下げる
+  $("a").on("click", function (e) {
+    let targetHref = $(this).attr("href");
+    if (targetHref && targetHref.includes("#")) {
+      let linkAnchor = $(this).attr("href").split("#")[1];
+      headerDown(linkAnchor, 100, "linear", 1.1);
+    }
+  });
+  $(window).on("load", function () {
+    let targetHref = window.location.href;
+    if (targetHref && targetHref.includes("#")) {
+      let linkAnchor = window.location.href.split("#")[1];
+      headerDown(linkAnchor, 100, "linear", 1.1);
+    }
+  });
 
   // ! 個別動作
 
@@ -166,8 +180,6 @@ jQuery(function ($) {
       let content = $("#" + linkId);
       button.addClass("is-active");
       content.addClass("is-active");
-    } else {
-      // console.log("no target-id");
     }
   });
 
