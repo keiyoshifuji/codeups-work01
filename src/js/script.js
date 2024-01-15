@@ -1,17 +1,32 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
+  // ! 「jQuery(function ($) {}」内であればWordpressでも「$」が使用可能になる
+
+  // ! 共通項目
+  // * ヘッダー高さ
+  const headerHeightDefault = $("header").height();
 
   // * 画面幅
+  const windowWidthDefault = $(window).width();
   let windowWidth = $(window).width();
   $(window).on("resize", function () {
     windowWidth = $(this).width();
   });
 
+  // ! function
+  // function myFunction(arg1, arg2) {}
+
+  // ! 個別動作
+
   // * hamburger and drawer
   $(".js-hamburger , .js-drawer-menu").click(function () {
-    $(".js-hamburger").toggleClass("is-active"); //.is-activeクラスをtoggleする
-    $("body").toggleClass("hamburger__body-scroll"); //overflow:hiddenをbodyにtoggleする
-    $(".js-drawer-menu").fadeToggle(); //ドロワー（マスク）をfadeIn/Outする
+    $(".js-hamburger").toggleClass("is-active");
+    $(".js-drawer-menu").fadeToggle();
+
+    if ($(".js-hamburger").hasClass("is-active")) {
+      $("body").css({ overflow: "hidden" });
+    } else {
+      $("body").css({ overflow: "" });
+    }
   });
 
   // * Main-view-swiper
@@ -52,8 +67,7 @@ jQuery(function ($) {
   });
 
   // * 横から背景画像→imageとなるアニメーション
-  //参考：https://design-remarks.com/image-after-color/
-  //.js-colorboxの付いた全ての要素に対して下記の処理を行う
+  // 参考：https://design-remarks.com/image-after-color/
   $(".js-colorbox").each(function () {
     $(this).append('<div class="is-color"></div>');
     let color = $(this).find($(".is-color"));
@@ -78,39 +92,11 @@ jQuery(function ($) {
     });
   });
 
-  // * ～px or 100vh後にscroll-top-buttonを表示させる
-  // $(window).scroll(function () {
-  //   // let scrollThreshold = $(this).height(); //=100vh
-  //   let scrollThreshold = 700;
-  //   let scrollPosition = $(this).scrollTop();
-  //   if (scrollPosition > scrollThreshold) {
-  //     $(".js-scroll-top-button").fadeIn();
-  //   } else {
-  //     $(".js-scroll-top-button").fadeOut();
-  //   }
-  // });
-
   // * スクロールトップにアニメーションで移動する
   $(".js-scroll-top-button").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "normal");
     return false;
   });
-
-  // * ナビゲーションクリック時にスーッと移動する
-  // const headerHeight = $(".js-header").height();
-  // $('a[href^="#"]').click(function () {
-  //   const speed = 600;
-  //   let href = $(this).attr("href");
-  //   let target = $(href == "#" || href == "" ? "html" : href);
-
-  //   //移動先のpadding-topを取得
-  //   let paddingValue = parseInt(target.css("padding-top"), 10);
-
-  //   // ヘッダーの高さ分下げる
-  //   let position = target.offset().top - headerHeight + paddingValue;
-  //   $("body,html").animate({ scrollTop: position }, speed, "swing");
-  //   return false;
-  // });
 
   // * ページネーションをactiveにする
   $(".js-pagination-number").click(function () {
@@ -119,35 +105,32 @@ jQuery(function ($) {
   });
 
   // * About us モーダル
-  const open = $(".js-modal-open");
-  const close = $(".js-modal__close");
   const modal = $(".js-modal");
+  const open = $(".js-modal-open");
+  const close = $(".js-modal-close");
   const specifiedWidth = 768;
-
   // 開くボタンをクリックしたらモーダルを表示する
   open.on("click", function () {
     if (windowWidth >= specifiedWidth) {
       let imageSrc = $(this).children("img").attr("src");
       let imageAlt = $(this).children("img").attr("alt");
       let newImg = $("<img>", {
-        class: "modal__img js-modal__img",
+        class: "modal__img js-modal-img",
         src: imageSrc,
         alt: imageAlt,
       });
-      $(".js-modal__figure").append(newImg);
-      modal.addClass("is-open");
-      //スクロールバーを表示したまま背景固定する
-      $("body").css({ overflow: "hidden" });
+      $(".js-modal-imgBox").append(newImg);
+      modal.fadeIn(500, function () {
+        $("body").css({ overflow: "hidden" });
+      });
     }
   });
-
   // 閉じるボタンをクリックしたらモーダルを閉じる
   close.add(modal).on("click", function () {
-    modal.removeClass("is-open");
-    $(".js-modal__img").remove();
-
-    //スクロールバーを表示したまま背景固定する
-    $("body").css({ overflow: "" });
+    modal.fadeOut(500, function () {
+      $(".js-modal-img").remove();
+      $("body").css({ overflow: "" });
+    });
   });
 
   // * カテゴリータグをactiveにする & Information記事を切り替える
@@ -183,4 +166,34 @@ jQuery(function ($) {
   });
 
   // * END
+
+  // ! 今回は利用しない
+
+  // * ナビゲーションクリック時にスーッと移動する
+  // const headerHeight = $(".js-header").height();
+  // $('a[href^="#"]').click(function () {
+  //   const speed = 600;
+  //   let href = $(this).attr("href");
+  //   let target = $(href == "#" || href == "" ? "html" : href);
+
+  //   //移動先のpadding-topを取得
+  //   let paddingValue = parseInt(target.css("padding-top"), 10);
+
+  //   // ヘッダーの高さ分下げる
+  //   let position = target.offset().top - headerHeight + paddingValue;
+  //   $("body,html").animate({ scrollTop: position }, speed, "swing");
+  //   return false;
+  // });
+
+  // * ～px or 100vh後にscroll-top-buttonを表示させる
+  // $(window).scroll(function () {
+  //   // let scrollThreshold = $(this).height(); //=100vh
+  //   let scrollThreshold = 700;
+  //   let scrollPosition = $(this).scrollTop();
+  //   if (scrollPosition > scrollThreshold) {
+  //     $(".js-scroll-top-button").fadeIn();
+  //   } else {
+  //     $(".js-scroll-top-button").fadeOut();
+  //   }
+  // });
 });
