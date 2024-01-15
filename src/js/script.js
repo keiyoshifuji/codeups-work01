@@ -28,10 +28,14 @@ jQuery(function ($) {
   $("a").on("click", function (e) {
     let targetHref = $(this).attr("href");
     if (targetHref && targetHref.includes("#")) {
+      // アンカーが同一ページにあるとき
       let linkAnchor = $(this).attr("href").split("#")[1];
-      headerDown(linkAnchor, 100, "linear", 1.1);
+      if ($("#" + linkAnchor).offset().top) {
+        headerDown(linkAnchor, 100, "linear", 1.1);
+      }
     }
   });
+  // 遷移先にアンカーがあるときは読み込み後に移動
   $(window).on("load", function () {
     let targetHref = window.location.href;
     if (targetHref && targetHref.includes("#")) {
