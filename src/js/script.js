@@ -12,8 +12,18 @@ jQuery(function ($) {
     windowWidth = $(this).width();
   });
 
-  // ! function
-  // function myFunction(arg1, arg2) {}
+  // ! function  // function myFunction(arg1, arg2) {}
+  // リンクからヘッダー分下げてスクロール
+  function linkScrollHeader(argLinkClass) {
+    let targetElement = $($(argLinkClass).attr("href"));
+    const duration = 500;
+    $("html, body").animate(
+      {
+        scrollTop: targetElement.offset().top - headerHeightDefault,
+      },
+      duration
+    );
+  }
 
   // ! 個別動作
 
