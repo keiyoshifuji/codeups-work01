@@ -25,7 +25,7 @@ jQuery(function ($) {
   const headerHeightDefault = $("header").height();
 
   // * URLにアンカーがある場合はローディング後にヘッダー高さ分を下げる
-  $("a").on("click", function (e) {
+  $("a").on("click", function () {
     let targetHref = $(this).attr("href");
     if (targetHref && targetHref.includes("#")) {
       // アンカーが同一ページにあるとき
