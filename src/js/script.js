@@ -3,6 +3,7 @@ jQuery(function ($) {
   // console.log()
 
   // ! function  // function myFunction(arg1, arg2) {}
+  // * ヘッダー高さ分を考慮した遷移
   function headerDown(linkAnchor, durationTime, easeType, a) {
     $("html, body").animate(
       {
@@ -11,6 +12,11 @@ jQuery(function ($) {
       durationTime,
       easeType
     );
+  }
+
+  // * Promise用
+  function wait(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   // ! 共通
@@ -46,6 +52,47 @@ jQuery(function ($) {
 
   // ! 個別動作
 
+  // * loading
+  const loadingTop = $(".js-load");
+  const loadingLeft = $(".js-loading-left");
+  const loadingRight = $(".js-loading-right");
+  if (!sessionStorage.getItem("visited")) {
+    $("body").css({ "overflow-y": "scroll", position: "fixed" });
+    loadingTop.show();
+    loadingLeft.css({ top: "100%" });
+    loadingRight.css({ top: "calc(100% + 80px)", right: "-20%" });
+    const loadingStartTime = 1000;
+    const imageAnimationTime = 1500;
+    const loadingFadeOutTime = 750;
+
+    wait(loadingStartTime)
+      .then(function () {
+        loadingLeft.animate(
+          {
+            top: 0,
+          },
+          imageAnimationTime
+        );
+        loadingRight.animate(
+          {
+            top: 0,
+            right: 0,
+          },
+          imageAnimationTime
+        );
+
+        return wait(imageAnimationTime);
+      })
+      .then(function () {
+        loadingTop.fadeOut(loadingFadeOutTime);
+        $("body").css({ "overflow-y": "", position: "" });
+      });
+
+    sessionStorage.setItem("visited", "true");
+  }
+
+  $(window).on("load", function () {});
+
   // * hamburger and drawer
   $(".js-hamburger , .js-drawer-menu").click(function () {
     $(".js-hamburger").toggleClass("is-active");
@@ -67,7 +114,7 @@ jQuery(function ($) {
     speed: 3000,
     allowTouchMove: false,
     autoplay: {
-      delay: 3000,
+      delay: 6000,
     },
   });
 

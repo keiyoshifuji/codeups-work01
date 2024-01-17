@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: zi(loading);
+  width: 100%;
+  height: 100dvh;
+  background-color: $white;
+}
+.loading__inner {
+  width: 100%;
+  position: relative;
+  height: inherit;
+}
+.loading__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: zi(just-above);
+  transform: translate(-50%, -50%);
+
+  @include mq {
+    top: 55.6%;
+  }
+}
+.loading__text-large {
+  color: $cGreenAccent;
+  font-weight: $normal;
+  font-size: rem(40);
+  line-height: 1.2;
+  font-family: $third-font-family;
+  letter-spacing: 0.525em;
+  text-align: center;
+  text-indent: 0.525em;
+  text-transform: uppercase;
+
+  @include mq {
+    font-size: rem(80);
+  }
+}
+.loading__text-small {
+  color: $cGreenAccent;
+  font-size: rem(20);
+  line-height: 1.7;
+  text-align: center;
+
+  @include mq {
+    margin-top: rem(1);
+  }
+}
+.loading__flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: inherit;
+}
+.loading__left,
+.loading__right {
+  position: relative;
+  width: 50%;
+  height: inherit;
+  overflow: hidden;
+}
+.loading__image {
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: inherit;
+
+  & img {
+    height: inherit;
+    object-fit: cover;
+  }
+}
+.loading__left .loading__image {
+  top: 0;
+  left: 0;
+}
+.loading__right .loading__image {
+  top: 0;
+  right: 0;
+}
