@@ -26,6 +26,7 @@
 }
 
 .gallery__item {
+  cursor: pointer;
   @include mq {
     &:nth-child(6n + 1) {
       grid-column: 1 / span 1;
