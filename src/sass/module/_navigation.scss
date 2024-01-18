@@ -43,15 +43,14 @@
   padding-top: rem(12);
   color: $white;
   line-height: 1.125;
-}
-// hover
-.navigation__item > a:hover,
-.navigation__sub-item > a:hover {
-  @include mq {
-    opacity: 0.8;
+  transition: opacity 0.3s;
+
+  &:hover {
+    @include mq {
+      opacity: 0.8;
+    }
   }
 }
-
 .navigation__item > a {
   font-weight: $bold;
 }
@@ -64,9 +63,7 @@
   & .navigation__item > a,
   & .navigation__sub-item > a {
     color: $cGreen01;
-    text-shadow: 2px 2px 0 $white, -2px -2px 0 $white,
-    -2px 2px 0 $white,  2px -2px 0 $white,
-    2px 0 0 $white, -2px  0 0 $white,
-    0 2px 0 $white,  0 -2px 0 $white;
+    text-shadow: 2px 2px 0 $white, -2px -2px 0 $white, -2px 2px 0 $white, 2px -2px 0 $white, 2px 0 0 $white,
+      -2px 0 0 $white, 0 2px 0 $white, 0 -2px 0 $white;
   }
 }

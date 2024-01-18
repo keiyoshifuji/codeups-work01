@@ -18,7 +18,7 @@
   font-size: rem(14);
   font-family: $second-font-family;
   text-align: center;
-  // transition: background-color 0.3s, opacity 0.3s, color 0.3s;
+  transition: background-color 0.1s, opacity 0.3s, color 0.1s;
   @include mq {
     max-width: rem(300);
     height: rem(90);

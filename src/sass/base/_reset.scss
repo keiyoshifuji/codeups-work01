@@ -36,6 +36,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  // swiper 100vw の影響を消すため
+  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

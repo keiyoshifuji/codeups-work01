@@ -26,6 +26,8 @@
   color: $cGreenAccent;
   font-size: rem(14);
   font-family: $second-font-family;
+  transition: opacity 0.3s;
+
   &:hover {
     opacity: 0.8;
     cursor: pointer;
