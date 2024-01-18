@@ -10,8 +10,11 @@
   justify-content: center;
   align-items: center;
   gap: rem(8);
-  width: 100%;
-  height: rem(60);
+  min-width: rem(102);
+  padding-bottom: rem(9);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  padding-top: rem(9);
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
   background-color: $cGreen02;
   color: $cGreenAccent;
@@ -20,23 +23,22 @@
   text-align: center;
   transition: background-color 0.1s, opacity 0.3s, color 0.1s;
   @include mq {
-    max-width: rem(300);
-    height: rem(90);
+    min-width: rem(300);
+    padding-bottom: rem(12);
+    padding-top: rem(12);
     font-size: rem(24);
   }
 }
 .categories-with-whale__item:hover {
+  opacity: 0.9;
   background-color: $cGreenAccent;
   color: $white;
-  opacity: 0.9;
   cursor: pointer;
 }
-
 .categories-with-whale__item.is-active {
   background-color: $cGreenAccent;
   color: $white;
 }
-
 .categories-with-whale__icon {
   width: rem(64);
   height: rem(64);
